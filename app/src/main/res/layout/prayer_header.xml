@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/prayer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/bubblegum_sans"
+        android:textSize="17dp"
+        android:textColor="@android:color/white"
+        android:padding="8dp"
+        android:background="#0277BD"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="textdshksbdjsdj" />
+</androidx.constraintlayout.widget.ConstraintLayout>

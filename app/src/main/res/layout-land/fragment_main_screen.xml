@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="#807BB3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:viewBindingIgnore="false"
+    tools:context=".fragments.MainScreenFragment">
+
+        <TextView
+            android:id="@+id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.1"
+            android:shadowColor="@color/colorRed"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/select_option_below"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/select"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            tools:listitem="@layout/main_screen_single_item_layout"
+            android:background="#807BB3"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view"/>
+
+    </RelativeLayout>

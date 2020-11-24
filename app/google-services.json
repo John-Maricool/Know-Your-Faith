@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "487434348780",
+    "firebase_url": "https://know-your-faith-for-children-a.firebaseio.com",
+    "project_id": "know-your-faith-for-children-a",
+    "storage_bucket": "know-your-faith-for-children-a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487434348780:android:72b09ec4f26a0072e0ddc9",
+        "android_client_info": {
+          "package_name": "com.example.maricools_app_designs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487434348780-0t0d3o0hmb1uer2cami93jia8ca5vqn2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.maricools_app_designs",
+            "certificate_hash": "e100957bdbb51cc518c83d25b6a1b81068f328b6"
+          }
+        },
+        {
+          "client_id": "487434348780-vafuq6sbo8mpbjnjhple6qa8ocp8o1gc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSFrFu1BG8Jln79E_XlKhtHr5y2W7FO9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487434348780-vafuq6sbo8mpbjnjhple6qa8ocp8o1gc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

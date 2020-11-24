@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstScreenFragment">
+
+    <fragment
+        android:id="@+id/firstScreenFragment"
+        android:name="com.example.maricools_app_designs.fragments.FirstScreenFragment"
+        android:label="Know your faith"
+        tools:layout="@layout/fragment_first_screen">
+        <action
+            android:id="@+id/action_firstScreenFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/firstScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.example.maricools_app_designs.fragments.MainScreenFragment"
+        android:label="Select Option"
+        tools:layout="@layout/fragment_main_screen" />
+    <fragment
+        android:id="@+id/catholicFactsFragment"
+        android:name="com.example.maricools_app_designs.fragments.CatholicFactsFragment"
+        android:label="Choose Fact"
+        tools:layout="@layout/fragment_catholic_facts" >
+        <action
+            android:id="@+id/action_catholicFactsFragment_to_factsFragment"
+            app:destination="@id/factsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/catholicPrayerFragment"
+        android:name="com.example.maricools_app_designs.fragments.CatholicPrayerFragment"
+        android:label="Choose Prayer"
+        tools:layout="@layout/fragment_catholic_prayer">
+        <action
+            android:id="@+id/action_catholicPrayerFragment_to_prayerFragment"
+            app:destination="@id/prayerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/catholicQuizFragment"
+        android:name="com.example.maricools_app_designs.fragments.CatholicQuizFragment"
+        android:label="fragment_catholic_quiz"
+        tools:layout="@layout/fragment_catholic_quiz"/>
+    <fragment
+        android:id="@+id/catholicSaintsFragment"
+        android:name="com.example.maricools_app_designs.fragments.CatholicSaintsFragment"
+        android:label="fragment_catholic_saints"
+        tools:layout="@layout/fragment_catholic_saints"/>
+    <fragment
+        android:id="@+id/prayerFragment"
+        android:name="com.example.maricools_app_designs.fragments.PrayerFragment"
+        android:label="fragment_prayer"
+        tools:layout="@layout/fragment_prayer" >
+        <argument
+            android:name="prayer"
+            app:argType="string"
+            android:defaultValue="Prayer" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/factsFragment"
+        android:name="com.example.maricools_app_designs.fragments.FactsFragment"
+        android:label="FactsFragment" >
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="title" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Know Your Faith</string>
+    <string name="app_text_name">Know your faith for Children and Teenagers</string>
+    <string name="loading">Loading...</string>
+    <string name="select_option_below">Select Option Below</string>
+
+    <string name="prayers">Catholic Prayers</string>
+    <string name="prayers_desc">Simple catholic prayers for kids and teenagers</string>
+
+    <string name="facts">Catholic Facts</string>
+    <string name="facts_desc">Facts and information about the church and its liturgy for children and teenagers</string>
+
+    <string name="saints">Catholic Saints</string>
+    <string name="saints_desc">Life of the catholic saints for the whole year</string>
+
+    <string name="quiz">Quiz</string>
+    <string name="quiz_desc">Test yourself in bible and catholic quiz for children and teenagers</string>
+
+
+    <string name="kids_prayer">Basic Prayers</string>
+    <string-array name="under_topics">
+        <item>Prayer before meal</item>
+        <item>Act of Faith</item>
+        <item>Act of Hope</item>
+        <item>Act of Charity</item>
+        <item>Prayer before mass</item>
+        <item>Prayer After mass</item>
+        <item>Prayer for Nigeria in distress</item>
+        <item>Prayer after meal</item>
+        <item>The Lords Prayer</item>
+        <item>Act of Contrition</item>
+        <item>The Creed</item>
+        <item>The Nicene Creed</item>
+        <item>The Confeitor</item>
+        <item>Prayer before Holy Communion</item>
+        <item>Prayer after Holy Communion</item>
+        <item>Hail Mary</item>
+        <item>Hail Holy Queen</item>
+        <item>Prayer for souls in Purgatory</item>
+        <item>The Angelus</item>
+        <item>The Regina Caeli</item>
+        <item>Prayer to St. Micheal</item>
+        <item>Prayer before Holy Communion</item>
+        <item>Prayer after Holy Communion</item>
+        <item>The Memorare</item>
+        <item>Prayer before study</item>
+        <item>Prayer before serving at mass</item>
+        <item>Prayer before sleep</item>
+        <item>Prayer before writing or preaching</item>
+        <item>Prayer for parents</item>
+        <item>Prayer for Peace</item>
+        <item>Prayer for students</item>
+        <item>Prayer for a Clergy</item>
+        <item>Prayer for the church</item>
+        <item>Prayer for the sick</item>
+        <item>Prayer for the Pope</item>
+        <item>Prayer for Family</item>
+    </string-array>
+
+
+    <string name="the_rosary">Holy Rosary</string>
+    <string-array name="rosary_topics">
+        <item>Joyful Mysteries</item>
+        <item>Sorrowful mysteries</item>
+        <item>Glorious Mysteries</item>
+        <item>Luminous Mysteries</item>
+        <item>Litany of the Blessed Virgin Mary</item>
+        <item>The Catena</item>
+        <item>Steps on saying the Rosary</item>
+    </string-array>
+
+    <string name="saints_prayer">Prayer to Angels and Saints</string>
+    <string-array name="saints_prayers">
+        <item>Prayer of St. Francis </item>
+        <item>Prayer to St. Christopher</item>
+        <item>A prayer to Padre Pio</item>
+        <item>Prayer to St. Joseph</item>
+        <item>Prayer to St. Jude</item>
+        <item>Prayer to St. Philomena</item>
+        <item>Novena to St. Philomena</item>
+        <item>St. Gertitude Thanksgiving</item>
+        <item>Angel of God</item>
+        <item>To St. Gabriel the Archangel</item>
+        <item>Ejaculations to the Guardian angel</item>
+        <item>A prayer to our Guardian angel</item>
+
+
+    </string-array>
+
+    <string name="jesus_prayer">Jesus Christ</string>
+    <string-array name="jesus_prayer">
+        <item>The Chaplet of Divine Mercy</item>
+        <item>Act of consecration to the sacrad Heart of Jesus</item>
+        <item>Prayer to the Sacrad Heart</item>
+        <item>Before a Crucifix</item>
+        <item>Tantum Egro</item>
+        <item>Adoremus in Eternum</item>
+        <item>O Salutaris Hostia</item>
+        <item>Stations of the Cross</item>
+        <item>Divine Praises</item>
+        <item>Chaplet of the Precious Blood</item>
+        <item>Litany of the Infant Jesus</item>
+        <item>The JESUS prayer</item>
+    </string-array>
+
+<string-array name="facts_list">
+    <item>Commandments</item>
+    <item>Sacrament</item>
+    <item>Sin</item>
+    <item>Prayer</item>
+    <item>Holy days of obligation</item>
+    <item>Holy Eucharist</item>
+    <item>Virtues and Vices</item>
+    <item>Fruits and gifts of the Holy Spirit</item>
+    <item>Indulgence</item>
+</string-array>
+
+    <string-array name="expandable_facts_list">
+    <item>Holy days of obligation</item>
+    <item>Holy Eucharist</item>
+    <item>Virtues and Vices</item>
+    <item>Fruits and gifts of the Holy Spirit</item>
+    <item>Indulgence</item>
+</string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
