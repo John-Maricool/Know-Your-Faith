@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="basic_prayers">
+        <item>Prayer before meal</item>
+        <item>Act of Faith</item>
+        <item>Act of Hope</item>
+        <item>Act of Charity</item>
+        <item>Prayer before mass</item>
+        <item>Prayer After mass</item>
+        <item>Prayer for Nigeria in distress</item>
+        <item>Prayer after meal</item>
+        <item>The Lords Prayer</item>
+        <item>Act of Contrition</item>
+        <item>The Creed</item>
+        <item>The Nicene Creed</item>
+        <item>The Confeitor</item>
+        <item>Prayer before the Crucifix</item>
+        <item>Prayer before Holy Communion</item>
+        <item>Hail Mary</item>
+        <item>Hail Holy Queen</item>
+        <item>Prayer for souls in Purgatory</item>
+        <item>The Angelus</item>
+        <item>The Regina Caeli</item>
+        <item>Prayer to St. Micheal</item>
+        <item>The Memorare</item>
+        <item>Prayer before study</item>
+        <item>Prayer before sleep</item>
+        <item>Prayer for parents</item>
+        <item>Prayer to the Holy Spirit</item>
+        <item>Prayer for Peace</item>
+        <item>Prayer for students</item>
+        <item>Prayer for a Clergy</item>
+        <item>Prayer for the church</item>
+        <item>Prayer for the sick</item>
+        <item>Prayer for the Pope</item>
+        <item>Prayer for Family</item>
+    </string-array>
+
+    <string-array name="list_of_basic_prayers">
+        <item>\t\tBless us O Lord and this your gift which we are about to eat and your bounty through Christ our Lord. Amen</item>
+
+        <item>\t\t O My Lord, I believe in you and all that your church teaches,
+            because you have said it and your word is true. Amen  </item>
+
+        <item>\t\tO My Lord, I hope in you, for your grace and glory,
+            because of your promises, your Mercy and your power. Amen  </item>
+
+        <item>\t\t O My Lord, I Love you with all my heart and for your sake, I Love my neighbour as myself. Amen </item>
+
+        <item>\t\tAlmighty and ever-living God,
+I approach the sacrament
+of Your only-begotten Son
+Our Lord Jesus Christ,
+I come sick to the doctor of life,
+unclean to the fountain of mercy,
+blind to the radiance of eternal light,
+and poor and needy to the Lord
+of heaven and earth.\n
+
+\t\tLord, in your great generosity,
+heal my sickness,
+wash away my defilement,
+enlighten my blindness, enrich my poverty,
+and clothe my nakedness.
+May I receive the bread of angels,
+the King of kings and Lord of lords,
+with humble reverence,
+with the purity and faith,
+the repentance and love,
+and the determined purpose
+that will help to bring me to salvation.
+May I receive the sacrament
+of the Lord\'s Body and Blood,
+and its reality and power.\n
+
+\t\tKind God,
+may I receive the Body
+of Your only-begotten Son,
+our Lord Jesus Christ,
+born from the womb of the Virgin Mary,
+and so be received into His mystical body
+and numbered among His members.\n
+
+\t\tLoving Father,
+as on my earthly pilgrimage
+I now receive Your beloved Son
+under the veil of a sacrament,
+may I one day see him face to face in glory,
+who lives and reigns with You for ever Amen.</item>
+
+        <item>\t\t I thank you, holy Lord, almighty Father, eternal God, who deigned to feast me, sinful and unworthy servant,
+            with the precious body and blood of your Son, Jesus Christ our Lord, not for any merit of mine, but only because of your merciful goodness.
+            And I pray that this Holy Communion, far from condemning me to punishment,
+            may bring about my pardon and salvation, encompassing me with the armor of faith and the shield of a good will.
+            By it let my vices be done away, all lustful desires extinguished. May it advance me in charity, patience, humility, obedience, and every other virtue.
+            Let it be strong defense against the wiles of all my enemies, visible and invisible, allaying for me every disturbance of flesh and spirit,
+            binding me firmly to you, the one true God, and bringing my last hour to a happy close.
+            I pray, too, that it may be your pleasure to call my sinful self one day to that banquet, wonderful past all telling, where you,
+            with your Son and the Holy Spirit, feast your saints with the vision of yourself, who are true light, the fulfillment of all desires,
+            the joy that knows no ending, gladness unalloyed, and perfect bliss: through the same Christ our Lord. Amen</item>
+
+        <item>\t\t All powerful and merciful Father
+You are a God of justice love and peace,
+You rule over all the nations of the earth,
+Power and might are in your hands and no one can withstand you,
+We present our country Nigeria before you,
+We praise and thank you for you are the source of all we have and are,
+We are sorry for all the sins we have committed and for the good deeds we have failed to do.
+In your loving forgiveness keep us safe from the punishment we deserve.
+Lord we are weighed down not only by uncertainties but also by moral, economic and political problems. Listen to the cries of Your people who confidently turn to You.
+God of infinite goodness, our strength in adversity, our health in weakness, our comfort in sorrow
+Be merciful to us your people; spare this nation Nigeria from chaos, anarchy and doom.
+Bless us with your kingdom of justice, love and peace.
+We ask this through Jesus Christ our Lord. Amen</item>
+
+        <item>\t\t We give you thanks Almighty God for all your benefits you who live and reign forever and ever. Amen</item>
+
+        <item>\t\tOur Father, who art in heaven, hallowed be thy name, thy kingdom come, thy will be done on earth as it is in heaven.\n
+                Give us this day, our daily bread and forgive us out trespasses, as we forgive those who trespass against us and lead us not into temptation but deliver us from evil Amen </item>
+
+        <item>\t\t O My God, because you are so good, am very sorry that i have offended you and by the help of your grace, i will not sin again. Amen</item>
+
+
+        <item>\t\tI believe in God, the Father almighty, creator of heaven and earth.\n
+              I believe in Jesus Christ, His only Son, our Lord.
+            He was conceived by the power of the Holy Spirit and born of the Virgin Mary. He suffered under Pontius Pilate, was crucified, died, and was buried. He descended to the dead. On the third day he rose again. He ascended into heaven,
+                and is seated at the right hand of the Father. He will come again to judge the living and the dead.\n
+                I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen.</item>
+
+        <item>\t\t We believe in one God, the Father, the Almighty,
+maker of heaven and earth, of all that is seen and unseen.
+
+We believe in one Lord, Jesus Christ, the only Son of God,
+eternally begotten of the Father,
+
+God from God, Light from Light,
+true God from true God, begotten not made, one in being with the Father.
+Through him all things were made.
+For us and for our salvation he came down from heaven;
+
+by the power of the Holy Spirit
+he was born of the Virgin Mary, and became man.
+
+For our sake he was crucified under Pontius Pilate,
+he suffered, died, and was buried.
+On the third day he rose again in fulfillment of the Scriptures;
+he ascended into heaven and is seated at the right hand of the Father.
+He will come again in glory to judge the living and the dead,
+and his kingdom will have no end.\n
+
+We believe in the Holy Spirit, the Lord, the giver of life,
+who proceeds from the Father and the Son.
+With the Father and the Son he is worshipped and glorified.
+He has spoken through the prophets.
+
+We believe in one, holy, catholic, and apostolic Church.
+We acknowledge one baptism for the forgiveness of sins.
+We look for the resurrection of the dead,
+and the life of the world to come.
+
+Amen.</item>
+
+        <item>\t\tI confess to Almighty God, to blessed Mary ever Virgin, to blessed Michael, the Archangel, to blessed John the Baptist,
+            to the holy Apostles Peter and Paul, to all the Saints and to you, Father, that I have sinned exceedingly, in thought, word and deed, through my fault,
+            through my fault, through my most grievous fault. Therefore I beseech the blessed Mary, ever Virgin, blessed Micahel the Archangel, blessed John the Baptist,
+            the holy Apostles Peter and Paul, all the Saints, and you, Father, to pray to the Lord our God for me.</item>
+
+        <item>\t\tLook down upon me, good and gentle Jesus
+while before Your face I humbly kneel and,
+with burning soul,
+pray and beseech You
+to fix deep in my heart lively sentiments
+of faith, hope, and charity;
+true contrition for my sins,
+and a firm purpose of amendment.
+
+While I contemplate,
+with great love and tender pity,
+Your five most precious wounds,
+pondering over them within me
+and calling to mind the words which David,
+Your prophet, said to You, my Jesus:
+
+\"They have pierced My hands and My feet,
+they have numbered all My bones.\"
+
+Amen.</item>
+        <item>\t\tO my God, help me to make a good Communion.
+Mary, my mother, pray to Jesus for me.
+All you holy Angels and saints, pray for me.
+My dear Angel Guardian, lead me to the altar of God.</item>
+        <item>\t\tHail Mary, full of grace, the lord is with you, blessed are you among women and blessed is the fruit of your womb Jesus\n
+                \tHoly Mary, mother of God, pray for us sinners, now and at the hour of our death Amen.</item>
+        <item>\t\tHail, holy Queen, Mother of mercy, hail, our life, our sweetness and our hope. To thee do we cry, poor banished children of Eve:
+            to thee do we send up our sighs, mourning and weeping in this vale of tears. Turn then, most gracious Advocate,
+            thine eyes of mercy toward us, and after this our exile, show unto us the blessed fruit of thy womb, Jesus,
+            O merciful, O loving, O sweet Virgin Mary! Amen.</item>
+        <item>\t\tEternal Father, I offer Thee the Most Precious Blood of Thy Divine Son, Jesus, in union with the masses said throughout the world today,
+            for all the holy souls in purgatory, for sinners everywhere, for sinners in the universal church, those in my own home and within my family. Amen.</item>
+        <item>\t\tThe Angel of the Lord declared to Mary: \n
+And she conceived of the Holy Spirit. \n\n
+Hail Mary, full of grace, the Lord is with thee; blessed art thou among women and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of
+our death. Amen.\n\n
+Behold the handmaid of the Lord:\n Be it done unto me according to Thy word.\n\n
+Hail Mary, full of grace, the Lord is with thee; blessed art thou among women and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of
+our death. Amen.\n\n
+And the Word was made Flesh:\n And dwelt among us.\n\n
+Hail Mary, full of grace, the Lord is with thee; blessed art thou among women and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of
+our death. Amen.\n\n
+Pray for us, O Holy Mother of God, \nthat we may be made worthy of the promises of Christ.
+\n\n
+Let us pray:
+\n
+Pour forth, we beseech Thee, O Lord, Thy grace into our hearts; that we,
+             to whom the incarnation of Christ, Thy Son, was made known by the message of an angel, may by His Passion and Cross be brought to the glory of His Resurrection,
+            through the same Christ Our Lord.
+
+Amen. </item>
+        <item>\t\tQueen of heaven, rejoice, alleluia.\n
+The Son you merited to bear, alleluia,\n\n
+
+Has risen as he said, alleluia.\n
+Pray to God for us, alleluia.\n\n
+
+Rejoice and be glad, O Virgin Mary, alleluia.\n
+For the Lord has truly risen, alleluia.\n\n
+
+Let us pray.
+\n
+God of life, you have given joy to the world
+by the resurrection of your Son, our Lord Jesus Christ.
+Through the prayers of his mother, the Virgin Mary,
+bring us to the happiness of eternal life.
+We ask this through Christ our Lord.
+Amen.</item>
+        <item>\t\tSaint Michael the Archangel, defend us in battle. Be our protection against the wickedness and snares of the devil; May God rebuke him,
+            we humbly pray; And do thou, O Prince of the Heavenly Host, by the power of God,
+            thrust into hell Satan and all evil spirits who wander through the world for the ruin of souls. Amen.</item>
+
+        <item>\t\tRemember, O most gracious Virgin Mary, that never was it known that anyone who fled to thy protection,
+            implored thy help, or sought thine intercession was left unaided.\n
+        Inspired by this confidence, I fly unto thee, O Virgin of virgins, my mother;
+            to thee do I come, before thee I stand, sinful and sorrowful. O Mother of the Word Incarnate, despise not my petitions, but in thy mercy hear and answer me.
+        Amen.</item>
+        <item>\t\tLord, I know you are with me and love me.
+Give me peace of mind as I prepare for this time of study.
+Help me to focus on my books and notes,
+keep me from all distractions so that I will make the best use
+of this time that is available to me.
+Give me insight that I might understand what I am studying,
+and help me to remember it when the time comes.
+Above all, I thank you for the ability to be able to study
+and for the many gifts and talents you have given me.
+Help me always to use them in such a way
+that they honor you and do justice to myself.</item>
+
+        <item>\t\tNight is falling dear Mother, the long day is o\’er!
+And before thy loved image I am kneeling once more
+To thank thee for keeping me safe through the day
+
+To ask thee this night to keep evil away.Many times have I fallen today, Mother Dear,
+Many graces neglected, since last I knelt here;
+Wilt thou not in pity, my own Mother mild,
+Ask Jesus to pardon the sins of thy child?
+
+I am going to rest, for the day\’s work is done,
+Its hours and its moments have passed one by one;
+And the God who will judge me has noted them all,
+He has numbered each grace, He has counted each fall.
+
+In His book they are written against the last day,
+O Mother, ask Jesus to wash them away;
+For one drop of His blood which for sinners was spilt,
+Is sufficient to cleanse the whole world of its guilt.
+
+And if ere the dawn I should draw my last breath
+And the sleep that I take be the long sleep of death,
+Be near me, dear Mother, for dear Jesus sake
+When my soul on Eternity\’s shore shall awake.
+Amen.</item>
+        <item>\t\tO Almighty God, you gave us the commandment to honour our father and mother. In your loving kindness hear my prayer for my parents. Give them long lives and keep them well in body and spirit. Bless their labours; keep them always in your care. Bless them generously for their loving care for me. Grant that, through your grace,
+            I may always be their support and comfort, and that, after our life together on earth, we may experience the joy together praising you forever.</item>
+
+        <item>\t\tHoly Spirit of light and love, you are the substantial love of the Father and the Son; hear my prayer.
+            Bounteous bestower of most precious gifts, grant me a strong and living faith which makes me accept all revealed truths and shape my conduct in accord with them.
+            Give me a most confident hope in all divine promises which prompts me to abandon myself unreservedly to you and your guidance.
+            Infuse into me a love of perfect goodwill, and act according to God\'s least desires. Make me love not only my friends but my enemies as well,
+            in imitation of Jesus Christ who through you offered himself on the Cross for all people. Holy Spirit, animate, inspire, and guide me,
+            and help me to be always a true follower of you. Amen.
+</item>
+        <item>\t\tLord, make me an instrument of your peace:
+where there is hatred, let me sow love;
+where there is injury, pardon;
+where there is doubt, faith;
+where there is despair, hope;
+where there is darkness, light;
+where there is sadness, joy.
+
+O divine Master, grant that I may not so much seek
+to be consoled as to console,
+to be understood as to understand,
+to be loved as to love.
+For it is in giving that we receive,
+it is in pardoning that we are pardoned,
+and it is in dying that we are born to eternal life.
+Amen.</item>
+        <item>\t\tDear God,
+Source of all wisdom,
+Help me to use my time
+And my intelligence wisely,
+As I prepare for exams.
+Help me to dispose myself
+To listen to your Holy Spirit
+So that you, as my loving Spirit,
+May place me in a state of prayer
+And lead me to understand
+That the supreme wisdom
+Is knowing I am your child.
+Help me to remain serene
+So that my work may truly reflect
+This profound truth
+Mary, Mother of my spiritual life,
+Guide me in the ways of your Son,
+So that my work may help
+To transform this world for God\'s glory.</item>
+
+        <item>\t\tGracious and loving God, we thank you for the gift of our priests.
+Through them, we experience your presence in the sacraments.
+
+Help our priests to be strong in their vocation.
+Set their souls on fire with love for your people.
+
+Grant them the wisdom, understanding, and strength they need to follow in the footsteps of Jesus.
+Inspire them with the vision of your Kingdom.
+
+Give them the words they need to spread the Gospel.
+Allow them to experience joy in their ministry.
+
+Help them to become instruments of your divine grace.
+
+We ask this through Jesus Christ, who lives and reigns as our Eternal Priest.
+
+Amen.</item>
+        <item>\t\tWe pray You,
+O almighty and eternal God!
+Who through Jesus Christ
+hast revealed Your glory to all nations,
+
+to preserve the works of Your mercy, that Your Church,
+being spread through the whole world,
+may continue with unchanging faith
+in the confession of your name.
+
+Amen.</item>
+        <item>\t\tAlmighty God,
+you know that we are surrounded by many great dangers,
+and because of our human frailty
+we cannot withstand them.
+Give us health of mind and body
+so that we who suffer under sin
+may overcome and win the victory in you;
+through your Son, Jesus Christ our Lord,
+who lives and reigns with you and the Holy Spirit,
+one God, now and forever.
+Amen.</item>
+        <item>\t\tO Lord, we are the millions of believers, humbly kneeling at Thy feet and begging Thee to preserve, defend and save the Sovereign Pontiff for many years. He is the Father of the great fellowship of souls and our Father as well. On this day, as on every other day, he is praying for us also, and is offering unto Thee with holy fervoUr the sacred Victim of love and peace.
+Wherefore, O Lord, turn Thyself toward us with eyes of pity; for we are now, as it were, forgetful of ourselves, and are praying above all for him. Do Thou unite our prayers with his and receive them into the bosom of Thine infinite mercy, as a sweet savor of active and fruitful charity, whereby the children are united in the Church to their Father. All that he asks of Thee this day, we too ask it of Thee in union with him.
+whether he weeps or rejoices, whether he hopes or offers himself as a victim of charity for his people, we desire to be united with him; nay more, we desire that the cry of our hearts should be made one with his. Of Thy great mercy grant, O Lord, that not one of us may be far from his mind and his heart in the hour that he prays and offers unto Thee the Sacrifice of Thy blessed Son. At the moment when our venerable High Priest, holding in His hands the very Body of Jesus Christ, shall say to the people over the Chalice of benediction these words: \"The peace of the Lord be with you always,\" grant, O Lord, that Thy sweet peace may come down upon our hearts and upon all the nations with new and manifest power.
+Amen</item>
+        <item>\t\tGuide our way, Lord, as we go on with our lives today. Also, be our shield as we go back home later. May you always preserve the bond that we have as a family, and may we look forward to seeing each other once again at home.
+Guard our home as well, God, that no harm will fall on it as we are away. May it continue to be a sanctuary of blessing, comfort, and love for each one of us. Let it always be a restful place for our tired bodies at the end of the day.
+Continue to protect us, Lord, as we rest at night. Allow no intruders or calamities to disturb my home tonight. I trust in your mighty power to keep me and my family safe from any form of evil. In Your Name, I ask all these things, Amen.</item>
+
+    </string-array>
+
+</resources>

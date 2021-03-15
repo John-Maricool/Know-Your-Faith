@@ -9,7 +9,7 @@
     android:background="#807BB3"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:viewBindingIgnore="false"
-    tools:context=".fragments.MainScreenFragment">
+    tools:context=".ui.mainscreen.MainScreenFragment">
 
         <TextView
             android:id="@+id/select"

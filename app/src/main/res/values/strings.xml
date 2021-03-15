@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">Know Your Faith</string>
-    <string name="app_text_name">Know your faith for Children and Teenagers</string>
-    <string name="loading">Loading...</string>
+    <string name="app_text_name">Know your faith for Children and Teenagers Quiz</string>
+    <string name="loading">Loading Questions...</string>
     <string name="select_option_below">Select Option Below</string>
 
     <string name="prayers">Catholic Prayers</string>
     <string name="prayers_desc">Simple catholic prayers for kids and teenagers</string>
 
     <string name="facts">Catholic Facts</string>
-    <string name="facts_desc">Facts and information about the church and its liturgy for children and teenagers</string>
+    <string name="facts_desc">Facts and Cathechesis about the church and its liturgy for children and teenagers</string>
 
     <string name="saints">Catholic Saints</string>
     <string name="saints_desc">Life of the catholic saints for the whole year</string>
@@ -16,113 +16,478 @@
     <string name="quiz">Quiz</string>
     <string name="quiz_desc">Test yourself in bible and catholic quiz for children and teenagers</string>
 
+    <string name="quiz_bible">Bible</string>
+    <string name="quiz_cathechesis">Catholic Faith</string>
+    <string name="quiz_facts">Advanced</string>
 
-    <string name="kids_prayer">Basic Prayers</string>
-    <string-array name="under_topics">
-        <item>Prayer before meal</item>
-        <item>Act of Faith</item>
-        <item>Act of Hope</item>
-        <item>Act of Charity</item>
-        <item>Prayer before mass</item>
-        <item>Prayer After mass</item>
-        <item>Prayer for Nigeria in distress</item>
-        <item>Prayer after meal</item>
-        <item>The Lords Prayer</item>
-        <item>Act of Contrition</item>
-        <item>The Creed</item>
-        <item>The Nicene Creed</item>
-        <item>The Confeitor</item>
-        <item>Prayer before Holy Communion</item>
-        <item>Prayer after Holy Communion</item>
+    <string-array name="spinner_entries">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+        <item>70</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="added_entries">
+        <item>Prayer</item>
+        <item>Fact</item>
+    </string-array>
+
+
+    <string-array name="list_of_prayer_title">
         <item>Hail Mary</item>
-        <item>Hail Holy Queen</item>
-        <item>Prayer for souls in Purgatory</item>
-        <item>The Angelus</item>
-        <item>The Regina Caeli</item>
-        <item>Prayer to St. Micheal</item>
-        <item>Prayer before Holy Communion</item>
-        <item>Prayer after Holy Communion</item>
-        <item>The Memorare</item>
-        <item>Prayer before study</item>
-        <item>Prayer before serving at mass</item>
-        <item>Prayer before sleep</item>
-        <item>Prayer before writing or preaching</item>
-        <item>Prayer for parents</item>
-        <item>Prayer for Peace</item>
-        <item>Prayer for students</item>
-        <item>Prayer for a Clergy</item>
-        <item>Prayer for the church</item>
-        <item>Prayer for the sick</item>
-        <item>Prayer for the Pope</item>
-        <item>Prayer for Family</item>
+        <item>The Lords Prayer</item>
+        <item>The Apostles Creed</item>
+        <item>Morning Offering</item>
     </string-array>
-
-
+    <string name="kids_prayer">Basic Prayers</string>
+    <string name="custom_prayer">Custom Prayers</string>
     <string name="the_rosary">Holy Rosary</string>
-    <string-array name="rosary_topics">
-        <item>Joyful Mysteries</item>
-        <item>Sorrowful mysteries</item>
-        <item>Glorious Mysteries</item>
-        <item>Luminous Mysteries</item>
-        <item>Litany of the Blessed Virgin Mary</item>
-        <item>The Catena</item>
-        <item>Steps on saying the Rosary</item>
-    </string-array>
-
     <string name="saints_prayer">Prayer to Angels and Saints</string>
-    <string-array name="saints_prayers">
-        <item>Prayer of St. Francis </item>
-        <item>Prayer to St. Christopher</item>
-        <item>A prayer to Padre Pio</item>
-        <item>Prayer to St. Joseph</item>
-        <item>Prayer to St. Jude</item>
-        <item>Prayer to St. Philomena</item>
-        <item>Novena to St. Philomena</item>
-        <item>St. Gertitude Thanksgiving</item>
-        <item>Angel of God</item>
-        <item>To St. Gabriel the Archangel</item>
-        <item>Ejaculations to the Guardian angel</item>
-        <item>A prayer to our Guardian angel</item>
-
-
-    </string-array>
-
     <string name="jesus_prayer">Jesus Christ</string>
-    <string-array name="jesus_prayer">
-        <item>The Chaplet of Divine Mercy</item>
-        <item>Act of consecration to the sacrad Heart of Jesus</item>
-        <item>Prayer to the Sacrad Heart</item>
-        <item>Before a Crucifix</item>
-        <item>Tantum Egro</item>
-        <item>Adoremus in Eternum</item>
-        <item>O Salutaris Hostia</item>
-        <item>Stations of the Cross</item>
-        <item>Divine Praises</item>
-        <item>Chaplet of the Precious Blood</item>
-        <item>Litany of the Infant Jesus</item>
-        <item>The JESUS prayer</item>
+
+    <string name="comm_header">Commandments</string>
+    <string name="sac_header">Sacrament</string>
+    <string name="sin_header">Sin</string>
+    <string name="pray_header">Prayer</string>
+    <string name="holy_header">Holy Spirit</string>
+    <string name="custom_fact">Custom Fact</string>
+    <string name="other_header">Others</string>
+
+
+    <string-array name="saints_months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
     </string-array>
 
-<string-array name="facts_list">
-    <item>Commandments</item>
-    <item>Sacrament</item>
-    <item>Sin</item>
-    <item>Prayer</item>
-    <item>Holy days of obligation</item>
-    <item>Holy Eucharist</item>
-    <item>Virtues and Vices</item>
-    <item>Fruits and gifts of the Holy Spirit</item>
-    <item>Indulgence</item>
-</string-array>
+    <string-array name="january">
+        <item>January 1</item>
+        <item>January 2</item>
+        <item>January 3</item>
+        <item>January 4</item>
+        <item>January 5</item>
+        <item>January 6</item>
+        <item>January 7</item>
+        <item>January 8</item>
+        <item>January 9</item>
+        <item>January 10</item>
+        <item>January 11</item>
+        <item>January 12</item>
+        <item>January 13</item>
+        <item>January 14</item>
+        <item>January 15</item>
+        <item>January 16</item>
+        <item>January 17</item>
+        <item>January 18</item>
+        <item>January 19</item>
+        <item>January 20</item>
+        <item>January 21</item>
+        <item>January 22</item>
+        <item>January 23</item>
+        <item>January 24</item>
+        <item>January 25</item>
+        <item>January 26</item>
+        <item>January 27</item>
+        <item>January 28</item>
+        <item>January 29</item>
+        <item>January 30</item>
+        <item>January 31</item>
+    </string-array>
+    <string-array name="february">
+        <item>February 1</item>
+        <item>February 2</item>
+        <item>February 3</item>
+        <item>February 4</item>
+        <item>February 5</item>
+        <item>February 6</item>
+        <item>February 7</item>
+        <item>February 8</item>
+        <item>February 9</item>
+        <item>February 10</item>
+        <item>February 11</item>
+        <item>February 12</item>
+        <item>February 13</item>
+        <item>February 14</item>
+        <item>February 15</item>
+        <item>February 16</item>
+        <item>February 17</item>
+        <item>February 18</item>
+        <item>February 19</item>
+        <item>February 20</item>
+        <item>February 21</item>
+        <item>February 22</item>
+        <item>February 23</item>
+        <item>February 24</item>
+        <item>February 25</item>
+        <item>February 26</item>
+        <item>February 27</item>
+        <item>February 28</item>
+        <item>February 29</item>
+    </string-array>
+    <string-array name="march">
+        <item>March 1</item>
+        <item>March 2</item>
+        <item>March 3</item>
+        <item>March 4</item>
+        <item>March 5</item>
+        <item>March 6</item>
+        <item>March 7</item>
+        <item>March 8</item>
+        <item>March 9</item>
+        <item>March 10</item>
+        <item>March 11</item>
+        <item>March 12</item>
+        <item>March 13</item>
+        <item>March 14</item>
+        <item>March 15</item>
+        <item>March 16</item>
+        <item>March 17</item>
+        <item>March 18</item>
+        <item>March 19</item>
+        <item>March 20</item>
+        <item>March 21</item>
+        <item>March 22</item>
+        <item>March 23</item>
+        <item>March 24</item>
+        <item>March 25</item>
+        <item>March 26</item>
+        <item>March 27</item>
+        <item>March 28</item>
+        <item>March 29</item>
+        <item>March 30</item>
+        <item>March 31</item>
+    </string-array>
+    <string-array name="april">
+        <item>April 1</item>
+        <item>April 2</item>
+        <item>April 3</item>
+        <item>April 4</item>
+        <item>April 5</item>
+        <item>April 6</item>
+        <item>April 7</item>
+        <item>April 8</item>
+        <item>April 9</item>
+        <item>April 10</item>
+        <item>April 11</item>
+        <item>April 12</item>
+        <item>April 13</item>
+        <item>April 14</item>
+        <item>April 15</item>
+        <item>April 16</item>
+        <item>April 17</item>
+        <item>April 18</item>
+        <item>April 19</item>
+        <item>April 20</item>
+        <item>April 21</item>
+        <item>April 22</item>
+        <item>April 23</item>
+        <item>April 24</item>
+        <item>April 25</item>
+        <item>April 26</item>
+        <item>April 27</item>
+        <item>April 28</item>
+        <item>April 29</item>
+        <item>April 30</item>
+    </string-array>
+    <string-array name="may">
+        <item>May 1</item>
+        <item>May 2</item>
+        <item>May 3</item>
+        <item>May 4</item>
+        <item>May 5</item>
+        <item>May 6</item>
+        <item>May 7</item>
+        <item>May 8</item>
+        <item>May 9</item>
+        <item>May 10</item>
+        <item>May 11</item>
+        <item>May 12</item>
+        <item>May 13</item>
+        <item>May 14</item>
+        <item>May 15</item>
+        <item>May 16</item>
+        <item>May 17</item>
+        <item>May 18</item>
+        <item>May 19</item>
+        <item>May 20</item>
+        <item>May 21</item>
+        <item>May 22</item>
+        <item>May 23</item>
+        <item>May 24</item>
+        <item>May 25</item>
+        <item>May 26</item>
+        <item>May 27</item>
+        <item>May 28</item>
+        <item>May 29</item>
+        <item>May 30</item>
+        <item>May 31</item>
+    </string-array>
+    <string-array name="june">
+        <item>June 1</item>
+        <item>June 2</item>
+        <item>June 3</item>
+        <item>June 4</item>
+        <item>June 5</item>
+        <item>June 6</item>
+        <item>June 7</item>
+        <item>June 8</item>
+        <item>June 9</item>
+        <item>June 10</item>
+        <item>June 11</item>
+        <item>June 12</item>
+        <item>June 13</item>
+        <item>June 14</item>
+        <item>June 15</item>
+        <item>June 16</item>
+        <item>June 17</item>
+        <item>June 18</item>
+        <item>June 19</item>
+        <item>June 20</item>
+        <item>June 21</item>
+        <item>June 22</item>
+        <item>June 23</item>
+        <item>June 24</item>
+        <item>June 25</item>
+        <item>June 26</item>
+        <item>June 27</item>
+        <item>June 28</item>
+        <item>June 29</item>
+        <item>June 30</item>
+    </string-array>
 
-    <string-array name="expandable_facts_list">
-    <item>Holy days of obligation</item>
-    <item>Holy Eucharist</item>
-    <item>Virtues and Vices</item>
-    <item>Fruits and gifts of the Holy Spirit</item>
-    <item>Indulgence</item>
-</string-array>
+    <string-array name="july">
+        <item>July 1</item>
+        <item>July 2</item>
+        <item>July 3</item>
+        <item>July 4</item>
+        <item>July 5</item>
+        <item>July 6</item>
+        <item>July 7</item>
+        <item>July 8</item>
+        <item>July 9</item>
+        <item>July 10</item>
+        <item>July 11</item>
+        <item>July 12</item>
+        <item>July 13</item>
+        <item>July 14</item>
+        <item>July 15</item>
+        <item>July 16</item>
+        <item>July 17</item>
+        <item>July 18</item>
+        <item>July 19</item>
+        <item>July 20</item>
+        <item>July 21</item>
+        <item>July 22</item>
+        <item>July 23</item>
+        <item>July 24</item>
+        <item>July 25</item>
+        <item>July 26</item>
+        <item>July 27</item>
+        <item>July 28</item>
+        <item>July 29</item>
+        <item>July 30</item>
+        <item>July 31</item>
+    </string-array>
+    <string-array name="august">
+        <item>August 1</item>
+        <item>August 2</item>
+        <item>August 3</item>
+        <item>August 4</item>
+        <item>August 5</item>
+        <item>August 6</item>
+        <item>August 7</item>
+        <item>August 8</item>
+        <item>August 9</item>
+        <item>August 10</item>
+        <item>August 11</item>
+        <item>August 12</item>
+        <item>August 13</item>
+        <item>August 14</item>
+        <item>August 15</item>
+        <item>August 16</item>
+        <item>August 17</item>
+        <item>August 18</item>
+        <item>August 19</item>
+        <item>August 20</item>
+        <item>August 21</item>
+        <item>August 22</item>
+        <item>August 23</item>
+        <item>August 24</item>
+        <item>August 25</item>
+        <item>August 26</item>
+        <item>August 27</item>
+        <item>August 28</item>
+        <item>August 29</item>
+        <item>August 30</item>
+        <item>August 31</item>
+    </string-array>
+    <string-array name="september">
+        <item>September 1</item>
+        <item>September 2</item>
+        <item>September 3</item>
+        <item>September 4</item>
+        <item>September 5</item>
+        <item>September 6</item>
+        <item>September 7</item>
+        <item>September 8</item>
+        <item>September 9</item>
+        <item>September 10</item>
+        <item>September 11</item>
+        <item>September 12</item>
+        <item>September 13</item>
+        <item>September 14</item>
+        <item>September 15</item>
+        <item>September 16</item>
+        <item>September 17</item>
+        <item>September 18</item>
+        <item>September 19</item>
+        <item>September 20</item>
+        <item>September 21</item>
+        <item>September 22</item>
+        <item>September 23</item>
+        <item>September 24</item>
+        <item>September 25</item>
+        <item>September 26</item>
+        <item>September 27</item>
+        <item>September 28</item>
+        <item>September 29</item>
+        <item>September 30</item>
+    </string-array>
+    <string-array name="october">
+        <item>October 1</item>
+        <item>October 2</item>
+        <item>October 3</item>
+        <item>October 4</item>
+        <item>October 5</item>
+        <item>October 6</item>
+        <item>October 7</item>
+        <item>October 8</item>
+        <item>October 9</item>
+        <item>October 10</item>
+        <item>October 11</item>
+        <item>October 12</item>
+        <item>October 13</item>
+        <item>October 14</item>
+        <item>October 15</item>
+        <item>October 16</item>
+        <item>October 17</item>
+        <item>October 18</item>
+        <item>October 19</item>
+        <item>October 20</item>
+        <item>October 21</item>
+        <item>October 22</item>
+        <item>October 23</item>
+        <item>October 24</item>
+        <item>October 25</item>
+        <item>October 26</item>
+        <item>October 27</item>
+        <item>October 28</item>
+        <item>October 29</item>
+        <item>October 30</item>
+        <item>October 31</item>
+    </string-array>
+    <string-array name="november">
+        <item>November 1</item>
+        <item>November 2</item>
+        <item>November 3</item>
+        <item>November 4</item>
+        <item>November 5</item>
+        <item>November 6</item>
+        <item>November 7</item>
+        <item>November 8</item>
+        <item>November 9</item>
+        <item>November 10</item>
+        <item>November 11</item>
+        <item>November 12</item>
+        <item>November 13</item>
+        <item>November 14</item>
+        <item>November 15</item>
+        <item>November 16</item>
+        <item>November 17</item>
+        <item>November 18</item>
+        <item>November 19</item>
+        <item>November 20</item>
+        <item>November 21</item>
+        <item>November 22</item>
+        <item>November 23</item>
+        <item>November 24</item>
+        <item>November 25</item>
+        <item>November 26</item>
+        <item>November 27</item>
+        <item>November 28</item>
+        <item>November 29</item>
+        <item>November 30</item>
+    </string-array>
+    <string-array name="december">
+        <item>December 1</item>
+        <item>December 2</item>
+        <item>December 3</item>
+        <item>December 4</item>
+        <item>December 5</item>
+        <item>December 6</item>
+        <item>December 7</item>
+        <item>December 8</item>
+        <item>December 9</item>
+        <item>December 10</item>
+        <item>December 11</item>
+        <item>December 12</item>
+        <item>December 13</item>
+        <item>December 14</item>
+        <item>December 15</item>
+        <item>December 16</item>
+        <item>December 17</item>
+        <item>December 18</item>
+        <item>December 19</item>
+        <item>December 20</item>
+        <item>December 21</item>
+        <item>December 22</item>
+        <item>December 23</item>
+        <item>December 24</item>
+        <item>December 25</item>
+        <item>December 26</item>
+        <item>December 27</item>
+        <item>December 28</item>
+        <item>December 29</item>
+        <item>December 30</item>
+        <item>December 31</item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="order_of_mass">Order of mass</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="share">Share</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about">About</string>
+    <string name="latin_prayers">Latin Prayers</string>
+    <string name="log_out">Log out</string>
+    <string name="communicate">Communicate</string>
+    <string name="sain">Saints</string>
+    <string name="no_connection">No connection</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="report">Report</string>
+    <string name="quiz_part">Quiz Part</string>
+    <string name="loadin">Loading...</string>
+    <string name="ebukaikenwa6419_gmail_com">ebukaikenwa6419@gmail.com</string>
+    <string name="recipient_email">Recipient email</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="send_email">Send Email</string>
+    <string name="report_contact">Report/Contact</string>
+    <string name="add_prayer">Add Prayer</string>
+    <string name="add_custom_item">Add Custom Item</string>
+    <string name="added_items">Added Items</string>
+    <string name="favourites_prayers">favourites</string>
 
 </resources>

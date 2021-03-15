@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
-    android:background="#807BB3"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:viewBindingIgnore="false"
-    tools:context=".fragments.MainScreenFragment">
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ui.mainscreen.MainScreenFragment"
+    tools:viewBindingIgnore="false">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_below="@+id/select"
-            tools:listitem="@layout/main_screen_single_item_layout"
-            android:background="#807BB3"
-            android:layout_height="match_parent"
-            android:id="@+id/recycler_view"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/main_screen_single_item_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

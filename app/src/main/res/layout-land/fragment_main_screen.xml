@@ -7,10 +7,18 @@
     android:padding="8dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
-    android:background="#807BB3"
+    android:background="@color/colorPrimaryDark"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:viewBindingIgnore="false"
-    tools:context=".fragments.MainScreenFragment">
+    tools:context=".ui.mainscreen.MainScreenFragment">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/select"

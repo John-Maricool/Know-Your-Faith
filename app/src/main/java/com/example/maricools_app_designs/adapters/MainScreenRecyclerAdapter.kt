@@ -6,43 +6,40 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.maricools_app_designs.R
-import com.example.maricools_app_designs.`interface`.onItemClickListener
+import com.example.maricools_app_designs.interfaces_kids.OnItemClickListener
 import com.example.maricools_app_designs.databinding.MainScreenSingleItemLayoutBinding
-import com.example.maricools_app_designs.models.MainScreenRecyclerModel
+import com.example.maricools_app_designs.utils.models.MainScreenRecyclerModel
+import dagger.hilt.android.qualifiers.ApplicationContext
+import javax.inject.Inject
 
-class MainScreenRecyclerAdapter(val context: Context?) :
+class MainScreenRecyclerAdapter
+@Inject
+constructor(@ApplicationContext val context: Context?) :
     RecyclerView.Adapter<MainScreenRecyclerAdapter.MyViewHolder>() {
     private val myList: MutableList<MainScreenRecyclerModel> = mutableListOf()
 
-    lateinit var itemClickListener: onItemClickListener
+    lateinit var itemClickListener: OnItemClickListener
     init {
         myList.add(
-            MainScreenRecyclerModel(
-                context!!.resources.getString(R.string.prayers),
-                context.resources.getString(R.string.prayers_desc),
-                "https://images.unsplash.com/photo-1579215176023-00341ea5ea67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=500"
-            )
+                MainScreenRecyclerModel(
+                        context!!.resources.getString(R.string.prayers),
+                        context.resources.getString(R.string.prayers_desc),
+                        "https://images.unsplash.com/photo-1579215176023-00341ea5ea67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=500"
+                )
         )
         myList.add(
-            MainScreenRecyclerModel(
-                context.resources.getString(R.string.facts),
-                context.resources.getString(R.string.facts_desc),
-                "https://images.unsplash.com/photo-1476461386254-61c4ff3a1cc3?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=500"
-            )
+                MainScreenRecyclerModel(
+                        context.resources.getString(R.string.facts),
+                        context.resources.getString(R.string.facts_desc),
+                        "https://images.unsplash.com/photo-1476461386254-61c4ff3a1cc3?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=500"
+                )
         )
         myList.add(
-            MainScreenRecyclerModel(
-                context.resources.getString(R.string.saints),
-                context.resources.getString(R.string.saints_desc),
-                "https://images.unsplash.com/photo-1548093190-e40f9b1b4082?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=500"
-            )
-        )
-        myList.add(
-            MainScreenRecyclerModel(
-                context.resources.getString(R.string.quiz),
-                context.resources.getString(R.string.quiz_desc),
-                "https://images.unsplash.com/photo-1530462943125-677cc511c87e?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=500"
-            )
+                MainScreenRecyclerModel(
+                        context.resources.getString(R.string.quiz),
+                        context.resources.getString(R.string.quiz_desc),
+                        "https://images.unsplash.com/photo-1530462943125-677cc511c87e?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=500"
+                )
         )
     }
 
@@ -60,7 +57,7 @@ class MainScreenRecyclerAdapter(val context: Context?) :
         return myList.size
     }
 
-    fun setOnItemClickListener(listener: onItemClickListener){
+    fun setOnItemClickListener(listener: OnItemClickListener){
         this.itemClickListener = listener
     }
 
@@ -70,7 +67,7 @@ class MainScreenRecyclerAdapter(val context: Context?) :
         Glide.with(holder.itemView.context)
             .load(mListPos.imageRes)
             .centerCrop()
-            .placeholder(R.drawable.background_theme)
+            .placeholder(R.drawable.for_view)
             .into(holder.binding.imageView)
 
         holder.binding.apply {
@@ -78,7 +75,6 @@ class MainScreenRecyclerAdapter(val context: Context?) :
             titleDescription.text = mListPos.description
         }
     }
-
 
     inner class MyViewHolder(val binding: MainScreenSingleItemLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {

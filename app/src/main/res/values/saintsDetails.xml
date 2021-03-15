@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="saints_name">
+        <item>St. Francis</item>
+        <item>St. Jude</item>
+    </string-array>
+
+    <string-array name="saints_res">
+        <item>R.drawable.francis</item>
+        <item>R.drawable.jude</item>
+    </string-array>
+
+    <string-array name="saints_story">
+        <item>he was a jnhsjsnbjssjbjsbjsdjdjsjdjlasdf.bjdsjvmskjdv jsman and i just like the saint tbhae way he used to behave adna i enjoy his behavoir very well aefbvwkjbjwbjwbnjs nssjbdjw</item>
+        <item>he was a jnhsjsnbjssjbjsbjsdjdjsjdjlasdf.bjdsjvmskjdv jsman and i just like the saint tbhae way he used to behave adna i enjoy his behavoir very well aefbvwkjbjwbjwbnjs nssjbdjw</item>
+    </string-array>
+
+    <string-array name="saints_prayer">
+        <item>I pray that i will be like the saint so i need god to give me the grace to likve like humdnf hwbjwk</item>
+        <item>I pray that i will be like the saint so i need god to give me the grace to like humdnf hwbjwk</item>
+    </string-array>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.quiz.QuizResultFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/no_of_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toTopOf="@+id/progress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="You have 0 points" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="56dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/circular_progress_big"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/correct_ones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress"
+            tools:text="Correct answers: " />
+
+        <TextView
+            android:id="@+id/wrong_ones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/correct_ones"
+            tools:text="Wrong answers: " />
+
+        <Button
+            android:id="@+id/back_to_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="BACK TO QUIZ"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wrong_ones" />
+
+        <TextView
+            android:id="@+id/percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0E7AFB"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progress"
+            app:layout_constraintEnd_toEndOf="@+id/progress"
+            app:layout_constraintStart_toStartOf="@+id/progress"
+            app:layout_constraintTop_toTopOf="@+id/progress"
+            tools:text="80%" />
+
+        <View
+            android:id="@+id/watch_video_anim"
+            android:layout_width="320dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="36dp"
+            android:background="#88B3E6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back_to_quiz" />
+
+        <View
+            android:id="@+id/watch_video"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:padding="6dp"
+            android:background="#0472F6"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="@+id/watch_video_anim"
+            app:layout_constraintEnd_toEndOf="@+id/watch_video_anim"
+            app:layout_constraintStart_toStartOf="@+id/watch_video_anim"
+            app:layout_constraintTop_toTopOf="@+id/watch_video_anim" />
+        <TextView
+            android:id="@+id/watch_video_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="WATCH AD TO EARN POINTS"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="@+id/watch_video_anim"
+            app:layout_constraintEnd_toEndOf="@+id/watch_video_anim"
+            app:layout_constraintStart_toStartOf="@+id/watch_video_anim"
+            app:layout_constraintTop_toTopOf="@+id/watch_video_anim" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

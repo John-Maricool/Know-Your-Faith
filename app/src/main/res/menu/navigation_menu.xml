@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/order_of_mass"
+        android:id="@+id/orderOfMassFragment"/>
+
+    <item
+        android:title="@string/favourites_prayers"
+        android:icon="@drawable/ic_red_fav"
+        android:id="@+id/favouritesFragment"/>
+
+    <item
+        android:title="Favorite facts"
+        android:icon="@drawable/ic_red_fav"
+        android:id="@+id/favoriteFactsFragment"/>
+
+ <item android:title="@string/communicate">
+    <menu>
+    <item android:id="@+id/night_mode"
+        app:actionLayout="@layout/switch_menu"
+        android:title="@string/night_mode"/>
+
+    <item android:title="@string/share"
+        android:icon="@drawable/ic_share"
+        android:id="@+id/share"/>
+
+        <item android:title="@string/report_contact"
+            android:icon="@drawable/ic_contact"
+            android:id="@+id/reportFragment"/>
+
+    <item android:title="@string/about"
+        android:id="@+id/about"/>
+
+    <item android:title="@string/log_out"
+        android:icon="@drawable/ic_close"
+        android:id="@+id/log_out"/>
+    </menu>
+</item>
+</menu>

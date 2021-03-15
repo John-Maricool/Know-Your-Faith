@@ -1,39 +1,45 @@
 package com.example.maricools_app_designs.adapters
 
-import android.content.Context
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.content.SharedPreferences
+import android.util.Log
+import android.view.*
 import android.widget.Filter
 import android.widget.Filterable
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
-import com.example.maricools_app_designs.MainActivity
+import com.example.maricools_app_designs.hilt.Fav
 import com.example.maricools_app_designs.R
-import com.example.maricools_app_designs.`interface`.onPrayerItemClickListener
+import com.example.maricools_app_designs.database.PrayerDao
+import com.example.maricools_app_designs.utils.models.PrayerFavModel
+import com.example.maricools_app_designs.interfaces_kids.OnPrayerItemClickListener
 import com.example.maricools_app_designs.databinding.PrayerHeaderBinding
 import com.example.maricools_app_designs.databinding.PrayerSingleItemBinding
+import com.example.maricools_app_designs.utils.models.PrayerModel
+import kotlinx.coroutines.*
+import kotlinx.coroutines.Dispatchers.IO
 import java.util.*
+import javax.inject.Inject
 
-class PrayerFragmentMainScreenAdapter(val header: String, var myList: MutableList<String>) :
+class PrayerFragmentMainScreenAdapter
+@Inject
+constructor(var scope: CoroutineScope,
+            var pDAO: PrayerDao,
+            @Fav var prefs: SharedPreferences) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>(), Filterable {
 
     private val TYPE_HEADER: Int = 0
     private val TYPE_ITEM: Int = 1
-
-    var filteredList: MutableList<String> = mutableListOf()
+    var header: String = "prayer"
+    var myList: List<PrayerModel> = listOf()
+    lateinit var listener: OnPrayerItemClickListener
+    var filteredList: List<PrayerModel> = listOf()
 
     init {
         filteredList = myList
     }
 
-    lateinit var itemClickListener: onPrayerItemClickListener
-
-
-    fun setOnItemClickListener(listener: onPrayerItemClickListener) {
-        this.itemClickListener = listener
+    fun setOnClickListener(mlistener: OnPrayerItemClickListener){
+        listener = mlistener
     }
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         if (viewType == TYPE_HEADER) {
@@ -57,7 +63,17 @@ class PrayerFragmentMainScreenAdapter(val header: String, var myList: MutableLis
     }
 
     override fun getItemCount(): Int {
-        return filteredList.size + 1
+        return if (filteredList.size == 0) {
+            1
+        } else {
+            filteredList.size + 1
+        }
+    }
+
+    fun getPrayerList(list: List<PrayerModel>) {
+        myList = list
+        filteredList = myList
+        notifyDataSetChanged()
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
@@ -67,10 +83,17 @@ class PrayerFragmentMainScreenAdapter(val header: String, var myList: MutableLis
         } else if (holder is MyViewHolder) {
             val Theholder: MyViewHolder = holder
 
-            if (position-1 != RecyclerView.NO_POSITION || position-1 != filteredList.size) {
-                Theholder.binding?.textPrayer?.text = filteredList[position - 1]
+            val newPos = position - 1
+            if (newPos != RecyclerView.NO_POSITION && newPos < filteredList.size) {
+                Theholder.binding?.textPrayer?.text = filteredList[newPos].prayerTitle
             } else {
                 return
+            }
+            val pos = filteredList[newPos].uid.minus(1)
+            if (checkIfAddedToSharedPrefs(pos)) {
+                Theholder.binding?.favImage?.setBackgroundResource(R.drawable.ic_red_fav)
+            } else if (!checkIfAddedToSharedPrefs(pos)) {
+                Theholder.binding?.favImage?.setBackgroundResource(R.drawable.ic_grey_fav)
             }
         }
     }
@@ -91,9 +114,9 @@ class PrayerFragmentMainScreenAdapter(val header: String, var myList: MutableLis
                 if (charSearch.isEmpty()) {
                     filteredList = myList
                 } else {
-                    val resultList = mutableListOf<String>()
+                    val resultList = mutableListOf<PrayerModel>()
                     for (row in myList) {
-                        if (row.toLowerCase(Locale.ROOT)
+                        if (row.prayerTitle.toLowerCase(Locale.ROOT)
                                 .contains(charSearch.toLowerCase(Locale.ROOT))
                         ) {
                             resultList.add(row)
@@ -107,53 +130,65 @@ class PrayerFragmentMainScreenAdapter(val header: String, var myList: MutableLis
             }
 
             override fun publishResults(sequence: CharSequence?, results: FilterResults?) {
-                filteredList = results?.values as MutableList<String>
-               notifyDataSetChanged()
+                filteredList = results?.values as MutableList<PrayerModel>
+                notifyDataSetChanged()
             }
-
         }
     }
 
+    fun addToSharedPrefs(position: Int, part: PrayerFavModel) {
+        val editor = prefs.edit()
+        editor.putInt(position.toString(), position)
+        scope.launch (IO){
+            pDAO.addFavPrayer(part)
+        }
+        editor.apply()
+    }
+
+    fun checkIfAddedToSharedPrefs(position: Int): Boolean {
+        return prefs.contains(position.toString())
+    }
+
+    fun removeFromSharedPrefs(position: Int, part: PrayerFavModel) {
+        val editor = prefs.edit()
+        editor.remove(position.toString())
+        scope.launch (IO) {
+            pDAO.removeFavPrayer(part)
+        }
+        editor.apply()
+    }
+
+
     @Suppress("DEPRECATION")
-     inner class MyViewHolder(var binding: PrayerSingleItemBinding?) :
+    inner class MyViewHolder(var binding: PrayerSingleItemBinding?) :
         RecyclerView.ViewHolder(binding?.root!!) {
 
-        var isAddedToFav: Boolean = false
-
-        init{
-          /*  binding!!.fav.setOnClickListener {
-                if (!isAddedToFav) {
-                    val prayer = filteredList[bindingAdapterPosition]
-                    binding!!.fav.setImageResource(R.drawable.ic_red_favorite_24)
-                    itemClickListener.onFavoriteItem(prayer)
-                    isAddedToFav = true
-
-                } else {
-                    binding!!.fav.setImageResource(R.drawable.ic_baseline_favorite_24)
-                    isAddedToFav = false
-                }
-            }*/
-
-
+        init {
             binding!!.textPrayer.setOnClickListener {
 
-                val text = binding?.textPrayer?.text
-                val size = myList.size
-                var position = 0
-
-                for (i in 0 until size){
-                    if (text == myList[i]){
-                        position = i
-                        break
-                    }
-                    else{
-                        continue
-                    }
+                val prayer = filteredList[bindingAdapterPosition - 1].prayerTitle
+                val id = filteredList[bindingAdapterPosition - 1].uid.minus(1)
+                if (id != RecyclerView.NO_POSITION) {
+                    Log.d("ONCLICK", id.toString())
+                    listener.onPrayerItemClick(prayer, id)
                 }
+            }
 
-                val prayer = filteredList[bindingAdapterPosition - 1]
-                if (position != RecyclerView.NO_POSITION || position > RecyclerView.NO_POSITION) {
-                    itemClickListener.onPrayerItemClick(prayer, position)
+            binding!!.favImage.setOnClickListener {
+                val pos = filteredList[bindingAdapterPosition - 1].uid.minus(1)
+                Log.d("CHECK", pos.toString())
+                if (checkIfAddedToSharedPrefs(pos)) {
+                    val partTitle = filteredList[bindingAdapterPosition - 1].prayerTitle
+                    val partContent = filteredList[bindingAdapterPosition - 1].prayerContent
+                    val favItem = PrayerFavModel(pos, partTitle, partContent)
+                    removeFromSharedPrefs(pos, favItem)
+                    it.setBackgroundResource(R.drawable.ic_grey_fav)
+                } else if (!checkIfAddedToSharedPrefs(pos)) {
+                    val partTitle = filteredList[bindingAdapterPosition - 1].prayerTitle
+                    val partContent = filteredList[bindingAdapterPosition - 1].prayerContent
+                    val favItem = PrayerFavModel(pos, partTitle, partContent)
+                    addToSharedPrefs(pos, favItem)
+                    it.setBackgroundResource(R.drawable.ic_red_fav)
                 }
             }
         }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="list_of_facts_title">
+        <item>The 10 Commandments</item>
+        <item>The commandments of the church</item>
+        <item>Baptism</item>
+        <item>Confirmation</item>
+    </string-array>
+
+    <string-array name="lists_of_facts">
+        <item>\t\tHail Mary, full of grace, the lord is with you, blessed are you among women and blessed is the fruit of your womb Jesus\n
+    \tHoly Mary, mother of God, pray for us sinners, now and at the hour of our death Amen.</item>
+
+        <item>\t\tOur Father, who art in heaven, hallowed be thy name, thy kingdom come, thy will be done on earth as it is in heaven.\n
+        Give us this day, our daily bread and forgive us out trespasses, as we forgive those who trespass against us and lead us not into temptation but deliver us from evil Amen </item>
+
+        <item>\t\tI believe in God, the Father almighty, creator of heaven and earth.\n
+              I believe in Jesus Christ, His only Son, our Lord.
+            He was conceived by the power of the Holy Spirit and born of the Virgin Mary. He suffered under Pontius Pilate, was crucified, died, and was buried. He descended to the dead. On the third day he rose again. He ascended into heaven,
+and is seated at the right hand of the Father. He will come again to judge the living and the dead.\n
+I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen.</item>
+
+        <item>
+            \t\tO Jesus, through the Immaculate Heart of Mary, I offer You my prayers, works, joys and sufferings of this day in union with the
+            Holy Sacrifice of the Mass throughout the world. I offer them for all the intentions of the Sacred Heart: the salvation of souls, reparation for sin, the reunion of all Christians, and the intentions of our Holy Father, the Pope. Amen.
+        </item>
+    </string-array>
+
+
+</resources>
