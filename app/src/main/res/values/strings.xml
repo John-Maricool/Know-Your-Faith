@@ -29,6 +29,15 @@
         <item>100</item>
     </string-array>
 
+    <string-array name="order_of_mass">
+        <item>THE INTRODUCTORY RITE</item>
+        <item>THE LITURGY OF THE WORD</item>
+        <item>THE LITURGY OF THE HOLY EUCHARIST</item>
+        <item>THE COMMUNION RITE</item>
+        <item>THE CONCLUDING RITE</item>
+    </string-array>
+
+
     <string-array name="added_entries">
         <item>Prayer</item>
         <item>Fact</item>

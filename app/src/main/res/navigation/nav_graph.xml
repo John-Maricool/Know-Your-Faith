@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/initialScreen">
+    app:startDestination="@id/mainScreenFragment">
 
     <fragment
         android:id="@+id/quizSettingSetupFragment"
@@ -195,14 +195,5 @@
         <action
             android:id="@+id/action_favoriteFactsFragment_to_factsFragment"
             app:destination="@id/factsFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/initialScreen"
-        android:name="com.example.maricools_app_designs.ui.initialscreen.InitialScreen"
-        android:label="fragment_initial_screen"
-        tools:layout="@layout/fragment_initial_screen" >
-        <action
-            android:id="@+id/action_initialScreen_to_mainScreenFragment"
-            app:destination="@id/mainScreenFragment" />
     </fragment>
 </navigation>

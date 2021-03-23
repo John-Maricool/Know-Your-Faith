@@ -1,5 +1,6 @@
 package com.example.maricools_app_designs.ui.quiz
 
+import android.app.AlertDialog
 import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -69,7 +70,7 @@ class CatholicQuizFragment : Fragment(R.layout.fragment_catholic_quiz) {
     }
 
     private fun CheckAdvancedButtonSettings(): Boolean {
-        if (reward.getInt("points", points) < 200){
+        if (reward.getInt("points", points) < 100){
             binding.advanced.isEnabled = false
             binding.advanced.isClickable = false
             binding.advanced.setTextColor(resources.getColor(R.color.colorGrey, null))
@@ -77,12 +78,20 @@ class CatholicQuizFragment : Fragment(R.layout.fragment_catholic_quiz) {
             return false
         }
         else{
+            showDialog()
             binding.advanced.isEnabled = true
             binding.advanced.isClickable = true
             binding.advanced.setTextColor(resources.getColor(R.color.colorBlack, null))
 
             return true
         }
+    }
+
+    private fun showDialog(){
+        val builder = AlertDialog.Builder(activity)
+        builder.setTitle("Congratulations!!!")
+        builder.setMessage("You have unlocked the advanced quiz")
+        builder.show()
     }
 
 }

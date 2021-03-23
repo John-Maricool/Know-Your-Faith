@@ -26,6 +26,7 @@ constructor(@ApplicationContext var context: Context,
 
      private var mapper: CacheMapper = CacheMapper()
     private var factMapper: FactMapper = FactMapper()
+    private var quizMapper: QuizMapper = QuizMapper()
     private var oomMapper: OOMMapper = OOMMapper()
 
      private var database = CacheDatabase.getDatabase(context)
@@ -33,6 +34,7 @@ constructor(@ApplicationContext var context: Context,
    private val prayerdao = database.prayerDao()
     private val factdao = database.factDao()
     private val oomDao = database.oomDao()
+    private val quizDow = database.quiDao()
     private val latch = CountDownLatch(N)
 
     override fun doWork(): Result {
@@ -57,8 +59,13 @@ constructor(@ApplicationContext var context: Context,
         factdao.addFact(fact)
     }
 
+    private fun addToRoomQuiz(quiz: List<QuizEntityModel>) {
+        quizDow.insertQuiz(quiz)
+    }
+
+
     private fun getData(){
-                cloud.collection("Prayer ")
+                cloud.collection("Prayer ").orderBy("id")
                 .get(Source.SERVER)
                 .addOnCompleteListener { taskQuerySnapshot ->
                     if (taskQuerySnapshot.isSuccessful) {
@@ -131,8 +138,13 @@ constructor(@ApplicationContext var context: Context,
                 .get(Source.SERVER)
                 .addOnCompleteListener { taskQuerySnapshot ->
                     if (taskQuerySnapshot.isSuccessful) {
-                        latch.countDown()
+                        for (query in taskQuerySnapshot.result!!) {
+                            val index = taskQuerySnapshot.result!!.toObjects(QuizModel::class.java)
+                            val cacheIndex = quizMapper.convertToCacheList(index)
+                            addToRoomQuiz(cacheIndex)
+                            latch.countDown()
                             Result.success()
+                        }
                         }
                     else{
                         Result.retry()

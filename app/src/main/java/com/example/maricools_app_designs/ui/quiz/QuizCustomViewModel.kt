@@ -3,6 +3,7 @@ package com.example.maricools_app_designs.ui.quiz
 import android.os.CountDownTimer
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
+import com.example.maricools_app_designs.utils.models.QuizEntityModel
 import com.example.maricools_app_designs.utils.models.QuizModel
 import com.example.maricools_app_designs.utils.repositories.QuizCustomRepository
 
@@ -11,7 +12,7 @@ class QuizCustomViewModel
     constructor(): ViewModel(){
 
     val repo = QuizCustomRepository()
-   var downloadedQuestions: MutableList<QuizModel>
+   var downloadedQuestions: MutableList<QuizEntityModel>
 
     init {
         downloadedQuestions = repo.GottenQuestions
@@ -23,7 +24,7 @@ class QuizCustomViewModel
 
     var questionIndex: Int = 0
     var questionCount = 1
-    lateinit var currentQuiz: QuizModel
+    lateinit var currentQuiz: QuizEntityModel
     lateinit var countDownTimer: CountDownTimer
 
     fun startTimer(listener: onTimeClick){

@@ -11,10 +11,12 @@ import kotlinx.coroutines.*
                         PrayerFavModel::class,
                         FactModel::class,
                         FactsFavModel::class,
+                        QuizEntityModel::class,
                         OOMModel::class], version = 1, exportSchema = false)
 abstract class CacheDatabase: RoomDatabase() {
     abstract fun prayerDao(): PrayerDao
     abstract fun factDao(): FactDao
+    abstract fun quiDao(): QuizDao
     abstract fun oomDao(): OOMDao
 
     companion object {

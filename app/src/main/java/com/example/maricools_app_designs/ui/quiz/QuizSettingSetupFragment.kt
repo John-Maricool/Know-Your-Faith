@@ -18,28 +18,26 @@ class QuizSettingSetupFragment : Fragment(R.layout.fragment_first_screen), State
 
     private var _binding: FragmentFirstScreenBinding? = null
     private val binding get() = _binding!!
-    var item: Int = 10
 
     private val model: QuizSettingViewModel by viewModels()
+     var item: Int = 10
     val args: QuizSettingSetupFragmentArgs by navArgs()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentFirstScreenBinding.bind(view)
 
-         item = binding.spinner.selectedItem.toString().toInt()
-
         binding.progressBar.visibility = View.GONE
 
         binding.startQuiz.setOnClickListener {
-            model.getAllQuestions(args.selection, item)
+            item = binding.spinner.selectedItem.toString().toInt()
+            model.getAnsweredList(item, args.selection)
         }
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         model.setStateInterfaceListener(this)
-        model.clearAllLists()
 
     }
 
@@ -51,7 +49,7 @@ class QuizSettingSetupFragment : Fragment(R.layout.fragment_first_screen), State
     private fun showSnackBar(){
         val snack = Snackbar.make(binding.rel, "No Internet Connection", Snackbar.LENGTH_LONG)
         snack.setAction("Retry"){
-            model.getAllQuestions(args.selection, item)
+            model.getAnsweredList(item, args.selection)
         }
         snack.show()
     }

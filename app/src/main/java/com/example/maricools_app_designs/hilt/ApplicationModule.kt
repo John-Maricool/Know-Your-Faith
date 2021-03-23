@@ -7,6 +7,7 @@ import androidx.work.NetworkType
 import androidx.work.OneTimeWorkRequest
 import com.example.maricools_app_designs.WorkerClass
 import com.example.maricools_app_designs.androidcomponents.ApplicationConstants
+import com.example.maricools_app_designs.androidcomponents.ApplicationConstants.Companion.points
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.InterstitialAd
 import com.google.android.gms.ads.rewarded.RewardedAd
@@ -38,7 +39,8 @@ object ApplicationModule {
     @Singleton
     @Provides
     fun getRewardPreference(@ApplicationContext context: Context): SharedPreferences{
-        return context.getSharedPreferences(ApplicationConstants.rewardPrefsName, Context.MODE_PRIVATE)
+        val prefs =  context.getSharedPreferences(ApplicationConstants.rewardPrefsName, Context.MODE_PRIVATE)
+        return prefs
     }
 
     @Fav

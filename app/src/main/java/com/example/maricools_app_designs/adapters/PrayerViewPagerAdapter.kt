@@ -1,7 +1,12 @@
 package com.example.maricools_app_designs.adapters
 
+import android.os.Build
+import android.text.Html
+import android.text.Spannable
+import android.text.SpannableString
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.text.toSpannable
 import androidx.recyclerview.widget.RecyclerView
 import com.example.maricools_app_designs.utils.models.PrayerModel
 import com.example.maricools_app_designs.databinding.PrayerItemViewpagerBinding
@@ -23,7 +28,10 @@ class PrayerViewPagerAdapter(val prayer: List<PrayerModel>): RecyclerView.Adapte
 
     override fun onBindViewHolder(holder: ViewPagerViewHolder, position: Int) {
         holder.binding.prayerTitle.text = prayer[position].prayerTitle
-        holder.binding.prayerBody.text = prayer[position].prayerContent
+       val text =  prayer[position].prayerContent
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            holder.binding.prayerBody.text = Html.fromHtml(text, 0)
+        }
     }
 
     inner class ViewPagerViewHolder(var binding: PrayerItemViewpagerBinding): RecyclerView.ViewHolder(binding.root) {

@@ -217,5 +217,4 @@ class QuizCustomFragment : Fragment(R.layout.fragment_quiz_custom),
         }
     }
 
-
 }

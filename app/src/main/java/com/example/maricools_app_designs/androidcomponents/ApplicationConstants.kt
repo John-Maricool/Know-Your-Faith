@@ -12,7 +12,7 @@ class ApplicationConstants {
         val favoritefactPrefsName = "favoritefactPrefs"
 
         //points for reward
-            var points: Int = 0
+             var points: Int = 0
 
         //main screen navigate to other screens
          val NAVIGATEFACTS = 1

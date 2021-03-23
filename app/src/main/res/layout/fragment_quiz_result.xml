@@ -92,17 +92,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/back_to_quiz" />
 
-        <View
-            android:id="@+id/watch_video"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:padding="6dp"
-            android:background="#0472F6"
-            android:textSize="19sp"
-            app:layout_constraintBottom_toBottomOf="@+id/watch_video_anim"
-            app:layout_constraintEnd_toEndOf="@+id/watch_video_anim"
-            app:layout_constraintStart_toStartOf="@+id/watch_video_anim"
-            app:layout_constraintTop_toTopOf="@+id/watch_video_anim" />
+
         <TextView
             android:id="@+id/watch_video_text"
             android:layout_width="wrap_content"

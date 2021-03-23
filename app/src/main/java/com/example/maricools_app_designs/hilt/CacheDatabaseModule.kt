@@ -1,10 +1,7 @@
 package com.example.maricools_app_designs.hilt
 
 import android.content.Context
-import com.example.maricools_app_designs.database.PrayerDao
-import com.example.maricools_app_designs.database.CacheDatabase
-import com.example.maricools_app_designs.database.FactDao
-import com.example.maricools_app_designs.database.OOMDao
+import com.example.maricools_app_designs.database.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -40,5 +37,11 @@ object CacheDatabaseModule {
     @Provides
     fun provideOOMDAO(cacheDatabase: CacheDatabase): OOMDao {
         return cacheDatabase.oomDao()
+    }
+
+    @Singleton
+    @Provides
+    fun provideQuizDAO(cacheDatabase: CacheDatabase): QuizDao {
+        return cacheDatabase.quiDao()
     }
 }
