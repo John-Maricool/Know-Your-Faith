@@ -6,25 +6,6 @@
     app:startDestination="@id/mainScreenFragment">
 
     <fragment
-        android:id="@+id/quizSettingSetupFragment"
-        android:name="com.example.maricools_app_designs.ui.quiz.QuizSettingSetupFragment"
-        android:label="Know your Faith"
-        tools:layout="@layout/fragment_first_screen">
-        <argument
-            android:name="selection"
-            app:argType="string"
-            android:defaultValue="quiz" />
-        <action
-            android:id="@+id/action_firstScreenFragment_to_quizCustomFragment"
-            app:destination="@id/quizCustomFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
-            app:popUpTo="@id/quizSettingSetupFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
-    <fragment
         android:id="@+id/mainScreenFragment"
         android:name="com.example.maricools_app_designs.ui.mainscreen.MainScreenFragment"
         android:label="Select Option"
@@ -32,22 +13,16 @@
         <action
             android:id="@+id/action_mainScreenFragment_to_catholicPrayerFragment3"
             app:destination="@id/catholicPrayerFragment"
-            app:enterAnim="@anim/fade_in"
-            app:exitAnim="@anim/fade_out"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_mainScreenFragment_to_catholicFactsFragment2"
             app:destination="@id/catholicFactsFragment"
-            app:enterAnim="@anim/fade_in"
-            app:exitAnim="@anim/fade_out"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_mainScreenFragment_to_catholicQuizFragment"
             app:destination="@id/catholicQuizFragment"
-            app:enterAnim="@anim/fade_in"
-            app:exitAnim="@anim/fade_out"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
@@ -84,12 +59,8 @@
         android:label="Select Quiz"
         tools:layout="@layout/fragment_catholic_quiz" >
         <action
-            android:id="@+id/action_catholicQuizFragment_to_firstScreenFragment"
-            app:destination="@id/quizSettingSetupFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            android:id="@+id/action_catholicQuizFragment_to_quizCustomFragment"
+            app:destination="@id/quizCustomFragment" />
     </fragment>
     <fragment
         android:id="@+id/prayerFragment"
@@ -167,7 +138,7 @@
     <fragment
         android:id="@+id/favouritesFragment"
         android:name="com.example.maricools_app_designs.ui.favoriteprayer.FavouritesFragment"
-        android:label="Favourites"
+        android:label="Favourite Prayers"
         tools:layout="@layout/fragment_favourites">
         <action
             android:id="@+id/action_favouritesFragment_to_prayerFragment2"
@@ -190,8 +161,8 @@
     <fragment
         android:id="@+id/favoriteFactsFragment"
         android:name="com.example.maricools_app_designs.ui.favoritefact.FavoriteFactsFragment"
-        android:label="favorite_facts_fragment"
-        tools:layout="@layout/favorite_facts_fragment" >
+        android:label="Favorite Facts"
+        tools:layout="@layout/favorite_facts_fragment">
         <action
             android:id="@+id/action_favoriteFactsFragment_to_factsFragment"
             app:destination="@id/factsFragment" />

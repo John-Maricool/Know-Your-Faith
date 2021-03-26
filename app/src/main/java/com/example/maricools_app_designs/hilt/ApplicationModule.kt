@@ -43,6 +43,14 @@ object ApplicationModule {
         return prefs
     }
 
+    @GetData
+    @Singleton
+    @Provides
+    fun doWorkPreference(@ApplicationContext context: Context): SharedPreferences{
+        val prefs =  context.getSharedPreferences("isDataGotten", Context.MODE_PRIVATE)
+        return prefs
+    }
+
     @Fav
     @Singleton
     @Provides
@@ -55,13 +63,6 @@ object ApplicationModule {
     @Provides
     fun getFactFavPreference(@ApplicationContext context: Context): SharedPreferences{
         return context.getSharedPreferences(ApplicationConstants.favoritefactPrefsName, Context.MODE_PRIVATE)
-    }
-
-    @GetData
-    @Singleton
-    @Provides
-    fun getDataPreference(@ApplicationContext context: Context): SharedPreferences{
-        return context.getSharedPreferences("isQuestionsGotten", Context.MODE_PRIVATE)
     }
 
     @Singleton

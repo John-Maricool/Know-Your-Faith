@@ -14,13 +14,12 @@ constructor(): ModelMapper<FactModel, FactServerModel> {
     override fun mapFromModel(model: FactServerModel): FactModel {
         return FactModel(
                 factTitle = model.title,
-                factPart = model.part,
                 factContent = model.fact
         )
     }
 
     override fun mapToModel(model: FactModel): FactServerModel {
-        return FactServerModel(model.factTitle, model.factContent, model.factPart)
+        return FactServerModel(model.factTitle, model.factContent)
     }
 
     fun convertToCacheList(modelList: List<FactServerModel>): List<FactModel>{

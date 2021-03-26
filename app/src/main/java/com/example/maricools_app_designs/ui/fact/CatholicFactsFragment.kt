@@ -1,20 +1,28 @@
 package com.example.maricools_app_designs.ui.fact
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.maricools_app_designs.R
+import com.example.maricools_app_designs.adapters.FactAdapter
+import com.example.maricools_app_designs.adapters.PrayerFragmentMainScreenAdapter
 import com.example.maricools_app_designs.databinding.FragmentCatholicFactsBinding
 import com.example.maricools_app_designs.interfaces_kids.OnItemClickListener
+import com.example.maricools_app_designs.interfaces_kids.OnPrayerItemClickListener
 import com.google.android.gms.ads.AdRequest
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class CatholicFactsFragment: Fragment(R.layout.fragment_catholic_facts), OnItemClickListener {
+class CatholicFactsFragment: Fragment(R.layout.fragment_catholic_facts), OnPrayerItemClickListener, SearchView.OnQueryTextListener {
 
     private var _binding: FragmentCatholicFactsBinding? = null
     private val binding get() = _binding!!
@@ -23,6 +31,9 @@ class CatholicFactsFragment: Fragment(R.layout.fragment_catholic_facts), OnItemC
     @Inject
     lateinit var adRequest: AdRequest
 
+    @Inject
+    lateinit var adapter: FactAdapter
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentCatholicFactsBinding.bind(view)
@@ -30,21 +41,16 @@ class CatholicFactsFragment: Fragment(R.layout.fragment_catholic_facts), OnItemC
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(activity)
         }
+        setHasOptionsMenu(true)
         binding.adView.loadAd(adRequest)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        binding.expandableRecyclerView.adapter = model.adapter
-        model.adapter.setOnClickListener(this)
-    }
-
-    override fun onStart() {
-        super.onStart()
-        binding.str.setOnRefreshListener {
-            binding.expandableRecyclerView.adapter = model.adapter
-            binding.str.isRefreshing = false
-        }
+        binding.expandableRecyclerView.adapter = adapter
+        model.facts.observe(viewLifecycleOwner, Observer {
+            adapter.getFactList(it)
+        })
     }
 
     override fun onDestroy() {
@@ -52,8 +58,29 @@ class CatholicFactsFragment: Fragment(R.layout.fragment_catholic_facts), OnItemC
         _binding = null
     }
 
-    override fun onItemClick(position: Int) {
-        val action = CatholicFactsFragmentDirections.actionCatholicFactsFragmentToFactsFragment(position)
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.main, menu)
+        val searchItem: MenuItem = menu.findItem(R.id.search)
+        val searchView: SearchView = searchItem.actionView as SearchView
+        searchView.setOnQueryTextListener(this)
+    }
+
+    override fun onQueryTextSubmit(query: String?): Boolean {
+        return true
+    }
+
+    override fun onQueryTextChange(newText: String?): Boolean {
+        adapter.filter.filter(newText)
+        return true
+    }
+
+    override fun onStart() {
+        super.onStart()
+        adapter.setOnClickListener(this)
+    }
+
+    override fun onPrayerItemClick(prayer: String, id: Int) {
+        val action = CatholicFactsFragmentDirections.actionCatholicFactsFragmentToFactsFragment(id)
         findNavController().navigate(action)
     }
 }

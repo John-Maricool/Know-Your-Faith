@@ -1,7 +1,7 @@
 package com.example.maricools_app_designs.utils.repositories
 
-import com.example.maricools_app_designs.ui.quiz.QuizSettingViewModel
+import com.example.maricools_app_designs.ui.quiz.CatholicQuizViewModel
 
 class QuizCustomRepository {
-    val GottenQuestions = QuizSettingViewModel.QuizQuestionsToAnswer
+    val GottenQuestions = CatholicQuizViewModel.QuizQuestionsToAnswer
 }

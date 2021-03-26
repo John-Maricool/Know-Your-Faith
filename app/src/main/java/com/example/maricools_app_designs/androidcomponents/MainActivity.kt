@@ -62,9 +62,6 @@ class MainActivity : AppCompatActivity() {
         val menu = nav_view.menu
         switchCompat = MenuItemCompat.getActionView(menu.findItem(R.id.night_mode)).findViewById(R.id.switch_id) as SwitchCompat
 
-        menu.findItem(R.id.share).setOnMenuItemClickListener {
-                shareToPeople()
-        }
         menu.findItem(R.id.log_out).setOnMenuItemClickListener {
             logOut()
         }
@@ -120,14 +117,6 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-    private fun shareToPeople(): Boolean {
-        val intent = Intent(Intent.ACTION_SEND)
-        intent.type = "text/plain"
-        startActivity(Intent.createChooser(intent, "Select Option"))
-
-        return true
-    }
-
     private fun logOut(): Boolean {
         val dialog = AlertDialog.Builder(this)
         dialog.setTitle("Log Out")
@@ -143,7 +132,4 @@ class MainActivity : AppCompatActivity() {
         alert.show()
         return true
     }
-
-
-
 }

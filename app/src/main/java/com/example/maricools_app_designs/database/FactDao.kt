@@ -15,20 +15,14 @@ interface FactDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun addFact(fact: FactModel)
 
-    @Query("SELECT * FROM fact WHERE factPart = :part")
-     fun getAllFacts(part: String): List<FactModel>
-
     @Query("SELECT * FROM fact WHERE uid = :id")
     fun getFactId(id: Int): FactModel
 
     @Query("SELECT * FROM fact")
-    fun getAllFacts(): List<FactModel>
+    fun getAllFacts(): LiveData<List<FactModel>>
 
     @Delete
     fun deleteAllFacts(fact: List<FactModel>)
-
-    @Query("SELECT * FROM fact")
-    fun getAllFact(): MutableList<FactModel>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun addFavFact(fact: FactsFavModel)

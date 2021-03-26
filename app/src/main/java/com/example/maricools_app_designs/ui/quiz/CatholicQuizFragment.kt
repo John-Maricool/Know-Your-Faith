@@ -3,9 +3,13 @@ package com.example.maricools_app_designs.ui.quiz
 import android.app.AlertDialog
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
+import android.widget.RadioButton
 import android.widget.Toast
+import androidx.core.view.get
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.maricools_app_designs.androidcomponents.ApplicationConstants.Companion.points
 import com.example.maricools_app_designs.R
@@ -22,12 +26,15 @@ class CatholicQuizFragment : Fragment(R.layout.fragment_catholic_quiz) {
     var _binding: FragmentCatholicQuizBinding? = null
     val binding get() = _binding!!
 
+    private val model: CatholicQuizViewModel by viewModels()
     @Inject
     lateinit var adRequest: AdRequest
 
     @Inject
     @Reward
     lateinit var reward: SharedPreferences
+
+    var item: Int = 10
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -41,47 +48,42 @@ class CatholicQuizFragment : Fragment(R.layout.fragment_catholic_quiz) {
         setClickListenersForButton()
     }
 
+    private fun setClickListenersForButton() {
+        binding.startQuiz.setOnClickListener {
+            //check if at least one of the radio buttons are clicked
+            if (binding.bibleButton.isChecked || binding.catholicFaithButton.isChecked || binding.advancedButton.isChecked) {
+                //get the integer from the spinner
+                item = binding.spinnerNumberOfQuestions.selectedItem.toString().toInt()
+                //check the checked item id and get the text
+                val checkedItem = binding.radioGroup.checkedRadioButtonId
+                val radioButton: RadioButton? = activity?.findViewById(checkedItem)
+
+                model.getAnsweredList(item, radioButton?.text.toString())
+                val action = CatholicQuizFragmentDirections.actionCatholicQuizFragmentToQuizCustomFragment(item)
+                findNavController().navigate(action)
+            }   else{
+                Toast.makeText(activity, "Select which quiz part you want to answer", Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
     }
 
-    private fun setClickListenersForButton(){
-        binding.apply {
-            bible.setOnClickListener {
-                val action = CatholicQuizFragmentDirections.actionCatholicQuizFragmentToFirstScreenFragment(bible.text.toString())
-                findNavController().navigate(action)
-            }
-            catholicQuiz.setOnClickListener {
-                val action = CatholicQuizFragmentDirections.actionCatholicQuizFragmentToFirstScreenFragment(catholicQuiz.text.toString())
-                findNavController().navigate(action)
-            }
-
-            advanced.setOnClickListener {
-                if (CheckAdvancedButtonSettings()){
-                    val action = CatholicQuizFragmentDirections.actionCatholicQuizFragmentToFirstScreenFragment(advanced.text.toString())
-                    findNavController().navigate(action)
-                }
-                else{
-                    Toast.makeText(activity, "You dont have 100 points yet!", Toast.LENGTH_LONG).show()
-                }
-            }
-        }
-    }
 
     private fun CheckAdvancedButtonSettings(): Boolean {
         if (reward.getInt("points", points) < 100){
-            binding.advanced.isEnabled = false
-            binding.advanced.isClickable = false
-            binding.advanced.setTextColor(resources.getColor(R.color.colorGrey, null))
+            binding.advancedButton.isEnabled = false
+            binding.advancedButton.isClickable = false
 
             return false
         }
         else{
             showDialog()
-            binding.advanced.isEnabled = true
-            binding.advanced.isClickable = true
-            binding.advanced.setTextColor(resources.getColor(R.color.colorBlack, null))
+            binding.advancedButton.isEnabled = true
+            binding.advancedButton.isClickable = true
 
             return true
         }

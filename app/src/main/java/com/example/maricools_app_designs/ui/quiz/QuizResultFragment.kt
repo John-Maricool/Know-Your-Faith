@@ -47,7 +47,6 @@ class QuizResultFragment : Fragment(R.layout.fragment_quiz_result) {
         _binding = FragmentQuizResultBinding.bind(view)
         arrangeResults()
         backQuizListener()
-
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

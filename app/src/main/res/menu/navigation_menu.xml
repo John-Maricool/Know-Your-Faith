@@ -12,7 +12,7 @@
         android:id="@+id/favouritesFragment"/>
 
     <item
-        android:title="Favorite facts"
+        android:title="@string/favorite_facts"
         android:icon="@drawable/ic_red_fav"
         android:id="@+id/favoriteFactsFragment"/>
 
@@ -22,16 +22,9 @@
         app:actionLayout="@layout/switch_menu"
         android:title="@string/night_mode"/>
 
-    <item android:title="@string/share"
-        android:icon="@drawable/ic_share"
-        android:id="@+id/share"/>
-
         <item android:title="@string/report_contact"
             android:icon="@drawable/ic_contact"
             android:id="@+id/reportFragment"/>
-
-    <item android:title="@string/about"
-        android:id="@+id/about"/>
 
     <item android:title="@string/log_out"
         android:icon="@drawable/ic_close"

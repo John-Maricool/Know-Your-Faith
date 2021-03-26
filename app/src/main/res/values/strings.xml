@@ -487,7 +487,7 @@
     <string name="start_quiz">Start Quiz</string>
     <string name="report">Report</string>
     <string name="quiz_part">Quiz Part</string>
-    <string name="loadin">Loading...</string>
+    <string name="loadin">Loading…</string>
     <string name="ebukaikenwa6419_gmail_com">ebukaikenwa6419@gmail.com</string>
     <string name="recipient_email">Recipient email</string>
     <string name="subject">Subject</string>
@@ -497,6 +497,7 @@
     <string name="add_prayer">Add Prayer</string>
     <string name="add_custom_item">Add Custom Item</string>
     <string name="added_items">Added Items</string>
-    <string name="favourites_prayers">favourites</string>
+    <string name="favourites_prayers">favourite Prayers</string>
+    <string name="favorite_facts">Favorite facts</string>
 
 </resources>

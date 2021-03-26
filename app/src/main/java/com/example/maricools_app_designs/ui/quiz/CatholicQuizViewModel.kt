@@ -5,22 +5,17 @@ import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
 import com.example.maricools_app_designs.interfaces_kids.StateInterface
 import com.example.maricools_app_designs.utils.models.QuizEntityModel
-import com.example.maricools_app_designs.utils.repositories.QuizSettingRepository
+import com.example.maricools_app_designs.utils.repositories.CatholicQuizRepository
 import java.util.concurrent.CountDownLatch
 
-class QuizSettingViewModel
+class CatholicQuizViewModel
     @ViewModelInject
- constructor(var repo: QuizSettingRepository
+ constructor(var repo: CatholicQuizRepository
     ): ViewModel() {
 
-    lateinit var state: StateInterface
     private val latch = CountDownLatch(1)
-    fun setStateInterfaceListener(listener: StateInterface){
-        state = listener
-    }
 
      fun getAnsweredList(id: Int, part: String) {
-             state.isLoading()
                AllQuizQuestions = repo.getQuizByPart(part).toMutableList()
                     Log.i("quizQuestions", AllQuizQuestions.size.toString())
                     latch.countDown()
@@ -34,7 +29,6 @@ class QuizSettingViewModel
                  AllQuizQuestions.removeAt(randomNumber)
              }
          Log.i("quizQuestion", QuizQuestionsToAnswer.toString())
-         state.fullyLoaded()
     }
 
     companion object {

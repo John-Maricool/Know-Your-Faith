@@ -35,7 +35,6 @@ class FactsFragment : Fragment(R.layout.facts_fragment) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FactsFragmentBinding.bind(view)
         binding.adView.loadAd(adRequest)
-        setHasOptionsMenu(true)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -53,29 +52,4 @@ class FactsFragment : Fragment(R.layout.facts_fragment) {
         _binding = null
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.fav, menu)
-        val imageItem: MenuItem = menu.findItem(R.id.fav)
-        val imageView: ImageView = imageItem.actionView as ImageView
-
-        if (viewModel.checkIfAddedToSharedPrefs(fact.uid!!)) {
-            imageView.setBackgroundResource(R.drawable.ic_red_fav)
-        } else if (!viewModel.checkIfAddedToSharedPrefs(fact.uid!!)) {
-            imageView.setBackgroundResource(R.drawable.ic_grey_fav)
-        }
-
-        imageView.setOnClickListener{
-            val id = fact.uid
-            val title = fact.factTitle
-            val content = fact.factContent
-            val favFact = FactsFavModel(id!!, title, content)
-            if (viewModel.checkIfAddedToSharedPrefs(id)) {
-                viewModel.removeFromSharedPrefs(id, favFact)
-                it.setBackgroundResource(R.drawable.ic_grey_fav)
-            } else if (!viewModel.checkIfAddedToSharedPrefs(id)) {
-                viewModel.addToSharedPrefs(id, favFact)
-                it.setBackgroundResource(R.drawable.ic_red_fav)
-            }
-        }
-    }
 }

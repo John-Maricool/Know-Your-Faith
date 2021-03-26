@@ -81,7 +81,6 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
 
     override fun onStart() {
         super.onStart()
-
         adapter1.setOnClickListener(this)
         adapter2.setOnClickListener(this)
         adapter3.setOnClickListener(this)
