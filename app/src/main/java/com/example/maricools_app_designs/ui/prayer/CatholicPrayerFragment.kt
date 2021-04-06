@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
+import android.view.ViewConfiguration.get
 import androidx.lifecycle.Observer
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.ViewCompat
@@ -21,6 +22,7 @@ import com.example.maricools_app_designs.interfaces_kids.OnPrayerItemClickListen
 import com.google.android.gms.ads.AdRequest
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.*
+import java.lang.reflect.Array.get
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -39,6 +41,8 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
      lateinit var adapter3: PrayerFragmentMainScreenAdapter
     @Inject
      lateinit var adapter4: PrayerFragmentMainScreenAdapter
+    @Inject
+    lateinit var adapter5: PrayerFragmentMainScreenAdapter
     @Inject
     lateinit var request: AdRequest
 
@@ -61,8 +65,9 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
         adapter2.header = "Jesus Christ"
         adapter3.header = "Rosary"
         adapter4.header = "Prayer to Angels and saints"
+        adapter5.header = "Stations of the Cross"
 
-        val concat = ConcatAdapter(adapter1, adapter2, adapter3, adapter4)
+        val concat = ConcatAdapter(adapter1, adapter2, adapter3, adapter4, adapter5)
         binding.recyclerPrayers.adapter = concat
 
         model.basic.observe(viewLifecycleOwner, Observer {
@@ -77,6 +82,9 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
         model.saints.observe(viewLifecycleOwner, Observer {
             adapter4.getPrayerList(it)
         })
+        model.station.observe(viewLifecycleOwner, Observer {
+            adapter5.getPrayerList(it)
+        })
     }
 
     override fun onStart() {
@@ -85,6 +93,7 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
         adapter2.setOnClickListener(this)
         adapter3.setOnClickListener(this)
         adapter4.setOnClickListener(this)
+        adapter5.setOnClickListener(this)
     }
 
     override fun onDestroy() {
@@ -108,6 +117,7 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
         adapter2.filter.filter(newText)
         adapter3.filter.filter(newText)
         adapter4.filter.filter(newText)
+        adapter5.filter.filter(newText)
         return true
     }
 

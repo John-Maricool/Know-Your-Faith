@@ -7,7 +7,6 @@ import androidx.work.NetworkType
 import androidx.work.OneTimeWorkRequest
 import com.example.maricools_app_designs.WorkerClass
 import com.example.maricools_app_designs.androidcomponents.ApplicationConstants
-import com.example.maricools_app_designs.androidcomponents.ApplicationConstants.Companion.points
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.InterstitialAd
 import com.google.android.gms.ads.rewarded.RewardedAd
@@ -48,6 +47,10 @@ object ApplicationModule {
     @Provides
     fun doWorkPreference(@ApplicationContext context: Context): SharedPreferences{
         val prefs =  context.getSharedPreferences("isDataGotten", Context.MODE_PRIVATE)
+        val editor = prefs.edit()
+        editor.putInt("points", 0)
+        editor.apply()
+
         return prefs
     }
 

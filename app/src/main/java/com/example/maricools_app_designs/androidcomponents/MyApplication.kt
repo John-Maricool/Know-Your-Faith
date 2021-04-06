@@ -18,17 +18,7 @@ class MyApplication : Application(){
     override fun onCreate() {
         super.onCreate()
         createNotificationChannel()
-        registerBroadcastReceiver()
     }
-
-    private fun registerBroadcastReceiver() {
-        val receiver = BroadReceiver()
-        val filter = IntentFilter(Intent.ACTION_BOOT_COMPLETED).apply {
-            addAction(receiverFilter)
-        }
-        registerReceiver(receiver, filter)
-    }
-
     private fun createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             val channel = NotificationChannel(

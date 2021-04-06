@@ -1,17 +1,15 @@
 package com.example.maricools_app_designs.ui.quiz
 
-import android.app.AlertDialog
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.RadioButton
 import android.widget.Toast
-import androidx.core.view.get
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.example.maricools_app_designs.androidcomponents.ApplicationConstants.Companion.points
 import com.example.maricools_app_designs.R
 import com.example.maricools_app_designs.hilt.Reward
 import com.example.maricools_app_designs.databinding.FragmentCatholicQuizBinding
@@ -36,10 +34,13 @@ class CatholicQuizFragment : Fragment(R.layout.fragment_catholic_quiz) {
 
     var item: Int = 10
 
+    lateinit var anim: Animation
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentCatholicQuizBinding.bind(view)
+        anim = AnimationUtils.loadAnimation(activity, R.anim.bounce)
         adView.loadAd(adRequest)
+        binding.notice.isSelected = true
         CheckAdvancedButtonSettings()
     }
 
@@ -50,16 +51,17 @@ class CatholicQuizFragment : Fragment(R.layout.fragment_catholic_quiz) {
 
     private fun setClickListenersForButton() {
         binding.startQuiz.setOnClickListener {
+            it.startAnimation(anim)
             //check if at least one of the radio buttons are clicked
-            if (binding.bibleButton.isChecked || binding.catholicFaithButton.isChecked || binding.advancedButton.isChecked) {
+            if (binding.bibleButton.isChecked || binding.catholicFaithButton.isChecked) {
                 //get the integer from the spinner
                 item = binding.spinnerNumberOfQuestions.selectedItem.toString().toInt()
                 //check the checked item id and get the text
                 val checkedItem = binding.radioGroup.checkedRadioButtonId
                 val radioButton: RadioButton? = activity?.findViewById(checkedItem)
-
-                model.getAnsweredList(item, radioButton?.text.toString())
-                val action = CatholicQuizFragmentDirections.actionCatholicQuizFragmentToQuizCustomFragment(item)
+                val quizPart = radioButton?.text.toString()
+                model.getAnsweredList(item, quizPart)
+                val action = CatholicQuizFragmentDirections.actionCatholicQuizFragmentToQuizCustomFragment(item, quizPart)
                 findNavController().navigate(action)
             }   else{
                 Toast.makeText(activity, "Select which quiz part you want to answer", Toast.LENGTH_LONG).show()
@@ -72,28 +74,17 @@ class CatholicQuizFragment : Fragment(R.layout.fragment_catholic_quiz) {
         _binding = null
     }
 
-
     private fun CheckAdvancedButtonSettings(): Boolean {
-        if (reward.getInt("points", points) < 100){
-            binding.advancedButton.isEnabled = false
-            binding.advancedButton.isClickable = false
+        return if (reward.getInt("points", 0) < 100){
+            binding.catholicFaithButton.isEnabled = false
+            binding.catholicFaithButton.isClickable = false
 
-            return false
+            false
         }
         else{
-            showDialog()
-            binding.advancedButton.isEnabled = true
-            binding.advancedButton.isClickable = true
-
-            return true
+            binding.catholicFaithButton.isEnabled = true
+            binding.catholicFaithButton.isClickable = true
+            true
         }
     }
-
-    private fun showDialog(){
-        val builder = AlertDialog.Builder(activity)
-        builder.setTitle("Congratulations!!!")
-        builder.setMessage("You have unlocked the advanced quiz")
-        builder.show()
-    }
-
 }

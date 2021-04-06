@@ -1,28 +1,31 @@
 package com.example.maricools_app_designs
 
+import android.app.Notification
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.job.JobInfo
 import android.content.Context
+import android.os.Build
 import android.os.Build.VERSION_CODES.N
 import android.util.Log
-import androidx.work.CoroutineWorker
-import androidx.work.Worker
-import androidx.work.WorkerParameters
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
+import androidx.work.*
+import com.example.maricools_app_designs.androidcomponents.MyApplication
 import com.example.maricools_app_designs.database.CacheDatabase
 import com.example.maricools_app_designs.utils.models.*
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Source
 import dagger.hilt.android.qualifiers.ApplicationContext
-import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.*
 import kotlinx.coroutines.Dispatchers.IO
-import kotlinx.coroutines.async
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 import java.util.concurrent.CountDownLatch
 import javax.inject.Inject
 
 class WorkerClass
 @Inject
 constructor(@ApplicationContext var context: Context,
-            params: WorkerParameters): Worker(context, params) {
+            params: WorkerParameters): CoroutineWorker(context, params) {
 
      private var mapper: CacheMapper = CacheMapper()
     private var factMapper: FactMapper = FactMapper()
@@ -37,13 +40,14 @@ constructor(@ApplicationContext var context: Context,
     private val quizDow = database.quiDao()
     private val latch = CountDownLatch(N)
 
-    override fun doWork(): Result {
-        return try {
-               doAllWork()
-            latch.await()
-            Result.success()
+     override suspend fun doWork(): Result {
+         try {
+             setForeground(createForegroundInfo())
+                 doAllWork()
+                 latch.await()
+           return Result.success()
         } catch (e: Exception) {
-            Result.failure()
+            return Result.failure()
         }
     }
 
@@ -62,7 +66,6 @@ constructor(@ApplicationContext var context: Context,
     private fun addToRoomQuiz(quiz: List<QuizEntityModel>) {
         quizDow.insertQuiz(quiz)
     }
-
 
     private fun getData(){
                 cloud.collection("Prayer ").orderBy("id")
@@ -156,29 +159,28 @@ constructor(@ApplicationContext var context: Context,
                 }
     }
 
-    private fun getCatholicFaithQuiz(){
-        cloud.collection("Catholic Faith")
-                .get(Source.SERVER)
-                .addOnCompleteListener { taskQuerySnapshot ->
-                    if (taskQuerySnapshot.isSuccessful) {
-                        latch.countDown()
-                        Result.success()
-                    }
-                    else{
-                        Result.retry()
-                    }
-                }.addOnFailureListener {
-                    Log.d("error", it.toString())
-                    latch.countDown()
-                    Result.retry()
-                }
-    }
-
     private fun doAllWork(){
         getData()
         getFactData()
-        getBibleQuiz()
+       getBibleQuiz()
         getOrderOfMass()
-        getCatholicFaithQuiz()
+    }
+
+    private fun createForegroundInfo(): ForegroundInfo {
+        val notificationId = 1
+        return ForegroundInfo(notificationId, showNotification())
+    }
+
+    private fun showNotification(): Notification {
+        //val manager = NotificationManagerCompat.from(context)
+        val builder = NotificationCompat.Builder(context, MyApplication.CHANNEL_ID)
+                .setSmallIcon(R.mipmap.ic_faithicon_round)
+                .setContentTitle("Know your Faith")
+                .setContentText("Work in progress")
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setOngoing(true)
+                .build()
+
+        return builder
     }
 }

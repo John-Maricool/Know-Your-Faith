@@ -46,7 +46,7 @@ constructor()
 
     inner class FavPrayerViewHolder(var binding: FragmentCustomSingleItemsBinding) : RecyclerView.ViewHolder(binding.root) {
         init {
-            binding.customItemText.setOnClickListener {
+            binding.rootCard.setOnClickListener {
                 val title = each[bindingAdapterPosition].factTitle
                 val id = each[bindingAdapterPosition].uid
                 if (id != RecyclerView.NO_POSITION) {

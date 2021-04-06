@@ -28,4 +28,8 @@ constructor(var dao: PrayerDao){
     fun getRosaryPrayer(): LiveData<List<PrayerModel>> {
         return dao.getPrayer("Rosary")
     }
+
+    fun getStationsOfTheCross(): LiveData<List<PrayerModel>> {
+        return dao.getPrayer("Station")
+    }
 }

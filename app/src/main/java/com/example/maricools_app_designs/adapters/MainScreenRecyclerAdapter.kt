@@ -24,23 +24,30 @@ constructor(@ApplicationContext val context: Context?) :
                 MainScreenRecyclerModel(
                         context!!.resources.getString(R.string.prayers),
                         context.resources.getString(R.string.prayers_desc),
-                        "https://images.unsplash.com/photo-1579215176023-00341ea5ea67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=500"
+                        context.getDrawable(R.drawable.catholicprayer)
                 )
         )
         myList.add(
                 MainScreenRecyclerModel(
                         context.resources.getString(R.string.facts),
                         context.resources.getString(R.string.facts_desc),
-                        "https://images.unsplash.com/photo-1476461386254-61c4ff3a1cc3?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=500"
+                        context.getDrawable(R.drawable.catholicfacts)
                 )
         )
         myList.add(
                 MainScreenRecyclerModel(
                         context.resources.getString(R.string.quiz),
                         context.resources.getString(R.string.quiz_desc),
-                        "https://images.unsplash.com/photo-1530462943125-677cc511c87e?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=500"
+                        context.getDrawable(R.drawable.catholicquiz)
                 )
         )
+        myList.add(
+                MainScreenRecyclerModel(
+                        context.resources.getString(R.string.oom_name),
+                        context.resources.getString(R.string.oom_desc),
+                        context.getDrawable(R.drawable.catholicoom)
+                )
+                )
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -64,11 +71,7 @@ constructor(@ApplicationContext val context: Context?) :
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
         val mListPos = myList.get(position)
-        Glide.with(holder.itemView.context)
-            .load(mListPos.imageRes)
-            .centerCrop()
-            .placeholder(R.drawable.for_view)
-            .into(holder.binding.imageView)
+        holder.binding.imageView.setImageDrawable(mListPos.imageRes)
 
         holder.binding.apply {
             title.text = mListPos.title

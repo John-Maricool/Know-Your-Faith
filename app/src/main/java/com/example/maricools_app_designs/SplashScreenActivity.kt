@@ -54,7 +54,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
     private fun onFailedLoading(){
         p_bar.visibility = View.GONE
-        val snack = Snackbar.make(p_bar, "No Internet Connection", Snackbar.LENGTH_LONG)
+        val snack = Snackbar.make(p_bar, "No Internet Connection", Snackbar.LENGTH_SHORT)
         snack.show()
     }
 

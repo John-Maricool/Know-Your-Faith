@@ -13,5 +13,7 @@ constructor(var repo: PrayerListRepository): ViewModel() {
     val jesus: LiveData<List<PrayerModel>> = repo.getJesusPrayer()
     val rosary: LiveData<List<PrayerModel>> = repo.getRosaryPrayer()
     val saints: LiveData<List<PrayerModel>> = repo.getSaintsPrayer()
+    val station: LiveData<List<PrayerModel>> = repo.getStationsOfTheCross()
+
 }
 

@@ -91,9 +91,9 @@ constructor(var scope: CoroutineScope,
             }
             val pos = filteredList[newPos].uid.minus(1)
             if (checkIfAddedToSharedPrefs(pos)) {
-                Theholder.binding?.favImage?.setBackgroundResource(R.drawable.ic_red_fav)
+                Theholder.binding?.favImage?.setBackgroundResource(R.drawable.ic_baseline_favorite_24)
             } else if (!checkIfAddedToSharedPrefs(pos)) {
-                Theholder.binding?.favImage?.setBackgroundResource(R.drawable.ic_grey_fav)
+                Theholder.binding?.favImage?.setBackgroundResource(R.drawable.ic_baseline_favorite_border_24)
             }
         }
     }
@@ -182,13 +182,13 @@ constructor(var scope: CoroutineScope,
                     val partContent = filteredList[bindingAdapterPosition - 1].prayerContent
                     val favItem = PrayerFavModel(pos, partTitle, partContent)
                     removeFromSharedPrefs(pos, favItem)
-                    it.setBackgroundResource(R.drawable.ic_grey_fav)
+                    it.setBackgroundResource(R.drawable.ic_baseline_favorite_border_24)
                 } else if (!checkIfAddedToSharedPrefs(pos)) {
                     val partTitle = filteredList[bindingAdapterPosition - 1].prayerTitle
                     val partContent = filteredList[bindingAdapterPosition - 1].prayerContent
                     val favItem = PrayerFavModel(pos, partTitle, partContent)
                     addToSharedPrefs(pos, favItem)
-                    it.setBackgroundResource(R.drawable.ic_red_fav)
+                    it.setBackgroundResource(R.drawable.ic_baseline_favorite_24)
                 }
             }
         }

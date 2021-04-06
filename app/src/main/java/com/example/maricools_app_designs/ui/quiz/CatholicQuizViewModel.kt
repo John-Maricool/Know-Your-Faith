@@ -3,8 +3,8 @@ package com.example.maricools_app_designs.ui.quiz
 import android.util.Log
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
-import com.example.maricools_app_designs.interfaces_kids.StateInterface
 import com.example.maricools_app_designs.utils.models.QuizEntityModel
+import com.example.maricools_app_designs.utils.models.QuizModel
 import com.example.maricools_app_designs.utils.repositories.CatholicQuizRepository
 import java.util.concurrent.CountDownLatch
 
@@ -22,13 +22,14 @@ class CatholicQuizViewModel
                     latch.await()
                     QuizQuestionsToAnswer.clear()
 
+                    //shuffle all the questions
+                    AllQuizQuestions.shuffle()
+
                   for (i in 0 until id) {
-                 val randomNumber: Int = (0 until AllQuizQuestions.size).random()
-                      Log.i("quizQuestions", randomNumber.toString())
-                 QuizQuestionsToAnswer.add(AllQuizQuestions[randomNumber])
-                 AllQuizQuestions.removeAt(randomNumber)
+               QuizQuestionsToAnswer.add(AllQuizQuestions[id])
+                 AllQuizQuestions.removeAt(i)
              }
-         Log.i("quizQuestion", QuizQuestionsToAnswer.toString())
+         AllQuizQuestions.clear()
     }
 
     companion object {

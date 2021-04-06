@@ -17,6 +17,7 @@ class OOMViewModel
        return getOOM(title).oomTitle
     }
     fun getStringContent(title: String): String{
+
         return getOOM(title).oomContent
     }
 

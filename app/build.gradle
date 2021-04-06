@@ -5,6 +5,7 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'com.google.gms.google-services'
 apply plugin: "androidx.navigation.safeargs.kotlin"
 apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'com.google.firebase.crashlytics'
 
 android {
     compileSdkVersion 29
@@ -64,7 +65,7 @@ dependencies {
     def nav_version = "2.3.2"
     def lifecycle_version = "2.2.0"
 
-    def work_version = "1.0.0-beta02"
+    def work_version = "2.3.0"
     def room_version = "2.2.5"
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
@@ -110,7 +111,7 @@ dependencies {
     implementation "com.google.firebase:firebase-analytics:18.0.1"
 
     //work manager
-    implementation "android.arch.work:work-runtime-ktx:$work_version"
+    implementation "androidx.work:work-runtime-ktx:$work_version"
 
     //dagger
     implementation "com.google.dagger:hilt-android:2.28.3-alpha"
@@ -120,8 +121,13 @@ dependencies {
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02"
     kapt "androidx.hilt:hilt-compiler:1.0.0-alpha02"
 
-    implementation 'com.google.firebase:firebase-auth:20.0.0'
-    implementation 'com.google.firebase:firebase-firestore:22.0.0'
+// Declare the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation platform('com.google.firebase:firebase-bom:26.8.0')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

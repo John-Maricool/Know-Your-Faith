@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="@string/order_of_mass"
-        android:id="@+id/orderOfMassFragment"/>
+        android:title="@string/home"
+        android:id="@+id/mainScreenFragment"
+        android:icon="@drawable/ic_baseline_home_24"/>
 
     <item
         android:title="@string/favourites_prayers"
-        android:icon="@drawable/ic_red_fav"
+        android:icon="@drawable/ic_baseline_favorite_24"
         android:id="@+id/favouritesFragment"/>
 
     <item
         android:title="@string/favorite_facts"
-        android:icon="@drawable/ic_red_fav"
+        android:icon="@drawable/ic_baseline_favorite_24"
         android:id="@+id/favoriteFactsFragment"/>
 
  <item android:title="@string/communicate">
     <menu>
-    <item android:id="@+id/night_mode"
-        app:actionLayout="@layout/switch_menu"
-        android:title="@string/night_mode"/>
+    <item android:id="@+id/aboutFragment"
+        android:title="@string/about_app"/>
 
         <item android:title="@string/report_contact"
             android:icon="@drawable/ic_contact"
             android:id="@+id/reportFragment"/>
+
+        <item android:title="@string/rate_me"
+            android:icon="@drawable/ic_baseline_grade_24"
+            android:id="@+id/rate_me"/>
 
     <item android:title="@string/log_out"
         android:icon="@drawable/ic_close"

@@ -1,6 +1,8 @@
 package com.example.maricools_app_designs.ui.fact
 
+import android.os.Build
 import android.os.Bundle
+import android.text.Html
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -10,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import com.example.maricools_app_designs.R
+import com.example.maricools_app_designs.androidcomponents.MainActivity
 import com.example.maricools_app_designs.databinding.FactsFragmentBinding
 import com.example.maricools_app_designs.utils.models.FactModel
 import com.example.maricools_app_designs.utils.models.FactsFavModel
@@ -40,12 +43,15 @@ class FactsFragment : Fragment(R.layout.facts_fragment) {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         fact = viewModel.getParticularFact(args.id)
-
         binding.apply {
             factName.text = fact.factTitle
-            factBody.text = fact.factContent
+            val text =  fact.factContent
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                factBody.text = Html.fromHtml(text, 0)
+            }
         }
-     }
+        (activity as MainActivity).supportActionBar?.title = fact.factTitle
+    }
 
     override fun onDestroy() {
         super.onDestroy()

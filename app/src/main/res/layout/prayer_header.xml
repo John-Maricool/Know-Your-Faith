@@ -10,12 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        android:fontFamily="@font/bubblegum_sans"
-        android:textSize="10sp"
-        android:textColor="@android:color/white"
-        android:padding="8dp"
-        android:background="#0277BD"
+        android:textSize="20sp"
+        android:textColor="@color/colorRed"
         android:textStyle="bold"
+        android:padding="15dp"
+        android:background="@drawable/header_gradient"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="textdshksbdjsdj" />
 </androidx.constraintlayout.widget.ConstraintLayout>

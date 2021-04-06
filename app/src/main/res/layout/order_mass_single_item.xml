@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:background="@drawable/custom_ripple"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="8dp">
 
     <TextView
         android:id="@+id/text_prayer"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:clickable="true"
-        android:textColor="@color/colorBlack"
         android:focusable="true"
         android:fontFamily="@font/bubblegum_sans"
         android:maxLines="2"
         android:padding="8dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:paddingTop="19dp"
         android:paddingBottom="19dp"
+        android:textColor="@color/colorBlack"
         android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="textds" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textStyle="bold|normal"
+        tools:text="textdnk" />
+
+    </androidx.cardview.widget.CardView>

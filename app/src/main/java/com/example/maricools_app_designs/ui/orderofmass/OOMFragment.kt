@@ -1,6 +1,8 @@
 package com.example.maricools_app_designs.ui.orderofmass
 
+import android.os.Build
 import android.os.Bundle
+import android.text.Html
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.fragment.app.viewModels
@@ -16,7 +18,7 @@ class OOMFragment : Fragment(R.layout.o_o_m_fragment) {
     var _binding: OOMFragmentBinding? = null
     val binding get() = _binding!!
     val model: OOMViewModel by viewModels()
-   private val args: OOMFragmentArgs by navArgs()
+    private val args: OOMFragmentArgs by navArgs()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -28,7 +30,10 @@ class OOMFragment : Fragment(R.layout.o_o_m_fragment) {
 
         (activity as MainActivity).supportActionBar?.title = args.title
         binding.oomTitle.text = model.getStringTitle(args.title)
-        binding.oomBody.text = model.getStringContent(args.title)
+        val text = model.getStringContent(args.title)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            binding.oomBody.text = Html.fromHtml(text, 0)
+        }
     }
 
     override fun onDestroy() {

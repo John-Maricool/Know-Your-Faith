@@ -9,7 +9,7 @@ import com.example.maricools_app_designs.databinding.FragmentCustomSingleItemsBi
 import com.example.maricools_app_designs.interfaces_kids.OnPrayerItemClickListener
 import javax.inject.Inject
 
-class FavouritePrayerAdapter
+open class FavouritePrayerAdapter
     
 @Inject
     constructor()
@@ -47,7 +47,7 @@ class FavouritePrayerAdapter
 
     inner class FavPrayerViewHolder(var binding: FragmentCustomSingleItemsBinding): RecyclerView.ViewHolder(binding.root){
         init {
-            binding.customItemText.setOnClickListener {
+            binding.rootCard.setOnClickListener {
                 val prayer = each[bindingAdapterPosition].prayerTitle
                 val id = each[bindingAdapterPosition].uid
                 if (id != RecyclerView.NO_POSITION) {

@@ -10,11 +10,11 @@
     <string name="facts">Catholic Facts</string>
     <string name="facts_desc">Facts and Cathechesis about the church and its liturgy for children and teenagers</string>
 
-    <string name="saints">Catholic Saints</string>
-    <string name="saints_desc">Life of the catholic saints for the whole year</string>
-
     <string name="quiz">Quiz</string>
     <string name="quiz_desc">Test yourself in bible and catholic quiz for children and teenagers</string>
+
+    <string name="oom_name">Order of Mass</string>
+    <string name="oom_desc">New Order of mass for the Catholic church</string>
 
     <string name="quiz_bible">Bible</string>
     <string name="quiz_cathechesis">Catholic Faith</string>
@@ -478,7 +478,7 @@
     <string name="night_mode">Night Mode</string>
     <string name="share">Share</string>
     <string name="contact_us">Contact Us</string>
-    <string name="about">About</string>
+    <string name="about_app">About</string>
     <string name="latin_prayers">Latin Prayers</string>
     <string name="log_out">Log out</string>
     <string name="communicate">Communicate</string>
@@ -499,5 +499,19 @@
     <string name="added_items">Added Items</string>
     <string name="favourites_prayers">favourite Prayers</string>
     <string name="favorite_facts">Favorite facts</string>
+    <string name="choose_number_of_questions">Choose number of questions</string>
+    <string name="show_that_advanced_quiz_is_unlocked">You have unlocked the Catholic Faith quiz</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <string name="this_is_about_the_app">\t\tThis app \"Know your Faith\" is for Catholics who wishes to know
+    more of the catholic faith and access some of the church prayers and other features. \nThe features that this application has to
+    offer are: Catholic Prayers, Catholic Facts or Cathchesis, Catholic Quiz and Order of Mass of the Catholic Church.
+    For any bugs or fixes, go to the contact section in the navigation and send us a log message.\n\n
+        For donations and support,\n Account Name: Ikenwa John Ebuka\n Account Number: 0717316287\n  Bank: Access Bank of Nigeria.\n\n
+    God bless you as you enjoy the App…</string>
+    <string name="about_know_your_faith">About Know your Faith</string>
+    <string name="search_list">Search</string>
+    <string name="notice">You need 100 points to unlock Catholic Faith quiz</string>
+    <string name="rate_me">Rate me</string>
 
 </resources>
