@@ -27,13 +27,9 @@ class OOMFragment : Fragment(R.layout.o_o_m_fragment) {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-
         (activity as MainActivity).supportActionBar?.title = args.title
-        binding.oomTitle.text = model.getStringTitle(args.title)
-        val text = model.getStringContent(args.title)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            binding.oomBody.text = Html.fromHtml(text, 0)
-        }
+        binding.oomTitle.text = args.title
+            binding.oomBody.text = model.getOOM(args.title)
     }
 
     override fun onDestroy() {

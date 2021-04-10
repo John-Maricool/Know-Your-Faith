@@ -1,6 +1,7 @@
 package com.example.maricools_app_designs.ui.prayer
 
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -8,6 +9,7 @@ import androidx.navigation.fragment.navArgs
 import com.example.maricools_app_designs.R
 import com.example.maricools_app_designs.databinding.FragmentPrayerBinding
 import com.google.android.gms.ads.AdRequest
+import com.google.gson.Gson
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import javax.inject.Inject

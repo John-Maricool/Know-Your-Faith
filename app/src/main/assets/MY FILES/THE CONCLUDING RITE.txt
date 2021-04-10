@@ -1,0 +1,30 @@
+
+<div>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <blockquote>
+                                            <p>[<i>If there are any announcements, acknowledgements, reflections, eulogies,
+                                                or similar actions, these are best included here.<br />The people may remain standing,
+                                                or may be invited to sit, depending on the length of the announcements or other activity.</i>]
+                                            </p> </blockquote> <p><span style="color: #990000;">[stand]</span><br /><strong>Final Blessing:</strong></p> <blockquote> <table border="1" cellspacing="0" cellpadding="5"> <tbody> <tr> <td valign="top" width="24%"> <p><strong><span style="color: #800000;">Option A: Simple Form</span></strong></p> <p><span style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;The Lord be with you.</p> <p><strong><span style="color: #ff0000;"><em>All</em>:</span>&nbsp;And with your spirit.</strong></p> <p><span style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;May almighty God bless you,<br />the Father, and the Son,<br />+ and the Holy Spirit.</p> <p align="left"><strong><span style="color: #ff0000;"><em>All</em>:</span>&nbsp;Amen.</strong></p> </td> <td valign="top" width="38%"> <p><strong><span style="color: #800000;">Option B: Solemn Blessing</span></strong></p> <p><span style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;The Lord be with you.</p> <p><strong><span style="color: #ff0000;"><em>All</em>:</span>&nbsp;And with your spirit.</strong></p> <p><span style="color: #ff0000;"><em>Deacon or Priest</em>:</span>&nbsp;Bow down for the blessing.</p> <p>[<em>One or more invocations may be spoken, and the people usually respond "<strong>Amen</strong>" to each one. The following conclusion is always used.</em>]</p> <p><span style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;And may the blessing of almighty God,<br />the Father, and the Son, + and the Holy Spirit,<br />come down on you and remain with you forever.</p> <p><strong><span style="color: #ff0000;"><em>All</em>:</span>&nbsp;Amen.</strong></p> </td> <td valign="top" width="38%"> <p><strong><span style="color: #800000;">Option C: Prayer over the People</span></strong></p> <p><span style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;The Lord be with you.</p> <p><strong><span style="color: #ff0000;"><em>All</em>:</span>&nbsp;And with your spirit.</strong></p> <p><span style="color: #ff0000;"><em>Deacon or Priest</em>:</span>&nbsp;Bow down for the blessing.</p> <p>[<em>The priest may choose from several options, depending on the occasion or the special need. The following conclusion is always used.]</em></p> <p><span style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;And may the blessing of almighty God,<br />the Father, and the Son, + and the Holy Spirit,<br />come down on you and remain with you forever.</p> <p><strong><span style="color: #ff0000;"><em>All</em>:</span>&nbsp;Amen.</strong></p> </td> </tr> </tbody> </table> </blockquote> <p><strong>Dismissal:</strong><a href="https://catholic-resources.org/Bible/Christological_Titles.htm#Messiah" target="_blank"><img src="https://catholic-resources.org/Symbols/Koch-045.gif" alt="Rudolf Koch: Christian Symbols" height="150" align="right" border="0" /></a></p> <blockquote> <p><span style="color: #ff0000;"><em>Deacon (or Priest)</em>:</span>&nbsp;Go forth, the Mass is ended.<br />&nbsp;&nbsp;<em>or</em>&nbsp; Go and announce the Gospel of the Lord.<br />&nbsp;&nbsp;<em>or</em>&nbsp; Go in peace, glorifying the Lord by your life.
+                                        <br />&nbsp;&nbsp;<em>or</em>&nbsp; Go in peace.<br /><strong><span style="color: #ff0000;">
+                                        <em>All</em>
+                                        :</span>&nbsp;Thanks be to God!</strong>
+                                    </p> </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

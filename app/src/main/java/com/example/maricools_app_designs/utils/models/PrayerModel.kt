@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName="prayer", indices = [Index(value = ["prayerTitle"], unique = true)])
 data class PrayerModel(
-        @PrimaryKey var uid: Int = 0,
+        @PrimaryKey var uid: Int,
         val prayerTitle: String,
     val prayerContent: String,
    val prayerPart: String

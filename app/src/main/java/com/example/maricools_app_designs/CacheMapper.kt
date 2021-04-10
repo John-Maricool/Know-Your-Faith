@@ -11,15 +11,15 @@ constructor(): ModelMapper<PrayerModel, PrayerServerModel> {
 
     override fun mapFromModel(model: PrayerServerModel): PrayerModel {
         return PrayerModel(
-                prayerTitle = model.title,
-                prayerPart = model.part,
-                prayerContent = model.prayer,
-                uid = model.id
+                prayerTitle = model.prayerTitle,
+                prayerPart = model.prayerPart,
+                prayerContent = model.prayerContent,
+                uid = model.uid
         )
     }
 
     override fun mapToModel(model: PrayerModel): PrayerServerModel {
-        return PrayerServerModel(model.prayerTitle, model.prayerContent, model.prayerPart, model.uid)
+        return PrayerServerModel(model.uid, model.prayerTitle, model.prayerContent, model.prayerPart)
     }
 
     fun convertToCacheList(modelList: List<PrayerServerModel>): List<PrayerModel>{

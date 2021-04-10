@@ -1,17 +1,17 @@
 package com.example.maricools_app_designs.ui.prayer
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
-import android.view.ViewConfiguration.get
-import androidx.lifecycle.Observer
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.ViewCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,10 +19,12 @@ import com.example.maricools_app_designs.R
 import com.example.maricools_app_designs.adapters.PrayerFragmentMainScreenAdapter
 import com.example.maricools_app_designs.databinding.FragmentCatholicPrayerBinding
 import com.example.maricools_app_designs.interfaces_kids.OnPrayerItemClickListener
+import com.example.maricools_app_designs.utils.models.PrayerServerModel
 import com.google.android.gms.ads.AdRequest
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.*
-import java.lang.reflect.Array.get
+import java.io.IOException
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -52,7 +54,6 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
         setHasOptionsMenu(true)
         binding.adView.loadAd(request)
     }
-
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
@@ -95,6 +96,7 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
         adapter4.setOnClickListener(this)
         adapter5.setOnClickListener(this)
     }
+
 
     override fun onDestroy() {
         super.onDestroy()

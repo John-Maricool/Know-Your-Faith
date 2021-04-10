@@ -26,8 +26,10 @@ class CatholicQuizViewModel
                     AllQuizQuestions.shuffle()
 
                   for (i in 0 until id) {
-               QuizQuestionsToAnswer.add(AllQuizQuestions[id])
-                 AllQuizQuestions.removeAt(i)
+                      if (i < AllQuizQuestions.size) {
+                          QuizQuestionsToAnswer.add(AllQuizQuestions[i])
+                          AllQuizQuestions.removeAt(i)
+                      }
              }
          AllQuizQuestions.clear()
     }

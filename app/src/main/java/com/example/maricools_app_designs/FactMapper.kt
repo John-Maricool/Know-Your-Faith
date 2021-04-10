@@ -13,8 +13,8 @@ constructor(): ModelMapper<FactModel, FactServerModel> {
 
     override fun mapFromModel(model: FactServerModel): FactModel {
         return FactModel(
-                factTitle = model.title,
-                factContent = model.fact
+                factTitle = model.factTitle,
+                factContent = model.factContent
         )
     }
 

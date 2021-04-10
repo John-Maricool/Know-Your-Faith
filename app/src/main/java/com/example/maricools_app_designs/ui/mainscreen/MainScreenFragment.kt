@@ -1,26 +1,57 @@
 package com.example.maricools_app_designs.ui.mainscreen
 
+import android.app.ProgressDialog
+import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
+import android.net.ConnectivityManager
+import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.ViewCompat
+import androidx.lifecycle.Observer
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.work.*
+import com.example.maricools_app_designs.QuizMapper
 import com.example.maricools_app_designs.androidcomponents.ApplicationConstants.Companion.NAVIGATEFACTS
 import com.example.maricools_app_designs.androidcomponents.ApplicationConstants.Companion.NAVIGATEPRAYERS
 import com.example.maricools_app_designs.androidcomponents.ApplicationConstants.Companion.NAVIGATEQUIZ
 import com.example.maricools_app_designs.R
+import com.example.maricools_app_designs.WorkerClass
 import com.example.maricools_app_designs.interfaces_kids.OnItemClickListener
 import com.example.maricools_app_designs.adapters.MainScreenRecyclerAdapter
 import com.example.maricools_app_designs.androidcomponents.ApplicationConstants.Companion.NAVIGATEORDEROFMASS
+import com.example.maricools_app_designs.androidcomponents.MainActivity
+import com.example.maricools_app_designs.database.QuizDao
 import com.example.maricools_app_designs.databinding.FragmentMainScreenBinding
+import com.example.maricools_app_designs.hilt.GetData
+import com.example.maricools_app_designs.hilt.QuizAdded
+import com.example.maricools_app_designs.utils.models.QuizEntityModel
+import com.example.maricools_app_designs.utils.models.QuizModel
+import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Source
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.android.synthetic.main.activity_splash_screen.*
+import kotlinx.coroutines.Dispatchers.IO
+import kotlinx.coroutines.Dispatchers.Main
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
+import java.nio.file.FileAlreadyExistsException
+import java.util.concurrent.CountDownLatch
 import javax.inject.Inject
 
+@Suppress("DEPRECATION")
 @AndroidEntryPoint
 class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickListener{
 
@@ -28,7 +59,25 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
     private val binding get() = _binding!!
 
     @Inject
+    lateinit var work: WorkManager
+
+    @Inject
+    @QuizAdded
+    lateinit var quizAdded: SharedPreferences
+
+    @Inject
+    lateinit var quizDow: QuizDao
+
+    @Inject
+    lateinit var cloud: FirebaseFirestore
+
+    @Inject
+    lateinit var auth: FirebaseAuth
+
+    @Inject
     lateinit var adapter: MainScreenRecyclerAdapter
+
+    lateinit var progressDialog: ProgressDialog
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -41,6 +90,7 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
             recyclerView.adapter = adapter
             setBackPressed()
         }
+        getProgressDialog()
     }
 
     override fun onDestroy() {
@@ -65,7 +115,6 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
 
     }
 
-
     override fun onActivityCreated(savedInstanceState: Bundle?){
         super.onActivityCreated(savedInstanceState)
         adapter.setOnItemClickListener(this)
@@ -75,8 +124,78 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
             when (position) {
                 NAVIGATEPRAYERS -> findNavController().navigate(R.id.action_mainScreenFragment_to_catholicPrayerFragment3)
                 NAVIGATEFACTS -> findNavController().navigate(R.id.action_mainScreenFragment_to_catholicFactsFragment2)
-                NAVIGATEQUIZ -> findNavController().navigate(R.id.action_mainScreenFragment_to_catholicQuizFragment)
+                NAVIGATEQUIZ -> {
+                    if (quizAdded.contains("dataGotten")){
+                        findNavController().navigate(R.id.action_mainScreenFragment_to_catholicQuizFragment)
+                    }else{
+                        startWork()
+                    }
+                }
                NAVIGATEORDEROFMASS -> findNavController().navigate(R.id.action_mainScreenFragment_to_orderOfMassFragment)
             }
     }
+
+
+    private fun getProgressDialog(){
+        progressDialog = ProgressDialog(activity);
+        progressDialog.setMessage("Fetching Quiz questions..."); // Setting Message
+        progressDialog.setTitle("Quiz"); // Setting Title
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        //progressDialog.setCancelable(false)// Progress Dialog Style Spinner
+        // / Display Progress Dialog\
+    }
+
+    private fun startWork() {
+        val provideConstraints = Constraints.Builder()
+                .setRequiredNetworkType(NetworkType.CONNECTED)
+                .build()
+
+        val provideWorkRequest: OneTimeWorkRequest =
+                OneTimeWorkRequest.Builder(WorkerClass::class.java)
+                        .setConstraints(provideConstraints)
+                        .build()
+
+        work.enqueue(provideWorkRequest)
+
+        work.getWorkInfoByIdLiveData(provideWorkRequest.id)
+                .observe(this, Observer {
+                    Toast.makeText(activity, it.state.name, Toast.LENGTH_LONG).show()
+                    when (it.state) {
+                        WorkInfo.State.SUCCEEDED -> {
+                            quizAdded.edit().putBoolean("dataGotten", true).apply()
+                            onLoaded()
+                            //findNavController().navigate(R.id.action_mainScreenFragment_to_catholicQuizFragment)
+                            ListenableWorker.Result.success()
+                        }
+                        WorkInfo.State.RUNNING -> {
+                            onLoading()
+                        }
+                        WorkInfo.State.ENQUEUED -> {
+                            onFailedLoading()
+                            ListenableWorker.Result.retry()
+                        }
+                        WorkInfo.State.BLOCKED, WorkInfo.State.FAILED -> {
+                            onFailedLoading()
+                            ListenableWorker.Result.failure()
+                        }
+                    }
+                })
+        }
+
+    private fun onLoading(){
+        progressDialog.show()
+    }
+
+    private fun onLoaded(){
+        progressDialog.cancel()
+    }
+
+    private fun onFailedLoading(){
+        val snack = Snackbar.make(binding.recyclerView, "No Internet Connection", Snackbar.LENGTH_SHORT)
+        snack.show()
+        progressDialog.cancel()
+    }
+
+
+
 }

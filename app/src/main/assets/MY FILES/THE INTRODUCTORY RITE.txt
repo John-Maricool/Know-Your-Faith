@@ -1,0 +1,361 @@
+<div data-v-0cbbd2f3="">
+    <div data-v-0cbbd2f3="">
+        <div data-v-0cbbd2f3="">
+            <div id="article-intro_1-0"
+                 class="comp article-content__description article-intro mntl-sc-page mntl-block"
+                 data-sc-sticky-offset="60" data-sc-ad-label-height="24"
+                 data-sc-ad-track-spacing="100" data-sc-min-track-height="250"
+                 data-sc-max-track-height="600" data-sc-breakpoint="54em" data-sc-load-immediate="1"
+                 data-sc-content-positions="[300,600,900,1200,1500,1800,2100]"
+                 data-bind-scroll-on-start="true">
+                <div data-v-0cbbd2f3="">
+                    <div data-v-0cbbd2f3="">
+                        <div class="explanation">
+                            <div class="explanation">
+                                <div class="explanation">
+                                    <div class="explanation"><p><span
+                                            style="color: #990000;">and]</span><br/><a
+                                            href="https://catholic-resources.org/Bible/Christological_Titles.htm"
+                                            target="_blank"><img
+                                            src="https://catholic-resources.org/Symbols/Koch-054.gif"
+                                            alt="Rudolf Koch: Christian Symbols" height="150"
+                                            align="right" border="0" hspace="10"/></a><strong>Entrance
+                                        Procession:</strong></p>
+                                        <blockquote><p>[<em>After the people have assembled, a
+                                            Gathering Song or Entrance Antiphon is sung or recited
+                                            as the priest and the ministers enter the church and
+                                            process to the altar; after reverencing the altar, and
+                                            sometimes also using incense, they go to their
+                                            chairs.</em>]</p></blockquote>
+                                        <p><strong>Liturgical Greeting:</strong></p>
+                                        <blockquote><p>[<em>All together make the sign of the
+                                            cross.</em>]<br/><span style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;In
+                                            the name of the Father, and of the Son, and of the Holy
+                                            Spirit.<br/><span style="color: #ff0000;"><strong><em>All</em>:</strong></span>&nbsp;<strong>Amen.</strong>
+                                        </p>
+                                            <table border="1" cellspacing="0" cellpadding="5">
+                                                <tbody>
+                                                <tr>
+                                                    <td valign="top">
+                                                        <p><strong><span style="color: #800000;">Option A:</span></strong>
+                                                        </p>
+                                                        <p><span
+                                                                style="color: #ff0000;"><em>Priest</em>:
+</span>&nbsp;The grace of our Lord Jesus Christ,<br/>and the love of God,<br/>and the communion of
+                                                            the Holy Spirit
+                                                            <br/>be with you all.</p>
+                                                        <p><span
+                                                                style="color: #ff0000;"><strong><em>All</em>:</strong></span>&nbsp;
+                                                            <strong>And with your spirit.</strong>
+                                                        </p></td>
+                                                    <td valign="top"><strong><span
+                                                            style="color: #800000;">
+Option B:</span></strong>
+                                                        <p><span
+                                                                style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Grace
+                                                            to you and peace<br/>from God our Father<br/>and
+                                                            the Lord Jesus Christ.</p>
+                                                        <p><span
+                                                                style="color: #ff0000;"><strong><em>All</em>:</strong></span>&nbsp;<strong>And
+                                                            with your spirit.</strong></p></td>
+                                                    <td valign="top"><strong><span
+                                                            style="color: #800000;">Option C:</span></strong>
+                                                        <p><span
+                                                                style="color: #ff0000;"><em>Priest</em>:&nbsp;</span>The
+                                                            Lord be with you.</p>
+                                                        <p>[or&nbsp;<span
+                                                                style="color: #ff0000;"><em>Bishop</em>:&nbsp;</span>Peace
+                                                            be with you.]</p>
+                                                        <p><span style="color: #ff0000;"><strong>All:&nbsp;</strong></span><strong>And
+                                                            with your spirit.</strong></p></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>[<em>The priest or another minister may then briefly
+                                                introduce the Mass of the day, saying something
+                                                about the readings, the feast, and/or the special
+                                                occasion being celebrated.</em>]</p></blockquote>
+                                        <p><strong>Penitential Act:</strong></p>
+                                        <blockquote><p><span style="color: #ff0000;"><em>Priest</em>:&nbsp;</span>&nbsp;Brethren
+                                            (brothers and sisters), let us acknowledge our sins, and
+                                            so prepare ourselves to celebrate the sacred mysteries.
+                                        </p>
+                                            <table border="1" cellspacing="0" cellpadding="5">
+                                                <tbody>
+                                                <tr>
+                                                    <td valign="top"><p><strong><span
+                                                            style="color: #800000;">Option A:</span></strong>
+                                                    </p>
+                                                        <p><strong><span
+                                                                style="color: #ff0000;"><em>All</em>:&nbsp;</span>I
+                                                            confess to almighty God<br/>and to you,
+                                                            my brothers and sisters,<br/>that I have
+                                                            greatly sinned,<br/>in my thoughts and
+                                                            in my words,<br/>in what I have
+                                                            done<br/>and in what I have failed to
+                                                            do,<br/>through my fault, through my
+                                                            fault,<br/>through my most grievous
+                                                            fault;<br/>therefore I ask blessed Mary
+                                                            ever-Virgin,<br/>all the Angels and
+                                                            Saints,<br/>and you, my brothers and
+                                                            sisters,<br/>to pray for me to the Lord
+                                                            our God.</strong></p>
+                                                        <p><span
+                                                                style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;May
+                                                            almighty God have mercy on us,<br/>forgive
+                                                            us our sins, and bring us to everlasting
+                                                            life.</p>
+                                                        <p><strong><span
+                                                                style="color: #ff0000;"><em>All</em>:</span>&nbsp;Amen.</strong>
+                                                        </p></td>
+                                                    <td valign="top"><p><strong><span
+                                                            style="color: #800000;">Option B:</span></strong>
+                                                    </p>
+                                                        <p><span
+                                                                style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Have
+                                                            mercy on us, O Lord.</p>
+                                                        <p><strong><span
+                                                                style="color: #ff0000;"><em>All</em>:&nbsp;</span>For
+                                                            we have sinned against you.</strong></p>
+                                                        <p><span
+                                                                style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Show
+                                                            us, O Lord, your mercy.</p>
+                                                        <p><strong><span
+                                                                style="color: #ff0000;"><em>All</em>:</span>&nbsp;And
+                                                            grant us your salvation.</strong></p>
+                                                        <p><span
+                                                                style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;May
+                                                            almighty God have mercy on us,<br/>forgive
+                                                            us our sins, and bring us to everlasting
+                                                            life.</p>
+                                                        <p><strong><span
+                                                                style="color: #ff0000;"><em>All</em>:</span>&nbsp;Amen.</strong>
+                                                        </p></td>
+                                                    <td valign="top"><p><strong><span
+                                                            style="color: #800000;">Option C:</span></strong><br/>[<em>The
+                                                        following or other invocations may be spoken
+                                                        by the priest<br/>or another minister, but
+                                                        the priest always gives the final blessing.</em>]
+                                                    </p>
+                                                        <p><span style="color: #ff0000;"><em>Minister</em>:</span>&nbsp;You
+                                                            raise the dead to life in the
+                                                            Spirit:<br/>Lord, have mercy.&nbsp;&nbsp;<em>or</em>&nbsp;&nbsp;Kyrie,
+                                                            eleison.<br/><strong><span
+                                                                    style="color: #ff0000;"><em>All</em>:</span>&nbsp;Lord,
+                                                                have mercy. &nbsp;<em>or</em>&nbsp;&nbsp;Kyrie,
+                                                                eleison.</strong></p>
+                                                        <p><span style="color: #ff0000;"><em>Minister</em>:</span>&nbsp;You
+                                                            bring pardon and peace to the
+                                                            sinner:<br/>Christ, have mercy.&nbsp;&nbsp;<em>or</em>&nbsp;&nbsp;Christe,
+                                                            eleison.<br/><strong><span
+                                                                    style="color: #ff0000;"><em>All</em>:</span>&nbsp;Christ,
+                                                                have mercy.&nbsp;&nbsp;<em>or</em>&nbsp;&nbsp;Christe,
+                                                                eleison.</strong></p>
+                                                        <p><span style="color: #ff0000;"><em>Minister</em>:</span>&nbsp;You
+                                                            bring light to those in darkness:<br/>Lord,
+                                                            have mercy.&nbsp;&nbsp;<em>or</em>&nbsp;&nbsp;Kyrie,
+                                                            eleison.<br/><strong><span
+                                                                    style="color: #ff0000;"><em>All</em>:</span>&nbsp;Lord,
+                                                                have mercy. &nbsp;<em>or</em>&nbsp;&nbsp;Kyrie,
+                                                                eleison.</strong></p>
+                                                        <p><span
+                                                                style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;May
+                                                            almighty God have mercy on us,<br/>forgive
+                                                            us our sins, and bring us to everlasting
+                                                            life.<br/><strong><span
+                                                                    style="color: #ff0000;"><em>All</em>:</span>&nbsp;Amen.</strong>
+                                                        </p></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </blockquote>
+                                        <p><strong>Kyrie:</strong></p>
+                                        <blockquote><p>[<em>The following acclamations are sung or
+                                            recited, either in English or in Greek, unless they have
+                                            already been used, as in option C above.</em>]</p>
+                                            <table border="1" cellspacing="0" cellpadding="5">
+                                                <tbody>
+                                                <tr>
+                                                    <td><p><span
+                                                            style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Lord,
+                                                        have mercy.&nbsp;&nbsp;<strong><span
+                                                                style="color: #ff0000;"><em>All</em>:</span>&nbsp;Lord,
+                                                            have mercy.</strong><br/><span
+                                                                style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Christ,
+                                                        have mercy.&nbsp;&nbsp;<strong><span
+                                                                style="color: #ff0000;"><em>All</em>:</span>&nbsp;Christ,
+                                                            have mercy.</strong><br/><span
+                                                                style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Lord,
+                                                        have mercy.&nbsp;&nbsp;<strong><span
+                                                                style="color: #ff0000;"><em>All</em>:</span>&nbsp;Lord,
+                                                            have mercy.</strong></p></td>
+                                                    <td><p align="center">
+                                                        <strong><em>&nbsp;or&nbsp;</em></strong></p>
+                                                    </td>
+                                                    <td><p><span
+                                                            style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Kyrie,
+                                                        eleison.&nbsp;&nbsp;<strong><span
+                                                                style="color: #ff0000;"><em>All</em>:</span>&nbsp;Kyrie,
+                                                            eleison.</strong><br/><span
+                                                                style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Christe,
+                                                        eleison.&nbsp;&nbsp;<strong><span
+                                                                style="color: #ff0000;"><em>All</em>:</span>&nbsp;Christe,
+                                                            eleison.</strong><br/><span
+                                                                style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Kyrie,
+                                                        eleison.&nbsp;&nbsp;<strong><span
+                                                                style="color: #ff0000;"><em>All</em>:</span>&nbsp;Kyrie,
+                                                            eleison.</strong></p></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </blockquote>
+                                        <p><strong>Rite for the Blessing and Sprinkling of
+                                            Water:</strong></p>
+                                        <blockquote><p>[<em>On Sundays, especially during the Easter
+                                            Season, this rite may take the place of the usual
+                                            Penitential Rite at the beginning of Mass;<br/>afterwards,
+                                            the Mass continues with the Gloria (on most Sundays and
+                                            solemnities) or with the Collect (during Advent and
+                                            Lent, and on weekdays).</em>]</p>
+                                            <p><span style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Dear
+                                                brothers and sisters, let us humbly beseech the Lord
+                                                our God to bless this water he has created, which
+                                                will be sprinkled on us as a memorial of our
+                                                Baptism. May he help us by his grace to remain
+                                                faithful to the Spirit we have received.</p>
+                                            <table border="1" cellspacing="0" cellpadding="5">
+                                                <tbody>
+                                                <tr>
+                                                    <td valign="top" width="29%"><p><strong><span
+                                                            style="color: #800000;">Option A:</span></strong>
+                                                    </p>
+                                                        <p><span
+                                                                style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Almighty
+                                                            ever-living God, who willed that through
+                                                            water, the fountain of life and the
+                                                            source of purification, even souls
+                                                            should be cleansed and receive the gift
+                                                            of eternal life; be pleased, we pray, to
+                                                            bless + this water, by which we seek
+                                                            protection on this your day, O Lord.</p>
+                                                        <p>Renew the living spring of your grace
+                                                            within us and grant that by this water
+                                                            we may be defended from all ills of
+                                                            spirit and body, and so approach you
+                                                            with hearts made clean and worthily
+                                                            receive your salvation.</p>
+                                                        <p>Through Christ our Lord.</p>
+                                                        <p><strong><span
+                                                                style="color: #ff0000;"><em>All</em>:</span>&nbsp;Amen.</strong>
+                                                        </p></td>
+                                                    <td valign="top" width="29%"><p><strong><span
+                                                            style="color: #800000;">Option B:</span></strong>
+                                                    </p>
+                                                        <p><span
+                                                                style="color: #ff0000;"><em>Priest</em>:&nbsp;</span>Almighty
+                                                            Lord and God, who are the source and
+                                                            origin of all life, whether of body or
+                                                            soul, we ask you to + bless this water,
+                                                            which we use in confidence to implore
+                                                            forgiveness for our sins and to obtain
+                                                            the protection of your grace against all
+                                                            illness and every snare of the enemy..
+                                                        </p>
+                                                        <p>Grant, O Lord, in your mercy, that living
+                                                            waters may always spring up for our
+                                                            salvation, and so we may approach you
+                                                            with a pure heart and avoid all danger
+                                                            to body and soul.</p>
+                                                        <p>Through Christ our Lord.</p>
+                                                        <p><strong><span
+                                                                style="color: #ff0000;"><em>All</em>:</span>&nbsp;Amen.</strong>
+                                                        </p></td>
+                                                    <td valign="top" width="42%"><p><strong><span
+                                                            style="color: #800000;">Option C (during the Easter Season):</span></strong>
+                                                    </p>
+                                                        <p><span
+                                                                style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Lord
+                                                            our God, in your mercy be present to
+                                                            your people's prayers, and, for us who
+                                                            recall the wondrous work of our creation
+                                                            and the still greater work of our
+                                                            redemption, graciously + bless this
+                                                            water. For you created water to make the
+                                                            fields fruitful and to refresh and
+                                                            cleanse our bodies. You also made water
+                                                            the instrument of your mercy: for
+                                                            through water you freed your people from
+                                                            slavery and quenched their thirst in the
+                                                            desert; through water the Prophets
+                                                            proclaimed the new covenant you were to
+                                                            enter upon with the human race; and last
+                                                            of all, through water, which Christ made
+                                                            holy in the Jordan, you have renewed our
+                                                            corrupted nature in the bath of
+                                                            regeneration. Therefore, may this water
+                                                            be for us a memorial of the Baptism we
+                                                            have received, and grant that we may
+                                                            share in the gladness of our brothers
+                                                            and sisters who at Easter have received
+                                                            their Baptism.</p>
+                                                        <p>Through Christ our Lord.</p>
+                                                        <p><strong><span
+                                                                style="color: #ff0000;"><em>All</em>:</span>&nbsp;Amen.</strong>
+                                                        </p></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>[<em>After blessing the water, the priest moves
+                                                through the church sprinkling all of the people
+                                                while an antiphon or other song is sung. When the
+                                                sprinkling and the song are finished, the rite
+                                                concludes as follows:</em>]</p>
+                                            <p><span style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;May
+                                                almighty God cleanse us of our sins, and through the
+                                                celebration of this Eucharist make us worthy to
+                                                share at the table of his Kingdom.<br/><strong><span
+                                                        style="color: #ff0000;"><em>All</em>:</span>&nbsp;Amen.</strong>
+                                            </p></blockquote>
+                                        <p><strong>Gloria:</strong></p>
+                                        <blockquote><p>[<em>This ancient hymn of praise is used on
+                                            all Sundays outside of Advent and Lent, on solemnities
+                                            and major feasts, and in solemn local celebrations. It
+                                            is preferably sung by the whole congregation, but may
+                                            also be sung by the choir or recited by all</em><em>.
+                                            The priest may begin with a brief sung or spoken
+                                            invitation for the people to praise God.</em>]</p>
+                                            <p><strong><span
+                                                    style="color: #ff0000;"><em>All</em>:</span>&nbsp;Glory
+                                                to God in the highest,<br/>and on earth peace to
+                                                people of good will.
+                                                <br/>We praise you, we bless you, we adore you, we
+                                                glorify you,<br/>we give you thanks for your great
+                                                glory,<br/>Lord God, heavenly King, O God, almighty
+                                                Father.<br/>Lord Jesus Christ, Only Begotten
+                                                Son,<br/>Lord God, Lamb of God, Son of the
+                                                Father,<br/>you take away the sins of the world,
+                                                have mercy on us;<br/>you take away the sins of the
+                                                world, receive our prayer;<br/>you are seated at the
+                                                right hand of the Father, have mercy on us.<br/>For
+                                                you alone are the Holy One, you alone are the
+                                                Lord,<br/>you alone are the Most High, Jesus Christ,
+                                                with the Holy Spirit,<br/>in the glory of God the
+                                                Father. Amen.</strong></p></blockquote>
+                                        <p><strong>Collect:</strong></p>
+                                        <blockquote><p><span style="color: #ff0000;"><em>Priest</em>:</span>&nbsp;Let
+                                            us pray.<br/>[<em>After a time of silent prayer, the
+                                                priest sings or says the Collect, which is different
+                                                for each Mass. At the end, the people proclaim their
+                                                consent.</em>]<br/><strong><span
+                                                    style="color: #ff0000;"><em>All</em>:</span>&nbsp;Amen.</strong>
+                                        </p></blockquote>
+                                        <p><span style="color: #990000;">[sit]</span></p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -2,10 +2,7 @@ package com.example.maricools_app_designs.hilt
 
 import android.content.Context
 import android.content.SharedPreferences
-import androidx.work.Constraints
-import androidx.work.NetworkType
-import androidx.work.OneTimeWorkRequest
-import com.example.maricools_app_designs.WorkerClass
+import androidx.work.WorkManager
 import com.example.maricools_app_designs.androidcomponents.ApplicationConstants
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.InterstitialAd
@@ -42,6 +39,13 @@ object ApplicationModule {
         return prefs
     }
 
+    @QuizAdded
+    @Singleton
+    @Provides
+    fun getQuizAddedPrefs(@ApplicationContext context: Context): SharedPreferences{
+        return context.getSharedPreferences("isQuizQuestionsGotten", Context.MODE_PRIVATE)
+    }
+
     @GetData
     @Singleton
     @Provides
@@ -54,6 +58,11 @@ object ApplicationModule {
         return prefs
     }
 
+    @Singleton
+    @Provides
+    fun getWorkManager(@ApplicationContext context: Context): WorkManager{
+        return WorkManager.getInstance(context)
+    }
     @Fav
     @Singleton
     @Provides
@@ -123,3 +132,7 @@ annotation class FactFav
 @Qualifier
 @Retention(AnnotationRetention.BINARY)
 annotation class GetData
+
+@Qualifier
+@Retention(AnnotationRetention.BINARY)
+annotation class QuizAdded
