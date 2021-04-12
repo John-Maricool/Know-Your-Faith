@@ -137,11 +137,11 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
 
 
     private fun getProgressDialog(){
-        progressDialog = ProgressDialog(activity);
-        progressDialog.setMessage("Fetching Quiz questions..."); // Setting Message
-        progressDialog.setTitle("Quiz"); // Setting Title
-        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        //progressDialog.setCancelable(false)// Progress Dialog Style Spinner
+        progressDialog = ProgressDialog(activity)
+        progressDialog.setMessage("Fetching Quiz questions...") // Setting Message
+        progressDialog.setTitle("Quiz") // Setting Title
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER)
+        progressDialog.setCancelable(true)// Progress Dialog Style Spinner
         // / Display Progress Dialog\
     }
 

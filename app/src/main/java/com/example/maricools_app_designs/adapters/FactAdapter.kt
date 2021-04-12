@@ -63,7 +63,7 @@ constructor(var scope: CoroutineScope,
                 return
             }
             val pos = filteredList[position].uid
-            if (checkIfAddedToSharedPrefs(pos!!)) {
+            if (checkIfAddedToSharedPrefs(pos)) {
                 holder.binding?.favImage?.setBackgroundResource(R.drawable.ic_baseline_favorite_24)
             } else if (!checkIfAddedToSharedPrefs(pos)) {
                 holder.binding?.favImage?.setBackgroundResource(R.drawable.ic_baseline_favorite_border_24)
@@ -142,8 +142,9 @@ constructor(var scope: CoroutineScope,
 
             binding!!.favImage.setOnClickListener {
                 val pos = filteredList[bindingAdapterPosition].uid
-                Log.d("CHECK", pos.toString())
-                if (checkIfAddedToSharedPrefs(pos!!)) {
+               /* Log.d("CHECK", pos.toString())
+                Log.d("CHECKB", bindingAdapterPosition.toString())*/
+                if (checkIfAddedToSharedPrefs(pos)) {
                     val partTitle = filteredList[bindingAdapterPosition].factTitle
                     val partContent = filteredList[bindingAdapterPosition].factContent
                     val favItem = FactsFavModel(pos, partTitle, partContent)

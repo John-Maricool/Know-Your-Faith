@@ -9,9 +9,8 @@ import kotlinx.android.parcel.Parcelize
 
 @Entity(tableName="fact", indices = [Index(value = ["factTitle"], unique = true)])
 data class FactModel(
+        @PrimaryKey var uid: Int,
         @ColumnInfo(name = "factTitle") val factTitle: String,
         @ColumnInfo(name = "factContent") val factContent: String
 ){
-
-    @PrimaryKey(autoGenerate = true) var uid: Int? = null
 }

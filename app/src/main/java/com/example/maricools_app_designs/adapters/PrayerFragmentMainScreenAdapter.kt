@@ -177,6 +177,7 @@ constructor(var scope: CoroutineScope,
             binding!!.favImage.setOnClickListener {
                 val pos = filteredList[bindingAdapterPosition - 1].uid.minus(1)
                 Log.d("CHECK", pos.toString())
+                Log.d("CHECKB", bindingAdapterPosition.toString())
                 if (checkIfAddedToSharedPrefs(pos)) {
                     val partTitle = filteredList[bindingAdapterPosition - 1].prayerTitle
                     val partContent = filteredList[bindingAdapterPosition - 1].prayerContent
