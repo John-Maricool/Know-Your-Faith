@@ -12,11 +12,9 @@ import androidx.work.*
 import com.example.maricools_app_designs.androidcomponents.MainActivity
 import com.example.maricools_app_designs.database.FactDao
 import com.example.maricools_app_designs.database.PrayerDao
+import com.example.maricools_app_designs.database.QuizDao
 import com.example.maricools_app_designs.hilt.GetData
-import com.example.maricools_app_designs.utils.models.FactModel
-import com.example.maricools_app_designs.utils.models.FactServerModel
-import com.example.maricools_app_designs.utils.models.PrayerModel
-import com.example.maricools_app_designs.utils.models.PrayerServerModel
+import com.example.maricools_app_designs.utils.models.*
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -41,9 +39,13 @@ class SplashScreenActivity : AppCompatActivity() {
     @Inject
     lateinit var factdao: FactDao
 
+    @Inject
+    lateinit var qDao: QuizDao
+
     lateinit var gson: Gson
     private lateinit var mapper: CacheMapper
     private lateinit var factMapper: FactMapper
+    private lateinit var quizMapper: QuizMapper
 
     val work by lazy {  WorkManager.getInstance(applicationContext)}
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,6 +55,7 @@ class SplashScreenActivity : AppCompatActivity() {
         mapper = CacheMapper()
         gson = Gson()
         factMapper = FactMapper()
+        quizMapper = QuizMapper()
         if (dataGotten.contains("added")) {
             delayTime()
         } else {
@@ -72,7 +75,6 @@ class SplashScreenActivity : AppCompatActivity() {
             startActivity(intent)
             finish()}, 500)
     }
-
 
     override fun onDestroy() {
         super.onDestroy()
@@ -110,9 +112,18 @@ class SplashScreenActivity : AppCompatActivity() {
         addToRoomFact(list)
     }
 
+    private fun getQuizData(){
+        val jsonFile = "MY FILES/QUIZ.json".getJsonDataFromAsset(this)
+        val listFact = object: TypeToken<List<QuizModel>>(){}.type
+        val quizes: List<QuizModel> = gson.fromJson(jsonFile, listFact)
+        val list = quizMapper.convertToCacheList(quizes)
+       addToRoomQuiz(list)
+    }
+
     private fun doAllWork(){
         getFactData()
         getData()
+        getQuizData()
     }
 
     private fun addToRoom(prayer: List<PrayerModel>) {
@@ -121,5 +132,9 @@ class SplashScreenActivity : AppCompatActivity() {
 
     private fun addToRoomFact(fact: List<FactModel>) {
         factdao.addFact(fact)
+    }
+
+    private fun addToRoomQuiz(quiz: List<QuizEntityModel>) {
+        qDao.insertQuiz(quiz)
     }
 }

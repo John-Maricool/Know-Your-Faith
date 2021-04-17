@@ -49,6 +49,7 @@ import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import java.nio.file.FileAlreadyExistsException
 import java.util.concurrent.CountDownLatch
+import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
 @Suppress("DEPRECATION")
@@ -90,7 +91,7 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
             recyclerView.adapter = adapter
             setBackPressed()
         }
-        getProgressDialog()
+       // getProgressDialog()
     }
 
     override fun onDestroy() {
@@ -124,18 +125,19 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
             when (position) {
                 NAVIGATEPRAYERS -> findNavController().navigate(R.id.action_mainScreenFragment_to_catholicPrayerFragment3)
                 NAVIGATEFACTS -> findNavController().navigate(R.id.action_mainScreenFragment_to_catholicFactsFragment2)
-                NAVIGATEQUIZ -> {
-                    if (quizAdded.contains("dataGotten")){
+                NAVIGATEQUIZ ->
+                   // if (quizAdded.contains("dataGotten")){
                         findNavController().navigate(R.id.action_mainScreenFragment_to_catholicQuizFragment)
-                    }else{
+                    /*}else{
+                        onLoading()
                         startWork()
-                    }
-                }
+                    }*/
                NAVIGATEORDEROFMASS -> findNavController().navigate(R.id.action_mainScreenFragment_to_orderOfMassFragment)
             }
     }
 
 
+/*
     private fun getProgressDialog(){
         progressDialog = ProgressDialog(activity)
         progressDialog.setMessage("Fetching Quiz questions...") // Setting Message
@@ -153,9 +155,14 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
         val provideWorkRequest: OneTimeWorkRequest =
                 OneTimeWorkRequest.Builder(WorkerClass::class.java)
                         .setConstraints(provideConstraints)
+                        .setBackoffCriteria(
+                                BackoffPolicy.LINEAR,
+                                40,
+                                TimeUnit.SECONDS
+                        )
                         .build()
 
-        work.enqueue(provideWorkRequest)
+        work.enqueueUniqueWork("TAG", ExistingWorkPolicy.KEEP, provideWorkRequest)
 
         work.getWorkInfoByIdLiveData(provideWorkRequest.id)
                 .observe(this, Observer {
@@ -164,7 +171,6 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
                         WorkInfo.State.SUCCEEDED -> {
                             quizAdded.edit().putBoolean("dataGotten", true).apply()
                             onLoaded()
-                            //findNavController().navigate(R.id.action_mainScreenFragment_to_catholicQuizFragment)
                             ListenableWorker.Result.success()
                         }
                         WorkInfo.State.RUNNING -> {
@@ -188,6 +194,7 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
 
     private fun onLoaded(){
         progressDialog.cancel()
+        progressDialog.dismiss()
     }
 
     private fun onFailedLoading(){
@@ -195,7 +202,7 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
         snack.show()
         progressDialog.cancel()
     }
-
+*/
 
 
 }

@@ -26,13 +26,12 @@ class WorkerClass
 constructor(@ApplicationContext var context: Context,
             params: WorkerParameters): CoroutineWorker(context, params) {
 
-    private var quizMapper: QuizMapper = QuizMapper()
 
     private val auth = FirebaseAuth.getInstance()
      private var database = CacheDatabase.getDatabase(context)
     private val cloud = FirebaseFirestore.getInstance()
-    private val quizDow = database.quiDao()
     private val latch = CountDownLatch(N)
+    val gson = Gson()
 
      override suspend fun doWork(): Result {
          return try {
@@ -45,7 +44,7 @@ constructor(@ApplicationContext var context: Context,
     }
 
     private fun addToRoomQuiz(quiz: List<QuizEntityModel>) {
-        quizDow.insertQuiz(quiz)
+       // quizDow.insertQuiz(quiz)
     }
 
     private fun doAWork(){
@@ -71,12 +70,12 @@ constructor(@ApplicationContext var context: Context,
               .get(Source.SERVER)
               .addOnCompleteListener { taskQuerySnapshot ->
                   if (taskQuerySnapshot.isSuccessful) {
-                      for (query in taskQuerySnapshot.result!!) {
-                          val index = taskQuerySnapshot.result!!.toObjects(QuizModel::class.java)
-                          val cacheIndex = quizMapper.convertToCacheList(index)
-                          addToRoomQuiz(cacheIndex)
+                          val index = taskQuerySnapshot.result.toObjects(QuizModel::class.java)
+                          //val cacheIndex = quizMapper.convertToCacheList(index)
+                          val ans = gson.toJson(index)
+                          Log.i("GSON", ans)
+                          //addToRoomQuiz(cacheIndex)
                           latch.countDown()
-                      }
                   }else{
                   }
               }.addOnFailureListener {
