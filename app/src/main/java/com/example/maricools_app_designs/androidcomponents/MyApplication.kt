@@ -35,7 +35,6 @@ class MyApplication : Application(){
 
     companion object{
         val CHANNEL_ID = "display daily saint"
-        val receiverFilter = "maricool_know_your_faith_an_hour_passed"
     }
 
 }

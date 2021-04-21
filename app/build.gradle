@@ -8,13 +8,13 @@ apply plugin: 'dagger.hilt.android.plugin'
 apply plugin: 'com.google.firebase.crashlytics'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.example.maricools_app_designs"
-        minSdkVersion 24
-        targetSdkVersion 29
+        minSdkVersion 22
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -26,6 +26,7 @@ android {
             }
         }
     }
+
 
     lintOptions{
         checkReleaseBuilds false

@@ -7,17 +7,15 @@ import androidx.room.RoomDatabase
 import com.example.maricools_app_designs.utils.models.*
 import kotlinx.coroutines.*
 
-@Database(entities = [ PrayerModel::class,
+@Database(entities = [PrayerModel::class,
                         PrayerFavModel::class,
                         FactModel::class,
                         FactsFavModel::class,
-                        QuizEntityModel::class,
-                        OOMModel::class], version = 1, exportSchema = false)
+                        QuizEntityModel::class], version = 1, exportSchema = false)
 abstract class CacheDatabase: RoomDatabase() {
     abstract fun prayerDao(): PrayerDao
     abstract fun factDao(): FactDao
     abstract fun quiDao(): QuizDao
-    abstract fun oomDao(): OOMDao
 
     companion object {
         @Volatile

@@ -24,18 +24,19 @@
         <item>10</item>
         <item>20</item>
         <item>30</item>
+        <item>40</item>
         <item>50</item>
+        <item>60</item>
         <item>70</item>
+        <item>80</item>
+        <item>90</item>
         <item>100</item>
     </string-array>
-
-    <string-array name="order_of_mass">
-        <item>THE INTRODUCTORY RITE</item>
-        <item>THE LITURGY OF THE WORD</item>
-        <item>THE LITURGY OF THE HOLY EUCHARIST</item>
-        <item>THE COMMUNION RITE</item>
-        <item>THE CONCLUDING RITE</item>
-    </string-array>
+        <string name="introductory_rite">THE INTRODUCTORY RITE</string>
+        <string name="liturgy_word">THE LITURGY OF THE WORD</string>
+        <string name="liturgy_eucharist">THE LITURGY OF THE HOLY EUCHARIST</string>
+        <string name="communion_rite">THE COMMUNION RITE</string>
+        <string name="concluding_rite">THE CONCLUDING RITE</string>
 
 
     <string-array name="added_entries">

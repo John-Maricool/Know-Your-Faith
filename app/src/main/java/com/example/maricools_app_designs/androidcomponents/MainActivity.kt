@@ -6,7 +6,6 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
@@ -24,7 +23,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
 @AndroidEntryPoint
-@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
      private lateinit var navController: NavController

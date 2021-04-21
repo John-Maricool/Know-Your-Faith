@@ -15,7 +15,7 @@ object FactRepositoryModule {
 
     @Singleton
     @Provides
-    fun provideFactRepository(dao: FactDao, scope: CoroutineScope): FactsRepository {
-        return FactsRepository(dao, scope)
+    fun provideFactRepository(dao: FactDao): FactsRepository {
+        return FactsRepository(dao)
     }
 }

@@ -6,6 +6,8 @@ import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
+import androidx.core.content.ContextCompat
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -65,17 +67,17 @@ class QuizResultFragment : Fragment(R.layout.fragment_quiz_result) {
     private fun arrangeResults() {
         val percent = model.arrangeViewsResult(args.score, args.wrong)
         when {
-            percent < 50 -> {
-                binding.percentage.setTextColor(context?.resources!!.getColor(R.color.colorRed, null))
-                binding.progress.progressDrawable = context?.resources!!.getDrawable(R.drawable.circular_progress_big_low, null)
+           args.score < args.wrong -> {
+                binding.percentage.setTextColor(ContextCompat.getColor(requireContext(), R.color.colorRed))
+                binding.progress.progressDrawable = ResourcesCompat.getDrawable(resources, R.drawable.circular_progress_big_low, context?.theme)
             }
-            percent > 50 -> {
-                binding.percentage.setTextColor(context?.resources!!.getColor(R.color.colorGreen, null))
-                binding.progress.progressDrawable = context?.resources!!.getDrawable(R.drawable.circular_progress_big, null)
+            args.score > args.wrong -> {
+                binding.percentage.setTextColor(ContextCompat.getColor(requireContext(), R.color.colorGreen))
+                binding.progress.progressDrawable = ResourcesCompat.getDrawable(resources, R.drawable.circular_progress_big, context?.theme)
             }
             else -> {
-                binding.percentage.setTextColor(context?.resources!!.getColor(R.color.colorWhite, null))
-                binding.progress.progressDrawable = context?.resources!!.getDrawable(R.drawable.circular_progress_big_center, null)
+                binding.percentage.setTextColor(ContextCompat.getColor(requireContext(), R.color.colorWhite))
+                binding.progress.progressDrawable = ResourcesCompat.getDrawable(resources, R.drawable.circular_progress_big_center, context?.theme)
             }
         }
         binding.progress.progress = percent

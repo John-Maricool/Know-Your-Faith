@@ -33,11 +33,6 @@ object CacheDatabaseModule {
         return cacheDatabase.factDao()
     }
 
-    @Singleton
-    @Provides
-    fun provideOOMDAO(cacheDatabase: CacheDatabase): OOMDao {
-        return cacheDatabase.oomDao()
-    }
 
     @Singleton
     @Provides

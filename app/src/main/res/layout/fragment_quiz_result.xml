@@ -21,7 +21,7 @@
             android:fontFamily="@font/bubblegum_sans"
             android:textSize="19sp"
             android:textStyle="bold"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorBlack"
             app:layout_constraintBottom_toTopOf="@+id/progress"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

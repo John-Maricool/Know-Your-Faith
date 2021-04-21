@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.view.View
 import androidx.lifecycle.lifecycleScope
 import androidx.work.*
@@ -47,7 +48,7 @@ class SplashScreenActivity : AppCompatActivity() {
     private lateinit var factMapper: FactMapper
     private lateinit var quizMapper: QuizMapper
 
-    val work by lazy {  WorkManager.getInstance(applicationContext)}
+    //val work by lazy {  WorkManager.getInstance(applicationContext)}
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
@@ -56,6 +57,7 @@ class SplashScreenActivity : AppCompatActivity() {
         gson = Gson()
         factMapper = FactMapper()
         quizMapper = QuizMapper()
+
         if (dataGotten.contains("added")) {
             delayTime()
         } else {
@@ -70,15 +72,11 @@ class SplashScreenActivity : AppCompatActivity() {
     }
 
     private fun delayTime(){
-        val handler = Handler()
-        handler.postDelayed( {val intent = Intent(this, MainActivity::class.java)
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish()}, 500)
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        work.cancelAllWork()
+            finish()
+        }, 1000)
     }
 
     private fun getData(){

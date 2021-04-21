@@ -26,7 +26,6 @@ class WorkerClass
 constructor(@ApplicationContext var context: Context,
             params: WorkerParameters): CoroutineWorker(context, params) {
 
-
     private val auth = FirebaseAuth.getInstance()
      private var database = CacheDatabase.getDatabase(context)
     private val cloud = FirebaseFirestore.getInstance()
@@ -44,7 +43,7 @@ constructor(@ApplicationContext var context: Context,
     }
 
     private fun addToRoomQuiz(quiz: List<QuizEntityModel>) {
-       // quizDow.insertQuiz(quiz)
+       //quizDow.insertQuiz(quiz)
     }
 
     private fun doAWork(){

@@ -42,5 +42,6 @@
         android:id="@+id/btn_send_intent"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:textSize="20sp"
         android:text="@string/send_email"/>
 </LinearLayout>

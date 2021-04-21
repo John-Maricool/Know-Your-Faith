@@ -8,19 +8,7 @@ import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 
 class FactsRepository
-    constructor(private val factsDao: FactDao, var scope: CoroutineScope){
-
-    fun addFavFact(fact: FactsFavModel) {
-        scope.launch(IO) {
-            factsDao.addFavFact(fact)
-        }
-    }
-
-        fun removeFavFact(fact: FactsFavModel) {
-            scope.launch(IO) {
-                factsDao.removeFavFact(fact)
-            }
-        }
+    constructor(private val factsDao: FactDao){
 
     fun theFact(id: Int): FactModel {
         return factsDao.getFactId(id)

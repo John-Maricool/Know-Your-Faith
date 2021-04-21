@@ -9,6 +9,1013 @@
     "timer": 20
   },
   {
+    "question":"When Samson killed 1000 Philistines at Lehi what weapon did he use?",
+    "correctOption":"Jawbone of an ass",
+    "quiz": "Bible",
+    "firstOption": "Stick",
+    "secondOption": "Jawbone of an ass",
+    "thirdOption": "A sword",
+    "timer": 20
+  },
+  {
+    "question":"How old (years) was David when he was anointed King of Israel?",
+    "correctOption":"30",
+    "quiz": "Bible",
+    "firstOption": "30",
+    "secondOption": "20",
+    "thirdOption": "40",
+    "timer": 20
+  },
+  {
+    "question":"Aside from Peter and John, which disciple witnessed Jesus’ Transfiguration?",
+    "correctOption":"James",
+    "quiz": "Bible",
+    "firstOption": "Andrew",
+    "secondOption": "Judas",
+    "thirdOption": "James",
+    "timer": 20
+  },
+  {
+    "question":"In Damascus, whose sight was restored by Ananias?",
+    "correctOption":"Saul",
+    "quiz": "Bible",
+    "firstOption": "Saul",
+    "secondOption": "Peter",
+    "thirdOption": "Bartimaeus",
+    "timer": 20
+  },
+  {
+    "question":"How many rivers were formed from the river that went out of Eden?",
+    "correctOption":"4",
+    "quiz": "Bible",
+    "firstOption": "4",
+    "secondOption": "3",
+    "thirdOption": "6",
+    "timer": 20
+  },
+  {
+    "question":"What is the name of the place where Jacob slept and dreamed of Jacob's Ladder?",
+    "correctOption":"Bethel",
+    "quiz": "Bible",
+    "firstOption": "Bethel",
+    "secondOption": "Moriah",
+    "thirdOption": "Land of Mantle",
+    "timer": 20
+  },
+  {
+    "question":"Who told Naaman to wash in the river Jordan 7 times in order to cure his leprosy?",
+    "correctOption":"Elisha",
+    "quiz": "Bible",
+    "firstOption": "Elisha",
+    "secondOption": "Elisha Servant",
+    "thirdOption": "Elijah",
+    "timer": 20
+  },
+  {
+    "question":"Who announced to Zachariah that his wife would bear a child to be named John the Baptist?",
+    "correctOption":"Angel Gabriel",
+    "quiz": "Bible",
+    "firstOption": "Angel Gabriel",
+    "secondOption": "Angel Rapheal",
+    "thirdOption": "Angel Micheal",
+    "timer": 20
+  },
+  {
+    "question":"Who said, '…as for me and my house, we will serve the Lord'?",
+    "correctOption":"Joshua",
+    "quiz": "Bible",
+    "firstOption": "Naomi",
+    "secondOption": "Joshua",
+    "thirdOption": "Ruth",
+    "timer": 20
+  },
+  {
+    "question":"God tested Abraham by telling him to offer his only son as a burnt offering. Who was that son?",
+    "correctOption":"Isaac",
+    "quiz": "Bible",
+    "firstOption": "Ishmeal",
+    "secondOption": "Abram",
+    "thirdOption": "Isaac",
+    "timer": 20
+  },
+  {
+    "question":"How many pieces of silver was Judas paid to betray Jesus?",
+    "correctOption":"30",
+    "quiz": "Bible",
+    "firstOption": "20",
+    "secondOption": "30",
+    "thirdOption": "40",
+    "timer": 20
+  },
+  {
+    "question":"Only 2 persons in the Bible are reported as being 'taken up to Heaven' (instead of dying). One is Elijah. Who is the other?",
+    "correctOption":"Enoch",
+    "quiz": "Bible",
+    "firstOption": "Enoch",
+    "secondOption": "Elisha",
+    "thirdOption": "Moses",
+    "timer": 20
+  },
+  {
+    "question":"Moses died at age 120 and was buried in a valley of Moab. Who buried him?",
+    "correctOption":"The Lord",
+    "quiz": "Bible",
+    "firstOption": "Joshua",
+    "secondOption": "The Lord",
+    "thirdOption": "Aaron",
+    "timer": 20
+  },
+  {
+    "question":"How many years were the Israelites in bondage in Egypt?",
+    "correctOption":"430",
+    "quiz": "Bible",
+    "firstOption": "400",
+    "secondOption": "470",
+    "thirdOption": "430",
+    "timer": 20,
+    "answer":430
+  },
+  {
+    "question":"When they heard of the adversity that had befallen Job, how many of his friends came to comfort him?",
+    "correctOption":"3",
+    "quiz": "Bible",
+    "firstOption": "1",
+    "secondOption": "3",
+    "thirdOption": "5",
+    "timer": 20
+  },
+  {
+    "question":"Who is the only woman mentioned in Paul’s letter to Philemon?",
+    "correctOption":"Apphia",
+    "quiz": "Bible",
+    "firstOption": "Aggripa",
+    "secondOption": "Apphia",
+    "thirdOption": "Plilemon",
+    "timer": 20
+  },
+  {
+    "question":"What part of the day did Christ embark on the boat from which He calmed the waters?",
+    "correctOption":"Evening",
+    "quiz": "Bible",
+    "firstOption": "Afternoon",
+    "secondOption": "Evening",
+    "thirdOption": "Night",
+    "timer": 20
+  },
+  {
+    "question":"After his epiphany, how many years did Paul spend in Arabia before beginning his ministry?",
+    "correctOption":"3",
+    "quiz": "Bible",
+    "firstOption": "1",
+    "secondOption": "2",
+    "thirdOption": "3",
+    "timer": 20
+  },
+  {
+    "question":"Who was the father of John the Baptist?",
+    "correctOption":"Zachariah",
+    "quiz": "Bible",
+    "firstOption": "Joseph",
+    "secondOption": "Zachariah",
+    "thirdOption": "John",
+    "timer": 20
+  },
+  {
+    "question":"How many demons came out of Mary called Magdalene?",
+    "correctOption":"7",
+    "quiz": "Bible",
+    "firstOption": "5",
+    "secondOption": "7",
+    "thirdOption": "9",
+    "timer": 20
+  },
+  {
+    "question":"Who was the king of Israel when David slew Goliath?",
+    "correctOption":"Saul",
+    "quiz": "Bible",
+    "firstOption": "Samuel",
+    "secondOption": "Saul",
+    "thirdOption": "Paul",
+    "timer": 20
+  },
+  {
+    "question":"To whom did God describe Job as a perfect and upright man?",
+    "correctOption":"satan",
+    "quiz": "Bible",
+    "firstOption": "His Friends",
+    "secondOption": "satan",
+    "thirdOption": "Job",
+    "timer": 20
+  },
+  {
+    "question":"Who said, “Silver and Gold have I none, but such as I have I give thee?”",
+    "correctOption":"Peter",
+    "quiz": "Bible",
+    "firstOption": "Peter",
+    "secondOption": "John",
+    "thirdOption": "James",
+    "timer": 20
+  },
+  {
+    "question":"James, the brother of John, was the first Apostle martyred. How was he killed?",
+    "correctOption":"With a sword",
+    "quiz": "Bible",
+    "firstOption": "With a sword",
+    "secondOption": "Crucifixion",
+    "thirdOption": "Beheading",
+    "timer": 20
+  },
+  {
+    "question":"How old (in years) was Abraham when his son Isaac was born?",
+    "correctOption":"100",
+    "quiz": "Bible",
+    "firstOption": "75",
+    "secondOption": "99",
+    "thirdOption": "100",
+    "timer": 20
+  },
+  {
+    "question":"What was the title placed on Jesus’ cross?",
+    "correctOption":"King of the Jews",
+    "quiz": "Bible",
+    "firstOption": "King of the Jews",
+    "secondOption": "Savior of the world",
+    "thirdOption": "Leader of the people",
+    "timer": 20
+  },
+  {
+    "question":"When Jesus struggled with his cross, who was forced to bear it for him?",
+    "correctOption":"Simon from Cyrene",
+    "quiz": "Bible",
+    "firstOption": "Mary Magdalene",
+    "secondOption": "Simon from Cyrene",
+    "thirdOption": "Joseph of Arimathea",
+    "timer": 20
+  },
+  {
+    "question":"What body of water, other than the red sea, was parted in the Bible?",
+    "correctOption":"Jordan river",
+    "quiz": "Bible",
+    "firstOption": "None",
+    "secondOption": "River nile",
+    "thirdOption": "Jordan river",
+    "timer": 20
+  },
+  {
+    "question":"What is the shortest chapter in the Bible?",
+    "quiz": "Bible",
+    "firstOption": "Psalm 117",
+    "secondOption": "Psalm 119",
+    "thirdOption": "John 11: 35",
+    "timer": 20,
+    "correctOption":"Psalm 117"
+  },
+  {
+    "question":"God parted the Red Sea so Moses and the Israelites could cross. What body of water did He part so Joshua and the Israelites could cross?",
+    "correctOption":"Jordan river",
+    "quiz": "Bible",
+    "firstOption": "None",
+    "secondOption": "River nile",
+    "thirdOption": "Jordan river",
+    "timer": 20
+  },
+  {
+    "question":"At Christ’s crucifixion darkness come over the whole land. How long did it last?",
+    "correctOption":"3 hours",
+    "quiz": "Bible",
+    "firstOption": "4 hours",
+    "secondOption": "2 hours",
+    "thirdOption": "3 hours",
+    "timer": 20
+  },
+  {
+    "question":"3 named women found Christ’s tomb open and empty: Mary Magdalene, Mary the mother of James, and _____?",
+    "correctOption":"Joanna",
+    "quiz": "Bible",
+    "firstOption": "Joanna",
+    "secondOption": "Mary",
+    "thirdOption": "Monica",
+    "timer": 20
+  },
+  {
+    "question": "To which tribe of Israel did Moses belong?",
+    "correctOption": "Levi",
+    "quiz": "Bible",
+    "firstOption": "Benjamin",
+    "secondOption": "Levi",
+    "thirdOption": "Joseph",
+    "timer": 20
+  },
+  {
+    "question":"What relic did Moses remove from Egypt at the time of the Exodus?",
+    "correctOption":"Bones of Joseph",
+    "quiz": "Bible",
+    "firstOption": "Bones of Joseph",
+    "secondOption": "Bones of Jacob",
+    "thirdOption": "Bones of Judah",
+    "timer": 20
+  },
+  {
+    "question":"How old was Abraham when he was circumcised?",
+    "correctOption":"99",
+    "quiz": "Bible",
+    "firstOption": "75",
+    "secondOption": "99",
+    "thirdOption": "100",
+    "timer": 20
+  },
+  {
+    "question":"After Christ’s triumphal entrance into Jerusalem and after visiting the temple, where did he spend the night?",
+    "correctOption":"Bethany",
+    "quiz": "Bible",
+    "firstOption": "Bethany",
+    "secondOption": "Galilee",
+    "thirdOption": "Capernaum",
+    "timer": 20
+  },
+  {
+    "question":"Which of the tribes of Israel was prohibited from owning land in Canaan?",
+    "correctOption":"Levites",
+    "quiz": "Bible",
+    "firstOption": "Levites",
+    "secondOption": "Joseph",
+    "thirdOption": "Judah",
+    "timer": 20
+  },
+  {
+    "question":"What city is called the City of David?",
+    "correctOption":"Bethlehem",
+    "quiz": "Bible",
+    "firstOption": "Nazareth",
+    "secondOption": "Isreal",
+    "thirdOption": "Bethlehem",
+    "timer": 20
+  },
+  {
+    "question":"Who ate honey out of a lion’s carcass?",
+    "correctOption":"Samson",
+    "quiz": "Bible",
+    "firstOption": "Samuel",
+    "secondOption": "Samson",
+    "thirdOption": "Delilah",
+    "timer": 20
+  },
+  {
+    "question":"What famous city did Nebuchadnezzar rule?",
+    "correctOption":"Babylon",
+    "quiz": "Bible",
+    "firstOption": "Judah",
+    "secondOption": "Isreal",
+    "thirdOption": "Babylon",
+    "timer": 20
+  },
+  {
+    "question":"Who was Israel’s first high priest?",
+    "correctOption":"Aaron",
+    "quiz": "Bible",
+    "firstOption": "Eli",
+    "secondOption": "Aaron",
+    "thirdOption": "Samuel",
+    "timer": 20
+  },
+  {
+    "question":"Who is the only woman whose age is mentioned in the Bible?",
+    "correctOption":"Sarah",
+    "quiz": "Bible",
+    "firstOption": "Sarah",
+    "secondOption": "Ruth",
+    "thirdOption": "Naomi",
+    "timer": 20
+  },
+  {
+    "question":"When God finally let the Israelites enter the promised land of Canaan, how many nations had to be destroyed?",
+    "correctOption":"7",
+    "quiz": "Bible",
+    "firstOption": "6",
+    "secondOption": "7",
+    "thirdOption": "8",
+    "timer": 20
+  },
+  {
+    "question":"On the 7th day, how many times did Joshua’s army march around Jericho before the walls fell?",
+    "correctOption":"7",
+    "quiz": "Bible",
+    "firstOption": "6",
+    "secondOption": "7",
+    "thirdOption": "8",
+    "timer": 20
+  },
+  {
+    "question":"Who did God describe as 'a blameless and upright man'?",
+    "correctOption":"Job",
+    "quiz": "Bible",
+    "firstOption": "Samuel",
+    "secondOption": "Job",
+    "thirdOption": "Jesus",
+    "timer": 20
+  },
+  {
+    "question":"Aside from the Serpent, what other animal in the Old Testament spoke to humans?",
+    "correctOption":"Donkey",
+    "quiz": "Bible",
+    "firstOption": "Dove",
+    "secondOption": "Donkey",
+    "thirdOption": "Horse",
+    "timer": 20
+  },
+  {
+    "question":"Where is King David buried?",
+    "correctOption":"City of David",
+    "quiz": "Bible",
+    "firstOption": "Land of Kings",
+    "secondOption": "City of David",
+    "thirdOption": "Land of Heroes",
+    "timer": 20
+  },
+  {
+    "question":"How many Beatitudes are there?",
+    "correctOption":"8",
+    "quiz": "Bible",
+    "firstOption": "9",
+    "secondOption": "10",
+    "thirdOption": "8",
+    "timer": 20
+  },
+  {
+    "question":"How old (in years) was Noah when the flood was upon the earth?",
+    "correctOption":"600",
+    "quiz": "Bible",
+    "firstOption": "600",
+    "secondOption": "700",
+    "thirdOption": "800",
+    "timer": 20
+  },
+  {
+    "question":"Which of Joseph’s (coat of many colors) 11 brothers said to his brothers not to kill Joseph but to cast him in a pit instead?",
+    "correctOption":"Reuben",
+    "quiz": "Bible",
+    "firstOption": "Judah",
+    "secondOption": "Reuben",
+    "thirdOption": "Levi",
+    "timer": 20
+  },
+  {
+    "question":"Paul said he would visit the Romans on this journey to which country?",
+    "correctOption":"Spain",
+    "quiz": "Bible",
+    "firstOption": "Spain",
+    "secondOption": "Italy",
+    "thirdOption": "Antioch",
+    "timer": 20
+  },
+  {
+    "question":"After his epiphany on the road to Damascus, how many days was Saul without sight?",
+    "correctOption":"3",
+    "quiz": "Bible",
+    "firstOption": "4",
+    "secondOption": "3",
+    "thirdOption": "2",
+    "timer": 20
+  },
+  {
+    "question":"Where is Moses buried?",
+    "correctOption":"Valley of Moab",
+    "quiz": "Bible",
+    "firstOption": "Valley of Moab",
+    "secondOption": "Hill of Moab",
+    "thirdOption": "City of David",
+    "timer": 20
+  },
+  {
+    "question":"About how long was Christ on the cross before he said “My God, my God, why hast thou forsaken me?”",
+    "correctOption":"9 hours",
+    "quiz": "Bible",
+    "firstOption": "8 hours",
+    "secondOption": "9 hours",
+    "thirdOption": "10 hours",
+    "timer": 20
+  },
+  {
+    "question":"For refusing to worship a false god, Shadrach, Meshach, and Abednego were cast into a fiery furnace by King Nebuchadnezzar. How many times hotter than normal did the king order the furnace fire to be?",
+    "correctOption":"7",
+    "quiz": "Bible",
+    "firstOption": "4",
+    "secondOption": "6",
+    "thirdOption": "7",
+    "timer": 20
+  },
+  {
+    "question":"What was the 3rd plague God inflicted on Egypt?",
+    "correctOption":"Lice",
+    "secondOption": "Frogs",
+    "firstOption": "Death of animals",
+    "thirdOption": "Lice",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What was the 4th plague God inflicted on Egypt?",
+    "correctOption":"Flies",
+    "secondOption": "Boils",
+    "firstOption": "Death of animals",
+    "thirdOption": "Flies",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What was the 5th plague God inflicted on Egypt?",
+    "correctOption":"Death of animals",
+    "secondOption": "Boils",
+    "firstOption": "Death of animals",
+    "thirdOption": "Hail",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What was the 6th plague God inflicted on Egypt?",
+    "correctOption":"Boils",
+    "secondOption": "Boils",
+    "firstOption": "Darkness",
+    "thirdOption": "Hail",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What was the 7th plague God inflicted on Egypt?",
+    "correctOption":"Hail",
+    "secondOption": "Boils",
+    "firstOption": "Darkness",
+    "thirdOption": "Hail",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What was the 8th plague God inflicted on Egypt?",
+    "correctOption":"Locusts",
+    "secondOption": "Death of first-born son",
+    "firstOption": "Darkness",
+    "thirdOption": "Locusts",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What was the 9th plague God inflicted on Egypt?",
+    "correctOption":"Darkness",
+    "secondOption": "Death of first-born son",
+    "firstOption": "Darkness",
+    "thirdOption": "Locusts",
+    "timer": 20,
+    "quiz": "Bible"
+
+  },
+  {
+    "question":"What was the 10th plague God inflicted on Egypt?",
+    "correctOption":"Death of first-born son",
+    "secondOption": "Death of first-born son",
+    "firstOption": "Darkness",
+    "thirdOption": "Locusts",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"How many plagues did God inflict on Egypt?",
+    "correctOption":"10",
+    "secondOption": "8",
+    "firstOption": "10",
+    "thirdOption": "7",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Which city was Jesus entering when Zacchaeus climbed a sycamore tree to see him?",
+    "correctOption":"Jericho",
+    "secondOption": "Galilee",
+    "firstOption": "Jerusalem",
+    "thirdOption": "Jericho",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Where did Cain go when he left Eden?",
+    "answer":"Nod",
+    "categories":["old_testament"],
+    "reference":"Genesis 4:16"
+  },
+  {
+    "question":"Name Jezebel’s husband.",
+    "correctOption":"Ahab",
+    "secondOption": "Ahaz",
+    "firstOption": "Aman",
+    "thirdOption": "Ahab",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"In the Bible, God is said to have physically written thrice – each time on a different surface. On what did his writing appear at the third instance?",
+    "correctOption":"On the Wall",
+    "secondOption": "In his cup",
+    "firstOption": "On the floor",
+    "thirdOption": "On the Wall",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Balaam was spoken to by which animal?",
+    "correctOption":"Donkey",
+    "secondOption": "Horse",
+    "firstOption": "Sheep",
+    "thirdOption": "Donkey",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What prophet issued ominous warning against people who took advantage of widows and the fatherless?",
+    "correctOption":"Malachi",
+    "secondOption": "Malachi",
+    "firstOption": "Obadiah",
+    "thirdOption": "Joel",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Who did Mordecai refuse to bow down to?",
+    "correctOption":"Haman",
+    "secondOption": "Terah",
+    "firstOption": "Tamah",
+    "thirdOption": "Haman",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"How old in years was Moses when he died?",
+    "correctOption":"120",
+    "secondOption": "129",
+    "firstOption": "120",
+    "thirdOption": "125",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"How long was Daniel in the den of the lions?",
+    "correctOption":"1 night",
+    "secondOption": "1 night",
+    "firstOption": "2 nights",
+    "thirdOption": "3 nights",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What animal is mentioned most frequently in both the New and Old Testaments?",
+    "correctOption":"Sheep",
+    "secondOption": "Lamb",
+    "firstOption": "Sheep",
+    "thirdOption": "Dove",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"According to the Bible, how many pearly gates are there?",
+    "correctOption":"12",
+    "secondOption": "7",
+    "firstOption": "10",
+    "thirdOption": "12",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"In the Bible, which of the 4 horsemen of the Apocalypse rides a red horse?",
+    "correctOption":"War",
+    "secondOption": "Power",
+    "firstOption": "War",
+    "thirdOption": "Wisdom",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What is the colour of the horse which the 'War' horseman of the Apocalypse rides?",
+    "correctOption":"Red",
+    "secondOption": "Blue",
+    "firstOption": "Red",
+    "thirdOption": "Black",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"In the Bible, which of the 4 horsemen of the Apocalypse rides a pale/ashen horse?",
+    "correctOption":"Death",
+    "secondOption": "Death",
+    "firstOption": "Heaven",
+    "thirdOption": "Judgement",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What kind of tree did Zacchaeus climb to see Jesus enter Jericho?",
+    "correctOption":"Sycamore",
+    "secondOption": "Fig",
+    "firstOption": "Sycamore",
+    "thirdOption": "Palm tree",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Who was able to decipher Nebuchadnezzar’s dreams?",
+    "correctOption":"Daniel",
+    "secondOption": "Hananiah",
+    "firstOption": "Azariah",
+    "thirdOption": "Daniel",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What king of Judah was stricken with leprosy?",
+    "correctOption":"Uzziah",
+    "secondOption": "Uzziah",
+    "firstOption": "Saul",
+    "thirdOption": "Jacob",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What occurred when Jonathan and his armor-bearer attacked the Philistines?",
+    "correctOption":"Earthquake",
+    "secondOption": "Tornado",
+    "firstOption": "Earthquake",
+    "thirdOption": "Famine",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Who built the first altar?",
+    "correctOption":"Noah",
+    "secondOption": "Isaac",
+    "firstOption": "Abraham",
+    "thirdOption": "Noah",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"How many shekels did Abraham pay to buy the field of Machpelah?",
+    "correctOption":"400",
+    "secondOption": "350",
+    "firstOption": "300",
+    "thirdOption": "400",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"God is not mentioned in only 1 book of the Bible. Which one?",
+    "correctOption":"Esther",
+    "secondOption": "Esther",
+    "firstOption": "Judith",
+    "thirdOption": "Tobit",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"For how many pieces of silver was Joseph sold by his brothers to the Ishmeelites?",
+    "correctOption":"20",
+    "secondOption": "20",
+    "firstOption": "40",
+    "thirdOption": "30",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"The angel said to Mary that Jesus would 'reign over the house' of which Old Testament character?",
+    "correctOption":"Jacob",
+    "secondOption": "Moses",
+    "firstOption": "Jacob",
+    "thirdOption": "Isaac",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Which prophet said, 'Out of Egypt have I called my son'?",
+    "correctOption":"Hosea",
+    "secondOption": "Hosea",
+    "firstOption": "Malachi",
+    "thirdOption": "Obadiah",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What type of tree did Jesus curse?",
+    "correctOption":"Fig",
+    "secondOption": "Mango",
+    "firstOption": "Fig",
+    "thirdOption": "Palm Tree",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"The fear of the Lord is the beginning of...?",
+    "correctOption":"Wisdom",
+    "secondOption": "Understanding",
+    "firstOption": "Knowledge",
+    "thirdOption": "Wisdom",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What city did the Lord tell Jonah to preach against?",
+    "correctOption":"Nineveh",
+    "secondOption": "Nineveh",
+    "firstOption": "Isreal",
+    "thirdOption": "Spain",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Which of these books (Philippians, Colossians, Galatians or Ephesians) come first in the Bible?",
+    "correctOption":"Galatians",
+    "secondOption": "Philippians",
+    "firstOption": "Ephesians",
+    "thirdOption": "Galatians",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"How many chapters does the book Hebrews have?",
+    "correctOption":"13",
+    "secondOption": "12",
+    "firstOption": "13",
+    "thirdOption": "14",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What is the name of the storm winds which can hit Crete?",
+    "correctOption":"Euroklydon",
+    "secondOption": "Euroklydon",
+    "firstOption": "Eradon",
+    "thirdOption": "Jordan",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"In which book of the bible to we read about Haman?",
+    "correctOption":"Esther",
+    "secondOption": "Esther",
+    "firstOption": "Tobit",
+    "thirdOption": "Ruth",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Name the only female judge mentioned in the Bible",
+    "correctOption":"Deborah",
+    "secondOption": "Esther",
+    "firstOption": "Deborah",
+    "thirdOption": "Judith",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Name the wife of King Agrippa, which Paul stood before on trial?",
+    "correctOption":"Bernince",
+    "secondOption": "Berdina",
+    "firstOption": "Bernince",
+    "thirdOption": "Judith",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"How old did Enoch become?",
+    "correctOption":"365",
+    "secondOption": "365",
+    "firstOption": "366",
+    "thirdOption": "360",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What does Jahwe-Schammah mean?",
+    "correctOption":"God himself",
+    "secondOption": "God's Power",
+    "firstOption": "God bless",
+    "thirdOption": "God himself",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"How many more years did God add to King Hezekiah's life in response to the dying king's prayer?",
+    "correctOption":"15",
+    "secondOption": "19",
+    "firstOption": "20",
+    "thirdOption": "15",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What prophetess of the Lord did King Josiah of Judah consult?",
+    "correctOption":"Huldah",
+    "secondOption": "Ruth",
+    "firstOption": "Judith",
+    "thirdOption": "Huldah",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What ceremony did King Josiah reinstate that had not been celebrated by any of the previous kings of Israel or Judah?",
+    "correctOption":"Passover",
+    "secondOption": "Feast of the dead",
+    "firstOption": "Feast of the Living",
+    "thirdOption": "Passover",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Upon the return of the ark to Israel, what sacrifice did Samuel offer to the Lord?",
+    "correctOption":"Suckling lamb",
+    "secondOption": "Fire",
+    "firstOption": "Ram",
+    "thirdOption": "Suckling lamb",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Name Samuel's firstborn son",
+    "correctOption":"Joel",
+    "secondOption": "Jamis",
+    "firstOption": "Joel",
+    "thirdOption": "James",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What was the name of king Saul's wife?",
+    "correctOption":"Ahinoam",
+    "secondOption": "Bathsheba",
+    "firstOption": "Anjojah",
+    "thirdOption": "Ahinoam",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What is required for anyone to understand God's Word?",
+    "correctOption":"Holy Spirit",
+    "secondOption": "Love",
+    "firstOption": "Jesus",
+    "thirdOption": "Holy Spirit",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Who did Paul say judged him?",
+    "correctOption":"God",
+    "secondOption": "God",
+    "firstOption": "Festus",
+    "thirdOption": "Ceasar",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Who offered to pay money for the power to give the Holy Spirit?",
+    "correctOption":"Simon",
+    "secondOption": "Simeon",
+    "firstOption": "Peter",
+    "thirdOption": "Simon",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"When Jesus turned water into wine, he converted water that was in stone jars. What we’re these stone jars normally used for?",
+    "correctOption":"Ceremonial washing",
+    "secondOption": "Drinking",
+    "firstOption": "Ceremonial washing",
+    "thirdOption": "Bathing",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"How many books in the Bible have the name “John” in the title?",
+    "correctOption":"4",
+    "secondOption": "4",
+    "firstOption": "2",
+    "thirdOption": "3",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"Which book in the Bible has the shortest title?",
+    "correctOption":"Job",
+    "secondOption": "Ruth",
+    "firstOption": "Mark",
+    "thirdOption": "Job",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
+    "question":"What were the names of the three sons of Noah in the order the Bible lists them in?",
+    "correctOption":"Shem, Ham and Japheth",
+    "secondOption": "Shem, Ham and Japheth",
+    "firstOption": "Japheth, Shem and Ham",
+    "thirdOption": "Ham, Shem and Japheth",
+    "timer": 20,
+    "quiz": "Bible"
+  },
+  {
     "correctOption": "Mother Theresa",
     "firstOption": "St. Agnes",
     "question": "Who won the nobel peace prize for her work in india?",
@@ -861,15 +1868,6 @@
     "quiz": "Bible",
     "secondOption": "They sold Him",
     "thirdOption": "They buried him",
-    "timer": 20
-  },
-  {
-    "correctOption": "",
-    "firstOption": "Levi",
-    "question": "To which tribe did Jesus belong?",
-    "quiz": "Bible",
-    "secondOption": "Judah",
-    "thirdOption": "Joseph",
     "timer": 20
   },
   {

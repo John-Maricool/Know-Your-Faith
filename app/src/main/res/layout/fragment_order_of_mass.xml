@@ -1,17 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".ui.orderofmass.OrderOfMassFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/order_recycler_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      android:fontFamily="@font/bubblegum_sans"
+      android:text="@string/introductory_rite"
+      android:id="@+id/introductory_rite"
+      android:textSize="20sp"
+    android:textColor="@color/colorBlack"
+    android:background="@drawable/rounded_corners"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      android:fontFamily="@font/bubblegum_sans"
+      android:text="@string/liturgy_word"
+      android:id="@+id/liturgy_word"
+      android:textSize="20sp"
+      android:textColor="@color/colorBlack"
+      android:background="@drawable/rounded_corners"/>
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      android:text="@string/liturgy_eucharist"
+      android:fontFamily="@font/bubblegum_sans"
+      android:id="@+id/liturgy_eucharist"
+      android:textSize="20sp"
+      android:textColor="@color/colorBlack"
+      android:background="@drawable/rounded_corners"/>
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      android:text="@string/communion_rite"
+      android:fontFamily="@font/bubblegum_sans"
+      android:id="@+id/communion_rite"
+      android:textSize="20sp"
+      android:textColor="@color/colorBlack"
+      android:background="@drawable/rounded_corners"/>
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      android:fontFamily="@font/bubblegum_sans"
+      android:text="@string/concluding_rite"
+      android:id="@+id/concluding_rite"
+      android:textSize="20sp"
+      android:textColor="@color/colorBlack"
+      android:background="@drawable/rounded_corners"/>
+
+</LinearLayout>

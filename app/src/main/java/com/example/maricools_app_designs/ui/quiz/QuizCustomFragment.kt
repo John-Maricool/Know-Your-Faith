@@ -7,6 +7,8 @@ import android.view.View
 import android.widget.Button
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
@@ -20,7 +22,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-@Suppress("DEPRECATION")
 class QuizCustomFragment : Fragment(R.layout.fragment_quiz_custom),
         QuizCustomViewModel.onTimeClick {
 
@@ -64,17 +65,17 @@ class QuizCustomFragment : Fragment(R.layout.fragment_quiz_custom),
         model.countDownTimer.cancel()
         val v = it as Button
         if (v.text.toString() == model.currentQuiz.correctOption){
-            v.setTextColor(resources.getColor(R.color.colorWhite, null))
-            v.background = resources.getDrawable(R.drawable.quiz_correct, null)
+            v.setTextColor(ContextCompat.getColor(requireContext(), R.color.colorWhite))
+            v.background = ResourcesCompat.getDrawable(resources, R.drawable.quiz_correct, context?.theme)
             binding.showCorrection.visibility = View.VISIBLE
             binding.showCorrection.text = "CORRECT"
             //binding.showCorrection.setTextColor(resources.getColor(R.color.colorWhite, null))
             binding.next.visibility = View.VISIBLE
             model.correctAnswers++
         }else{
-            v.setBackgroundColor(resources.getColor(R.color.colorRed, null))
-            v.setTextColor(resources.getColor(R.color.colorWhite, null))
-            v.background = resources.getDrawable(R.drawable.quiz_wrong, null)
+            v.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.colorRed))
+            v.setTextColor(ContextCompat.getColor(requireContext(), R.color.colorWhite))
+            v.background = ResourcesCompat.getDrawable(resources, R.drawable.quiz_wrong, context?.theme)
             binding.showCorrection.visibility = View.VISIBLE
             binding.showCorrection.text = "WRONG"
             //binding.showCorrection.setTextColor(resources.getColor(R.color.colorRed, null))
@@ -112,13 +113,13 @@ class QuizCustomFragment : Fragment(R.layout.fragment_quiz_custom),
 
     private fun enableButtons(){
         binding.apply{
-            option1.setTextColor(resources.getColor(R.color.colorPrimary, null))
-            option1.background = resources.getDrawable(R.drawable.quiz_options, null)
-            option2.setTextColor(resources.getColor(R.color.colorPrimary, null))
-            option2.background = resources.getDrawable(R.drawable.quiz_options, null)
-            option3.setTextColor(resources.getColor(R.color.colorPrimary, null))
-            option3.background = resources.getDrawable(R.drawable.quiz_options, null)
-            binding.timerText.setTextColor(context?.resources!!.getColor(R.color.colorPrimaryDark, null))
+            option1.setTextColor(ContextCompat.getColor(requireContext(), R.color.colorPrimary))
+            option1.background = ResourcesCompat.getDrawable(resources, R.drawable.quiz_options, context?.theme)
+            option2.setTextColor(ContextCompat.getColor(requireContext(), R.color.colorPrimary))
+            option2.background = ResourcesCompat.getDrawable(resources, R.drawable.quiz_options, context?.theme)
+            option3.setTextColor(ContextCompat.getColor(requireContext(), R.color.colorPrimary))
+            option3.background = ResourcesCompat.getDrawable(resources, R.drawable.quiz_options, context?.theme)
+            binding.timerText.setTextColor(ContextCompat.getColor(requireContext(), R.color.colorPrimaryDark))
             option1.isEnabled = true
             option2.isEnabled = true
             option3.isEnabled = true
@@ -132,7 +133,7 @@ class QuizCustomFragment : Fragment(R.layout.fragment_quiz_custom),
         //update time
         val time = (p0/1000)
         if (time < 10){
-            binding.timerText.setTextColor(context?.resources!!.getColor(R.color.colorRed, null))
+            binding.timerText.setTextColor(ContextCompat.getColor(requireContext(), R.color.colorRed))
         }
         binding.timerText.text = (p0/1000).toString()
         val percent = p0/(ttA*10)
@@ -180,7 +181,6 @@ class QuizCustomFragment : Fragment(R.layout.fragment_quiz_custom),
                 alert?.show()
             }
         })
-
     }
 
     private fun handleButtonClicks(){

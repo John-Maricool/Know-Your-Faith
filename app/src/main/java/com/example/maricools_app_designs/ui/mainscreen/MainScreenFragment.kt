@@ -52,7 +52,6 @@ import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
-@Suppress("DEPRECATION")
 @AndroidEntryPoint
 class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickListener{
 
@@ -78,8 +77,6 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
     @Inject
     lateinit var adapter: MainScreenRecyclerAdapter
 
-    lateinit var progressDialog: ProgressDialog
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentMainScreenBinding.bind(view)
@@ -91,7 +88,6 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
             recyclerView.adapter = adapter
             setBackPressed()
         }
-       // getProgressDialog()
     }
 
     override fun onDestroy() {
@@ -125,13 +121,7 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
             when (position) {
                 NAVIGATEPRAYERS -> findNavController().navigate(R.id.action_mainScreenFragment_to_catholicPrayerFragment3)
                 NAVIGATEFACTS -> findNavController().navigate(R.id.action_mainScreenFragment_to_catholicFactsFragment2)
-                NAVIGATEQUIZ ->
-                   // if (quizAdded.contains("dataGotten")){
-                        findNavController().navigate(R.id.action_mainScreenFragment_to_catholicQuizFragment)
-                    /*}else{
-                        onLoading()
-                        startWork()
-                    }*/
+                NAVIGATEQUIZ -> findNavController().navigate(R.id.action_mainScreenFragment_to_catholicQuizFragment)
                NAVIGATEORDEROFMASS -> findNavController().navigate(R.id.action_mainScreenFragment_to_orderOfMassFragment)
             }
     }
