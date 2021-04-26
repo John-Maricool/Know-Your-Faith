@@ -11,6 +11,7 @@ import com.example.maricools_app_designs.R
 import com.example.maricools_app_designs.adapters.FavouritePrayerAdapter
 import com.example.maricools_app_designs.databinding.FragmentFavouritesBinding
 import com.example.maricools_app_designs.interfaces_kids.OnPrayerItemClickListener
+import com.google.android.gms.ads.AdRequest
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import javax.inject.Inject
@@ -25,12 +26,17 @@ class FavouritesFragment : Fragment(R.layout.fragment_favourites), OnPrayerItemC
     @Inject
     lateinit var adapter: FavouritePrayerAdapter
 
+    @Inject
+    lateinit var request: AdRequest
+
+
     private val model: FavPrayerViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentFavouritesBinding.bind(view)
 
+        binding.adView.adView.loadAd(request)
         binding.recyclerFav.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(activity)

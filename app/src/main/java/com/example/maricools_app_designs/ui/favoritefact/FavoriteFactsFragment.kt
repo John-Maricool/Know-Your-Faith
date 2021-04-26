@@ -11,6 +11,7 @@ import com.example.maricools_app_designs.R
 import com.example.maricools_app_designs.databinding.FavoriteFactsFragmentBinding
 import com.example.maricools_app_designs.adapters.FavoriteFactAdapter
 import com.example.maricools_app_designs.interfaces_kids.OnPrayerItemClickListener
+import com.google.android.gms.ads.AdRequest
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -22,13 +23,16 @@ class FavoriteFactsFragment : Fragment(R.layout.favorite_facts_fragment), OnPray
 
     @Inject
     lateinit var adapter: FavoriteFactAdapter
+    @Inject
+    lateinit var request: AdRequest
 
     private val viewModel: FavoriteFactsViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        _binding = FavoriteFactsFragmentBinding.bind(view)
 
+        _binding = FavoriteFactsFragmentBinding.bind(view)
+        binding.adView.adView.loadAd(request)
         binding.recyclerFav.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(activity)

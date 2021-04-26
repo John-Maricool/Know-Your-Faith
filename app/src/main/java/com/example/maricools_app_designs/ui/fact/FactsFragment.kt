@@ -37,7 +37,7 @@ class FactsFragment : Fragment(R.layout.facts_fragment) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FactsFragmentBinding.bind(view)
-        binding.adView.loadAd(adRequest)
+        binding.adView.adView.loadAd(adRequest)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

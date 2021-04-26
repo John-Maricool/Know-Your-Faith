@@ -42,7 +42,7 @@ class CatholicFactsFragment: Fragment(R.layout.fragment_catholic_facts), OnPraye
             layoutManager = LinearLayoutManager(activity)
         }
         setHasOptionsMenu(true)
-        binding.adView.loadAd(adRequest)
+        binding.adView.adView.loadAd(adRequest)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

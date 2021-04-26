@@ -7,20 +7,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.View
 import androidx.lifecycle.lifecycleScope
-import androidx.work.*
 import com.example.maricools_app_designs.androidcomponents.MainActivity
 import com.example.maricools_app_designs.database.FactDao
 import com.example.maricools_app_designs.database.PrayerDao
 import com.example.maricools_app_designs.database.QuizDao
 import com.example.maricools_app_designs.hilt.GetData
 import com.example.maricools_app_designs.utils.models.*
-import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.activity_splash_screen.*
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -111,17 +107,26 @@ class SplashScreenActivity : AppCompatActivity() {
     }
 
     private fun getQuizData(){
-        val jsonFile = "MY FILES/QUIZ.json".getJsonDataFromAsset(this)
+        val jsonFile = "MY FILES/BIBLE QUIZ.json".getJsonDataFromAsset(this)
         val listFact = object: TypeToken<List<QuizModel>>(){}.type
         val quizes: List<QuizModel> = gson.fromJson(jsonFile, listFact)
         val list = quizMapper.convertToCacheList(quizes)
        addToRoomQuiz(list)
     }
 
+    private fun getCatholicQuizData(){
+        val jsonFile = "MY FILES/CATHOLIC QUIZ.json".getJsonDataFromAsset(this)
+        val listFact = object: TypeToken<List<QuizModel>>(){}.type
+        val quizes: List<QuizModel> = gson.fromJson(jsonFile, listFact)
+        val list = quizMapper.convertToCacheList(quizes)
+        addToRoomQuiz(list)
+    }
+
     private fun doAllWork(){
         getFactData()
         getData()
         getQuizData()
+        getCatholicQuizData()
     }
 
     private fun addToRoom(prayer: List<PrayerModel>) {

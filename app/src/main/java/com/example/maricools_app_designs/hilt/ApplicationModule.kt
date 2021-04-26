@@ -2,7 +2,6 @@ package com.example.maricools_app_designs.hilt
 
 import android.content.Context
 import android.content.SharedPreferences
-import androidx.work.WorkManager
 import com.example.maricools_app_designs.androidcomponents.ApplicationConstants
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.InterstitialAd
@@ -58,11 +57,6 @@ object ApplicationModule {
         return prefs
     }
 
-    @Singleton
-    @Provides
-    fun getWorkManager(@ApplicationContext context: Context): WorkManager{
-        return WorkManager.getInstance(context)
-    }
     @Fav
     @Singleton
     @Provides
@@ -104,14 +98,14 @@ object ApplicationModule {
     @Singleton
     @Provides
     fun provideRewardedAd(@ApplicationContext context: Context): RewardedAd{
-        return RewardedAd(context, "ca-app-pub-3940256099942544/5224354917")
+        return RewardedAd(context, "ca-app-pub-2405193777782482/4089167443")
     }
 
     @Singleton
     @Provides
     fun provideInterstitialAd(@ApplicationContext context: Context, request: AdRequest): InterstitialAd{
        val ad = InterstitialAd(context)
-        ad.adUnitId = "ca-app-pub-3940256099942544/1033173712"
+        ad.adUnitId = "ca-app-pub-2405193777782482/7021424875"
         ad.loadAd(request)
         return ad
     }

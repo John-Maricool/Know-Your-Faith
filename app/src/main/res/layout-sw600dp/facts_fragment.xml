@@ -41,17 +41,11 @@
        app:layout_constraintTop_toBottomOf="@+id/fact_name"
        tools:text="Body msknjss ssksjssjskjsjsss sskjjsosjslkjsslkjss sksjnsjskjs ssjscskodjslksls slll sls lkskslsl slsnkss skjsjsjsjsks sskjsjsksjsjs s sksjnsksjs s skjsksjskss s sksjsks" />
 
-   <com.google.android.gms.ads.AdView
+   <include
+       layout="@layout/adview"
        android:id="@+id/adView"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:adSize="BANNER"
-       android:layout_marginTop="20dp"
-       app:adUnitId="ca-app-pub-3940256099942544/6300978111"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/fact_body" />
+       android:layout_width="0dp"
+       android:layout_height="0dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

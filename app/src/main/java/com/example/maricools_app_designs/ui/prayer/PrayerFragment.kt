@@ -30,7 +30,7 @@ class PrayerFragment : Fragment(R.layout.fragment_prayer) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentPrayerBinding.bind(view)
 
-        binding.adView.loadAd(adRequest)
+        binding.adView.adView.loadAd(adRequest)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

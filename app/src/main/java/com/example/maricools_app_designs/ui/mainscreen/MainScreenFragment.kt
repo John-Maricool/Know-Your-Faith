@@ -37,6 +37,7 @@ import com.example.maricools_app_designs.hilt.GetData
 import com.example.maricools_app_designs.hilt.QuizAdded
 import com.example.maricools_app_designs.utils.models.QuizEntityModel
 import com.example.maricools_app_designs.utils.models.QuizModel
+import com.google.android.gms.ads.AdRequest
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -57,10 +58,6 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
 
     private var _binding:  FragmentMainScreenBinding? = null
     private val binding get() = _binding!!
-
-    @Inject
-    lateinit var work: WorkManager
-
     @Inject
     @QuizAdded
     lateinit var quizAdded: SharedPreferences
@@ -76,6 +73,8 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
 
     @Inject
     lateinit var adapter: MainScreenRecyclerAdapter
+    @Inject
+    lateinit var request: AdRequest
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -88,6 +87,7 @@ class MainScreenFragment : Fragment(R.layout.fragment_main_screen), OnItemClickL
             recyclerView.adapter = adapter
             setBackPressed()
         }
+        binding.adView?.adView?.loadAd(request)
     }
 
     override fun onDestroy() {

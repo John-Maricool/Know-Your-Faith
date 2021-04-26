@@ -22,7 +22,7 @@ class AboutFragment : Fragment(R.layout.fragment_about) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentAboutBinding.bind(view)
-        binding.adView.loadAd(request)
+        binding.adView.adView.loadAd(request)
     }
 
     override fun onDestroy() {

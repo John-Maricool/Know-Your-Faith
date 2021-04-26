@@ -39,7 +39,7 @@ class CatholicQuizFragment : Fragment(R.layout.fragment_catholic_quiz) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentCatholicQuizBinding.bind(view)
         anim = AnimationUtils.loadAnimation(activity, R.anim.bounce)
-        adView.loadAd(adRequest)
+        binding.adView.adView.loadAd(adRequest)
         binding.notice.isSelected = true
         CheckAdvancedButtonSettings()
     }

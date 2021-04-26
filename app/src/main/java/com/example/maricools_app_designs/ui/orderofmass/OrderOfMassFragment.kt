@@ -10,10 +10,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.maricools_app_designs.R
 import com.example.maricools_app_designs.databinding.FragmentOrderOfMassBinding
 import com.example.maricools_app_designs.interfaces_kids.OnPrayerItemClickListener
+import com.google.android.gms.ads.AdRequest
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class OrderOfMassFragment : Fragment(R.layout.fragment_order_of_mass), View.OnClickListener {
+
+    @Inject
+    lateinit var request: AdRequest
 
     var _binding: FragmentOrderOfMassBinding? = null
     val binding get() = _binding!!
@@ -21,6 +26,8 @@ class OrderOfMassFragment : Fragment(R.layout.fragment_order_of_mass), View.OnCl
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentOrderOfMassBinding.bind(view)
+
+        binding.adView.adView.loadAd(request)
         binding.communionRite.setOnClickListener(this)
         binding.concludingRite.setOnClickListener(this)
         binding.introductoryRite.setOnClickListener(this)

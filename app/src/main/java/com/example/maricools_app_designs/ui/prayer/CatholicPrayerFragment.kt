@@ -52,7 +52,7 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentCatholicPrayerBinding.bind(view)
         setHasOptionsMenu(true)
-        binding.adView.loadAd(request)
+        binding.adView.adView.loadAd(request)
     }
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)

@@ -1,14 +1,5 @@
 [
   {
-    "correctOption": "The liturgy of the word",
-    "firstOption": "The holy Eucharist",
-    "question": "The responsorial psalm is read in what part of the mass?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Concluding rite",
-    "thirdOption": "The liturgy of the word",
-    "timer": 20
-  },
-  {
     "question":"When Samson killed 1000 Philistines at Lehi what weapon did he use?",
     "correctOption":"Jawbone of an ass",
     "quiz": "Bible",
@@ -81,7 +72,7 @@
     "timer": 20
   },
   {
-    "question":"Who said, '…as for me and my house, we will serve the Lord'?",
+    "question":"Who said, 'as for me and my house, we will serve the Lord'?",
     "correctOption":"Joshua",
     "quiz": "Bible",
     "firstOption": "Naomi",
@@ -506,7 +497,7 @@
   },
   {
     "question":"What was the 3rd plague God inflicted on Egypt?",
-    "correctOption":"Lice",
+    "correctOption": "Lice",
     "secondOption": "Frogs",
     "firstOption": "Death of animals",
     "thirdOption": "Lice",
@@ -515,7 +506,7 @@
   },
   {
     "question":"What was the 4th plague God inflicted on Egypt?",
-    "correctOption":"Flies",
+    "correctOption": "Flies",
     "secondOption": "Boils",
     "firstOption": "Death of animals",
     "thirdOption": "Flies",
@@ -524,7 +515,7 @@
   },
   {
     "question":"What was the 5th plague God inflicted on Egypt?",
-    "correctOption":"Death of animals",
+    "correctOption": "Death of animals",
     "secondOption": "Boils",
     "firstOption": "Death of animals",
     "thirdOption": "Hail",
@@ -533,7 +524,7 @@
   },
   {
     "question":"What was the 6th plague God inflicted on Egypt?",
-    "correctOption":"Boils",
+    "correctOption": "Boils",
     "secondOption": "Boils",
     "firstOption": "Darkness",
     "thirdOption": "Hail",
@@ -542,7 +533,7 @@
   },
   {
     "question":"What was the 7th plague God inflicted on Egypt?",
-    "correctOption":"Hail",
+    "correctOption": "Hail",
     "secondOption": "Boils",
     "firstOption": "Darkness",
     "thirdOption": "Hail",
@@ -597,9 +588,12 @@
   },
   {
     "question":"Where did Cain go when he left Eden?",
-    "answer":"Nod",
-    "categories":["old_testament"],
-    "reference":"Genesis 4:16"
+    "correctOption":"Nod",
+    "secondOption": "Galilee",
+    "firstOption": "Jerusalem",
+    "thirdOption": "Nod",
+    "timer": 20,
+    "quiz": "Bible"
   },
   {
     "question":"Name Jezebel’s husband.",
@@ -773,7 +767,7 @@
     "quiz": "Bible"
   },
   {
-    "question":"For how many pieces of silver was Joseph sold by his brothers to the Ishmeelites?",
+    "question":"For how many pieces of silver was Joseph sold by his brothers to the Ishmaelites?",
     "correctOption":"20",
     "secondOption": "20",
     "firstOption": "40",
@@ -809,7 +803,7 @@
     "quiz": "Bible"
   },
   {
-    "question":"The fear of the Lord is the beginning of...?",
+    "question":"The fear of the Lord is the beginning of_________?",
     "correctOption":"Wisdom",
     "secondOption": "Understanding",
     "firstOption": "Knowledge",
@@ -1014,213 +1008,6 @@
     "thirdOption": "Ham, Shem and Japheth",
     "timer": 20,
     "quiz": "Bible"
-  },
-  {
-    "correctOption": "Mother Theresa",
-    "firstOption": "St. Agnes",
-    "question": "Who won the nobel peace prize for her work in india?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Mother Theresa",
-    "thirdOption": "St. Monica",
-    "timer": 20
-  },
-  {
-    "correctOption": "Purgatory",
-    "firstOption": "Heaven",
-    "question": "Final purification will take place in?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Hell",
-    "thirdOption": "Purgatory",
-    "timer": 20
-  },
-  {
-    "correctOption": "1566",
-    "firstOption": "The first century",
-    "question": "The first official universal Catechism was published in?",
-    "quiz": "Catholic Faith",
-    "secondOption": "1899",
-    "thirdOption": "1566",
-    "timer": 20
-  },
-  {
-    "correctOption": "Creed, Sacraments, Commandments, Prayer",
-    "firstOption": " Creed, Sacraments, Commandments, Prayer",
-    "question": "The “four pillars” of the Catechism are?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Eucharist, Commandments, Scripture, Church history",
-    "thirdOption": "Sacraments, Commandments, Prayer, Scripture",
-    "timer": 20
-  },
-  {
-    "correctOption": "Eucharist",
-    "firstOption": "Baptism",
-    "question": "The “source and summit” of Christian life is?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Orders",
-    "thirdOption": "Eucharist",
-    "timer": 20
-  },
-  {
-    "correctOption": "24,000",
-    "firstOption": "556",
-    "question": "One draft of the Catechism submitted to the bishops of the world resulted in this many suggested changes?",
-    "quiz": "Catholic Faith",
-    "secondOption": "24,000",
-    "thirdOption": "3,000",
-    "timer": 20
-  },
-  {
-    "correctOption": "Jesus Christ",
-    "firstOption": "Jesus Christ",
-    "question": "Who is the “physician of our souls and bodies”? ",
-    "quiz": "Catholic Faith",
-    "secondOption": "Holy Spirit",
-    "thirdOption": "Mary",
-    "timer": 20
-  },
-  {
-    "correctOption": "Our Father",
-    "firstOption": "Apostles’ Creed",
-    "question": "The fourth “pillar” of the Catechism focuses at length on this prayer?",
-    "quiz": "CatholicFaith",
-    "secondOption": "Our Father",
-    "thirdOption": "Rosary",
-    "timer": 20
-  },
-  {
-    "correctOption": "14",
-    "firstOption": "14",
-    "question": "How many apostles did St. Paul have?",
-    "quiz": "Catholic Faith",
-    "secondOption": "13",
-    "thirdOption": "12",
-    "timer": 20
-  },
-  {
-    "correctOption": "Jesus’ second coming",
-    "firstOption": "Jesus’ second coming",
-    "question": "“Parousia” refers to?",
-    "quiz": "Catholic Faith",
-    "secondOption": "The gift of tongues",
-    "thirdOption": "One of the seven gifts of the Holy Spirit",
-    "timer": 20
-  },
-  {
-    "correctOption": "Confirmation",
-    "firstOption": "Baptism",
-    "question": "“Be sealed with the gift of the Holy Spirit” is spoken during which sacrament?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Annointing of the Sick",
-    "thirdOption": "Confirmation",
-    "timer": 20
-  },
-  {
-    "correctOption": "Code of Canon Law",
-    "firstOption": "Code of Canon Law",
-    "question": "Ecclesiastical Law refers to laws found in?",
-    "quiz": "Catholic Faith",
-    "secondOption": "New Testament",
-    "thirdOption": "Old Testament",
-    "timer": 20
-  },
-  {
-    "correctOption": "Vatican City",
-    "firstOption": "Vatican City",
-    "question": "Where does the pope live?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Rome",
-    "thirdOption": "Italy",
-    "timer": 20
-  },
-  {
-    "correctOption": "Lord have Mercy",
-    "firstOption": "Lord have Mercy",
-    "question": "Which part of the Latin mass is said in greek?",
-    "quiz": "Catholic Faith",
-    "secondOption": "I believe",
-    "thirdOption": "Glory to God",
-    "timer": 20
-  },
-  {
-    "correctOption": "Individual Catholic families",
-    "firstOption": "Individual Catholic families",
-    "question": "When the Catechism refers to a “privileged community,” it means?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Hierarchy",
-    "thirdOption": "Parish family",
-    "timer": 20
-  },
-  {
-    "correctOption": "Ten Commandments",
-    "firstOption": "Cardinal and theological virtues",
-    "question": "The “Decalogue” refers to?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Writings of the Church Fathers",
-    "thirdOption": "Ten Commandments",
-    "timer": 20
-  },
-  {
-    "correctOption": "Six",
-    "firstOption": "Six",
-    "question": "It took this many years to complete the Catechism of the Catholic Church?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Four",
-    "thirdOption": "Three",
-    "timer": 20
-  },
-  {
-    "correctOption": "Fathers",
-    "firstOption": "Brothers",
-    "question": "The pre eminent teachers and theologians of the early church are referred to as?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Fathers",
-    "thirdOption": "Grandfathers",
-    "timer": 20
-  },
-  {
-    "correctOption": "Common work of the Trinity",
-    "firstOption": "Parish finances",
-    "question": " Divine economy refers to?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Common work of the Trinity",
-    "thirdOption": "Tithing",
-    "timer": 20
-  },
-  {
-    "correctOption": "Perfumed oil used during baptism, confirmation and holy orders",
-    "firstOption": " Incense used during funeral Masses",
-    "question": "Chrism refers to?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Perfumed oil used during baptism, confirmation and holy orders",
-    "thirdOption": " Blessed oil used for anointing of the sick",
-    "timer": 20
-  },
-  {
-    "correctOption": "Easter",
-    "firstOption": "Easter",
-    "question": "What is considered the “feast of feasts”?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Christmas",
-    "thirdOption": "Good Friday",
-    "timer": 20
-  },
-  {
-    "correctOption": "Signet",
-    "firstOption": "Signet",
-    "question": "What is the name of the ring the Bishop wears?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Fisherman Ring",
-    "thirdOption": "Apostle ring",
-    "timer": 20
-  },
-  {
-    "correctOption": "Honor your father and Mother.",
-    "firstOption": "Don\u0027t kill",
-    "question": "What is the fourth commandment?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Honor your father and Mother.",
-    "thirdOption": "Don\u0027t commit adultery. ",
-    "timer": 20
   },
   {
     "correctOption": "Saul",
@@ -1484,7 +1271,7 @@
     "timer": 20
   },
   {
-    "correctOption": "",
+    "correctOption": "Psalm 23",
     "firstOption": "Psalm 32",
     "question": "Which psalm has this phrase \"He makes me lie down in green pastures\"?",
     "quiz": "Bible",
@@ -1570,7 +1357,7 @@
     "question": "What day of creation did God create birds?",
     "quiz": "Bible",
     "secondOption": "Sixth",
-    "thirdOption": "Seveth",
+    "thirdOption": "Seventh",
     "timer": 20
   },
   {
@@ -1613,7 +1400,7 @@
     "correctOption": "Peter and Andrew",
     "firstOption": "Peter and Andrew",
     "question": "Who were the first apostles called to follow Jesus?",
-    "quiz": "",
+    "quiz": "Bible",
     "secondOption": "James and John",
     "thirdOption": "Matthew and Mark",
     "timer": 20
@@ -1844,15 +1631,6 @@
     "timer": 20
   },
   {
-    "correctOption": "Purple",
-    "firstOption": "Red and Yellow",
-    "question": "What color of vestment does the priest wear during Lent or Advent?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Purple",
-    "thirdOption": "Green",
-    "timer": 20
-  },
-  {
     "correctOption": "Death",
     "firstOption": "Death",
     "question": "Who sat on the pale Horse of Revelation 6?",
@@ -1947,7 +1725,7 @@
     "firstOption": "Take no thought of it",
     "question": "What did Jesus say about tomorrow in him sermon on the mount?",
     "quiz": "Bible",
-    "secondOption": "It will end ",
+    "secondOption": "It will end",
     "thirdOption": "Have good plans for tomorrow",
     "timer": 20
   },
@@ -2111,240 +1889,6 @@
     "quiz": "Bible",
     "secondOption": "66",
     "thirdOption": "27",
-    "timer": 20
-  },
-  {
-    "correctOption": "Man",
-    "firstOption": "Consubstantial",
-    "question": "The English translation of the Catechism was held up for more than a year when some U.S. bishops objected to the use of which word?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Man",
-    "thirdOption": "Concupiscence",
-    "timer": 20
-  },
-  {
-    "correctOption": "St. Simon Stock",
-    "firstOption": "St. Dominic",
-    "question": "Who received the scapular from the Blessed virgin Mary?",
-    "quiz": "Catholic Faith",
-    "secondOption": "St. Simon Stock",
-    "thirdOption": "St. Francis",
-    "timer": 20
-  },
-  {
-    "correctOption": "Abortion",
-    "firstOption": "Abortion",
-    "question": "The second edition of the English version of the Catechism was changed to reflect stronger language on this topic in light of Evangelium Vitae?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Death penalty",
-    "thirdOption": "Euthanasia",
-    "timer": 20
-  },
-  {
-    "correctOption": "Revelation",
-    "firstOption": "Gospel of John",
-    "question": "Church teaching on a “heavenly liturgy” comes from?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Book of Isaiah",
-    "thirdOption": "Revelation",
-    "timer": 20
-  },
-  {
-    "correctOption": "St. Frances",
-    "firstOption": "St. Frances",
-    "question": "Which saint tamed a wild wolf?",
-    "quiz": "Catholic Faith",
-    "secondOption": "St. Christopher",
-    "thirdOption": "St. Joseph",
-    "timer": 20
-  },
-  {
-    "correctOption": "Joseph",
-    "firstOption": "Christ",
-    "question": "Who is the Foster Father of Jesus?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Joseph",
-    "thirdOption": "Mary",
-    "timer": 20
-  },
-  {
-    "correctOption": "Stole",
-    "firstOption": "Armise",
-    "question": "What is the name of the scald the priest wears on his neck during confession?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Stole",
-    "thirdOption": "Chasable",
-    "timer": 20
-  },
-  {
-    "correctOption": "French",
-    "firstOption": "French",
-    "question": "In which language was the current Catechism first published?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Italian",
-    "thirdOption": "English",
-    "timer": 20
-  },
-  {
-    "correctOption": "Seventh — You shall not steal.",
-    "firstOption": "Fifth — You shall not kill.",
-    "question": "Respecting and caring for animals is taught as part of which commandment?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Seventh — You shall not steal.",
-    "thirdOption": "Ninth — You shall not covet your neighbor’s goods.",
-    "timer": 20
-  },
-  {
-    "correctOption": "Three",
-    "firstOption": "Three",
-    "question": "How many persons are in the holy trinity?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Two",
-    "thirdOption": "One",
-    "timer": 20
-  },
-  {
-    "correctOption": "Couples",
-    "firstOption": "Bishop",
-    "question": "Who is the chief celebrant of the sacrament of matrimony?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Priest",
-    "thirdOption": "Couples",
-    "timer": 20
-  },
-  {
-    "correctOption": "Chasable",
-    "firstOption": "Chasable",
-    "question": "What is the name of the large coloured vestment the priest wears for mass?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Alb",
-    "thirdOption": "Stole",
-    "timer": 20
-  },
-  {
-    "correctOption": " Come, O Lord.",
-    "firstOption": " Why have you forsaken me?",
-    "question": "“Marana tha” means?",
-    "quiz": "Catholic Faith",
-    "secondOption": " Come, O Lord.",
-    "thirdOption": "It is finished.",
-    "timer": 20
-  },
-  {
-    "correctOption": "White and Yellow",
-    "firstOption": "Red",
-    "question": "What color are papal flags?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Purple",
-    "thirdOption": "White and Yellow",
-    "timer": 20
-  },
-  {
-    "correctOption": "Baptism, Confirmation, Eucharist",
-    "firstOption": "Baptism, Reconciliation, Eucharist",
-    "question": "The Sacraments of Initiation are?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Baptism, Confirmation, Eucharist",
-    "thirdOption": "Eucharist, Marriage, Holy Orders",
-    "timer": 20
-  },
-  {
-    "correctOption": "Argentina",
-    "firstOption": "Uruguay",
-    "question": "What country does pope Francis come from?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Italy",
-    "thirdOption": "Argentina",
-    "timer": 20
-  },
-  {
-    "correctOption": "Rome",
-    "firstOption": "Rome",
-    "question": "Where did St. Peter die?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Jerusalem",
-    "thirdOption": "Italy",
-    "timer": 20
-  },
-  {
-    "correctOption": "Martin Luther",
-    "firstOption": "John Calvin",
-    "question": "Some credit this person with producing the first Catechism text?",
-    "quiz": "Catholic Faith",
-    "secondOption": "",
-    "thirdOption": "Martin Luther",
-    "timer": 20
-  },
-  {
-    "correctOption": "The sign of the cross",
-    "firstOption": "The sign of the cross",
-    "question": "Every prayer starts with?",
-    "quiz": "Catholic Faith",
-    "secondOption": "I believe",
-    "thirdOption": "The creed",
-    "timer": 20
-  },
-  {
-    "correctOption": "Extraordinary time",
-    "firstOption": "Extraordinary time",
-    "question": "Which of these is not a liturgical season?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Ordinary time",
-    "thirdOption": "Advent ",
-    "timer": 20
-  },
-  {
-    "correctOption": "Archangel",
-    "firstOption": "Seraphim",
-    "question": "Angel Gabriel is what type of Angel?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Cherubim",
-    "thirdOption": "Archangel",
-    "timer": 20
-  },
-  {
-    "correctOption": "Red",
-    "firstOption": "Red",
-    "question": "What color of vestment does the priest wear on second of November?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Purple",
-    "thirdOption": "Green",
-    "timer": 20
-  },
-  {
-    "correctOption": "Year D",
-    "firstOption": "Year A",
-    "question": "Which of these is not a liturgical year?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Year D",
-    "thirdOption": "Year C",
-    "timer": 20
-  },
-  {
-    "correctOption": "I believe",
-    "firstOption": "Gloria",
-    "question": "What do we call the summary of our Faith?",
-    "quiz": "Catholic Faith",
-    "secondOption": "I believe",
-    "thirdOption": "Lord have mercy",
-    "timer": 20
-  },
-  {
-    "correctOption": "6",
-    "firstOption": "5",
-    "question": "What is the maximum number of sacraments one can get?",
-    "quiz": "Catholic Faith",
-    "secondOption": "6",
-    "thirdOption": "7",
-    "timer": 20
-  },
-  {
-    "correctOption": "First",
-    "firstOption": "First",
-    "question": "Believing in superstitions like horoscopes, tarot cards and clairvoyants goes against this commandment?",
-    "quiz": "Catholic Faith",
-    "secondOption": "Second",
-    "thirdOption": "Third",
     "timer": 20
   }
 ]

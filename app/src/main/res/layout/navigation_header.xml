@@ -23,7 +23,7 @@
         android:layout_marginBottom="16dp"
         android:textStyle="bold"
         android:textColor="@color/colorWhite"
-        android:text="Know your faith for children and teenagers"
+        android:text="@string/know_your_faith"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
