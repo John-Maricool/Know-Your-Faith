@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainScreenFragment"
-        android:name="com.example.maricools_app_designs.ui.mainscreen.MainScreenFragment"
+        android:name="com.johnmaricool.mario_designs.ui.mainscreen.MainScreenFragment"
         android:label="Home"
         tools:layout="@layout/fragment_main_screen">
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/catholicFactsFragment"
-        android:name="com.example.maricools_app_designs.ui.fact.CatholicFactsFragment"
+        android:name="com.johnmaricool.mario_designs.ui.fact.CatholicFactsFragment"
         android:label="Choose Fact"
         tools:layout="@layout/fragment_catholic_facts" >
         <action
@@ -45,7 +45,7 @@
 
     <fragment
         android:id="@+id/catholicPrayerFragment"
-        android:name="com.example.maricools_app_designs.ui.prayer.CatholicPrayerFragment"
+        android:name="com.johnmaricool.mario_designs.ui.prayer.CatholicPrayerFragment"
         android:label="Choose Prayer"
         tools:layout="@layout/fragment_catholic_prayer">
         <action
@@ -58,7 +58,7 @@
     </fragment>
     <fragment
         android:id="@+id/catholicQuizFragment"
-        android:name="com.example.maricools_app_designs.ui.quiz.CatholicQuizFragment"
+        android:name="com.johnmaricool.mario_designs.ui.quiz.CatholicQuizFragment"
         android:label="Select Quiz"
         tools:layout="@layout/fragment_catholic_quiz" >
         <action
@@ -67,7 +67,7 @@
     </fragment>
     <fragment
         android:id="@+id/prayerFragment"
-        android:name="com.example.maricools_app_designs.ui.prayer.PrayerFragment"
+        android:name="com.johnmaricool.mario_designs.ui.prayer.PrayerFragment"
         android:label="Prayer"
         tools:layout="@layout/fragment_prayer" >
         <argument
@@ -81,7 +81,7 @@
     </fragment>
     <fragment
         android:id="@+id/factsFragment"
-        android:name="com.example.maricools_app_designs.ui.fact.FactsFragment"
+        android:name="com.johnmaricool.mario_designs.ui.fact.FactsFragment"
         android:label="Facts" >
         <argument
             android:name="id"
@@ -90,7 +90,7 @@
     </fragment>
     <fragment
         android:id="@+id/orderOfMassFragment"
-        android:name="com.example.maricools_app_designs.ui.orderofmass.OrderOfMassFragment"
+        android:name="com.johnmaricool.mario_designs.ui.orderofmass.OrderOfMassFragment"
         android:label="Order of Mass"
         tools:layout="@layout/fragment_order_of_mass" >
         <action
@@ -99,7 +99,7 @@
     </fragment>
     <fragment
         android:id="@+id/quizCustomFragment"
-        android:name="com.example.maricools_app_designs.ui.quiz.QuizCustomFragment"
+        android:name="com.johnmaricool.mario_designs.ui.quiz.QuizCustomFragment"
         android:label="Quiz"
         tools:layout="@layout/fragment_quiz_custom" >
         <argument
@@ -118,7 +118,7 @@
     </fragment>
     <fragment
         android:id="@+id/quizResultFragment"
-        android:name="com.example.maricools_app_designs.ui.quiz.QuizResultFragment"
+        android:name="com.johnmaricool.mario_designs.ui.quiz.QuizResultFragment"
         android:label="Quiz Result"
         tools:layout="@layout/fragment_quiz_result" >
 
@@ -139,12 +139,12 @@
     </fragment>
     <fragment
         android:id="@+id/reportFragment"
-        android:name="com.example.maricools_app_designs.ui.report.ReportFragment"
+        android:name="com.johnmaricool.mario_designs.ui.report.ReportFragment"
         android:label="Report"
         tools:layout="@layout/fragment_report" />
     <fragment
         android:id="@+id/favouritesFragment"
-        android:name="com.example.maricools_app_designs.ui.favoriteprayer.FavouritesFragment"
+        android:name="com.johnmaricool.mario_designs.ui.favoriteprayer.FavouritesFragment"
         android:label="Favourite Prayers"
         tools:layout="@layout/fragment_favourites">
         <action
@@ -157,7 +157,7 @@
     </fragment>
     <fragment
         android:id="@+id/OOMFragment"
-        android:name="com.example.maricools_app_designs.ui.orderofmass.OOMFragment"
+        android:name="com.johnmaricool.mario_designs.ui.orderofmass.OOMFragment"
         android:label="ORDER OF MASS"
         tools:layout="@layout/o_o_m_fragment">
         <argument
@@ -167,7 +167,7 @@
     </fragment>
     <fragment
         android:id="@+id/favoriteFactsFragment"
-        android:name="com.example.maricools_app_designs.ui.favoritefact.FavoriteFactsFragment"
+        android:name="com.johnmaricool.mario_designs.ui.favoritefact.FavoriteFactsFragment"
         android:label="Favorite Facts"
         tools:layout="@layout/favorite_facts_fragment">
         <action
@@ -176,7 +176,7 @@
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.example.maricools_app_designs.AboutFragment"
+        android:name="com.johnmaricool.mario_designs.AboutFragment"
         android:label="@string/about"
         tools:layout="@layout/fragment_about" />
 </navigation>

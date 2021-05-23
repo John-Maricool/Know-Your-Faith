@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:487434348780:android:72b09ec4f26a0072e0ddc9",
         "android_client_info": {
-          "package_name": "com.example.maricools_app_designs"
+          "package_name": "com.johnmaricool.mario_designs"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "487434348780-0t0d3o0hmb1uer2cami93jia8ca5vqn2.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.maricools_app_designs",
+            "package_name": "com.johnmaricool.mario_designs",
             "certificate_hash": "e100957bdbb51cc518c83d25b6a1b81068f328b6"
           }
         },
