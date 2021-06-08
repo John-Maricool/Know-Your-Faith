@@ -67,7 +67,7 @@
     "correctOption":"Angel Gabriel",
     "quiz": "Bible",
     "firstOption": "Angel Gabriel",
-    "secondOption": "Angel Rapheal",
+    "secondOption": "Angel Raphael",
     "thirdOption": "Angel Micheal",
     "timer": 20
   },
@@ -84,7 +84,7 @@
     "question":"God tested Abraham by telling him to offer his only son as a burnt offering. Who was that son?",
     "correctOption":"Isaac",
     "quiz": "Bible",
-    "firstOption": "Ishmeal",
+    "firstOption": "Ishmael",
     "secondOption": "Abram",
     "thirdOption": "Isaac",
     "timer": 20
@@ -338,7 +338,7 @@
     "correctOption":"Bethlehem",
     "quiz": "Bible",
     "firstOption": "Nazareth",
-    "secondOption": "Isreal",
+    "secondOption": "Israel",
     "thirdOption": "Bethlehem",
     "timer": 20
   },
@@ -356,7 +356,7 @@
     "correctOption":"Babylon",
     "quiz": "Bible",
     "firstOption": "Judah",
-    "secondOption": "Isreal",
+    "secondOption": "Israel",
     "thirdOption": "Babylon",
     "timer": 20
   },
@@ -815,7 +815,7 @@
     "question":"What city did the Lord tell Jonah to preach against?",
     "correctOption":"Nineveh",
     "secondOption": "Nineveh",
-    "firstOption": "Isreal",
+    "firstOption": "Israel",
     "thirdOption": "Spain",
     "timer": 20,
     "quiz": "Bible"
@@ -1078,7 +1078,7 @@
     "question": "Who is the first to be born in the world?",
     "quiz": "Bible",
     "secondOption": "Cain",
-    "thirdOption": "",
+    "thirdOption": "Seth",
     "timer": 20
   },
   {
@@ -1086,7 +1086,7 @@
     "firstOption": "Theresa",
     "question": "Who is the mother of Mary (mother of Jesus)?",
     "quiz": "Bible",
-    "secondOption": "Elizerbeth",
+    "secondOption": "Elizabeth",
     "thirdOption": "Anna",
     "timer": 20
   },
@@ -1100,11 +1100,11 @@
     "timer": 20
   },
   {
-    "correctOption": "Rebecca",
+    "correctOption": "Rebbecca",
     "firstOption": "Jezebel",
     "question": "Who is the first woman to wear earring in the Bible?",
     "quiz": "Bible",
-    "secondOption": "Rebecca",
+    "secondOption": "Rebbecca",
     "thirdOption": "Monica",
     "timer": 20
   },
@@ -1185,14 +1185,14 @@
     "firstOption": "Rehab",
     "question": "Who hid two spies but denied their whereabouts?",
     "quiz": "Bible",
-    "secondOption": "Rebecca",
+    "secondOption": "Rebbecca",
     "thirdOption": "Sarah",
     "timer": 20
   },
   {
     "correctOption": "Isaac",
     "firstOption": "Ishmael",
-    "question": "Who\u0027s name means laughter?",
+    "question": "Who's name means laughter?",
     "quiz": "Bible",
     "secondOption": "Jacob",
     "thirdOption": "Isaac",
@@ -1201,9 +1201,9 @@
   {
     "correctOption": "Jacob",
     "firstOption": "Esau",
-    "question": "Who stole his brother\u0027s blessing?",
+    "question": "Who stole his brother's blessing?",
     "quiz": "Bible",
-    "secondOption": "Rebecca",
+    "secondOption": "Rebbecca",
     "thirdOption": "Jacob",
     "timer": 20
   },
@@ -1600,7 +1600,7 @@
     "question": "What is the common name given to the first four books of the New Testament?",
     "quiz": "Bible",
     "secondOption": "The Gospels",
-    "thirdOption": "The deuterocanonicals",
+    "thirdOption": "The Deuterocanonicals",
     "timer": 20
   },
   {

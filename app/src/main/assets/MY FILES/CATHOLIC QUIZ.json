@@ -103,7 +103,7 @@
     "firstOption": "Baptism",
     "question": "“Be sealed with the gift of the Holy Spirit” is spoken during which sacrament?",
     "quiz": "Catholic Faith",
-    "secondOption": "Annointing of the Sick",
+    "secondOption": "Anointing of the Sick",
     "thirdOption": "Confirmation",
     "timer": 20
   },
@@ -154,10 +154,10 @@
   },
   {
     "correctOption": "Six",
-    "firstOption": "Six",
+    "firstOption": "Four",
     "question": "It took this many years to complete the Catechism of the Catholic Church?",
     "quiz": "Catholic Faith",
-    "secondOption": "Four",
+    "secondOption": "Six",
     "thirdOption": "Three",
     "timer": 20
   },
@@ -184,8 +184,8 @@
     "firstOption": " Incense used during funeral Masses",
     "question": "Chrism refers to?",
     "quiz": "Catholic Faith",
-    "secondOption": "Perfumed oil used during baptism, confirmation and holy orders",
-    "thirdOption": " Blessed oil used for anointing of the sick",
+    "secondOption": "Blessed oil used for anointing of the sick",
+    "thirdOption": "Perfumed oil used during baptism, confirmation and holy orders",
     "timer": 20
   },
   {
@@ -208,11 +208,11 @@
   },
   {
     "correctOption": "Honor your father and Mother.",
-    "firstOption": "Don\u0027t kill",
+    "firstOption": "Don't kill",
     "question": "What is the fourth commandment?",
     "quiz": "Catholic Faith",
     "secondOption": "Honor your father and Mother.",
-    "thirdOption": "Don\u0027t commit adultery. ",
+    "thirdOption": "Don't commit adultery. ",
     "timer": 20
   },
   {
@@ -220,8 +220,8 @@
     "firstOption": "Red and Yellow",
     "question": "What color of vestment does the priest wear during Lent or Advent?",
     "quiz": "Catholic Faith",
-    "secondOption": "Purple",
-    "thirdOption": "Green",
+    "secondOption": "Green",
+    "thirdOption": "Purple",
     "timer": 20
   },
   {
@@ -244,11 +244,11 @@
   },
   {
     "correctOption": "Abortion",
-    "firstOption": "Abortion",
+    "firstOption": "Euthanasia",
     "question": "The second edition of the English version of the Catechism was changed to reflect stronger language on this topic in light of Evangelium Vitae?",
     "quiz": "Catholic Faith",
     "secondOption": "Death penalty",
-    "thirdOption": "Euthanasia",
+    "thirdOption": "Abortion",
     "timer": 20
   },
   {
@@ -458,11 +458,6 @@
     "thirdOption": "Third",
     "timer": 20
   },
-
-
-
-
-
   {
     "correctOption": "Mary",
     "firstOption": "Mary",
@@ -514,7 +509,7 @@
     "question": "The church is one, holy, catholic and, ________?",
     "quiz": "Catholic Faith",
     "secondOption": "Apostolic",
-    "thirdOption": "Aposlotic",
+    "thirdOption": "Apostolic",
     "timer": 20
   },
   {
@@ -527,7 +522,7 @@
     "timer": 20
   },
   {
-    "correctOption": "Jonh Paul II",
+    "correctOption": "John Paul II",
     "firstOption": "John Paul I",
     "question": "Which of this popes canonised the greatest number of saints in his pontificate?",
     "quiz": "Catholic Faith",
@@ -563,11 +558,11 @@
     "timer": 20
   },
   {
-    "correctOption": "All of the above",
+    "correctOption": "All of the options",
     "firstOption": "Elijah",
     "question": "Which of these was an old Testament prophet?",
     "quiz": "Catholic Faith",
-    "secondOption": "All of the above",
+    "secondOption": "All of the options",
     "thirdOption": "Elisha",
     "timer": 20
   },
@@ -600,8 +595,8 @@
   },
   {
     "correctOption": "St John the Apostle",
-    "firstOption": "Saint John ofvthe cross",
-    "question": "Which Saint stayed at the foot of the cross during the cruci",
+    "firstOption": "Saint John of the cross",
+    "question": "Which Saint stayed at the foot of the cross during the crucifixion",
     "quiz": "Catholic Faith",
     "secondOption": "St John the Apostle",
     "thirdOption": "John the fisher man",
@@ -662,11 +657,11 @@
     "timer": 20
   },
   {
-    "correctOption": "St paul",
+    "correctOption": "St Paul",
     "firstOption": "St James",
     "question": "which Saint wrote most of the Epistles(letters)in the New Testament?",
     "quiz": "Catholic Faith",
-    "secondOption": "St paul",
+    "secondOption": "St Paul",
     "thirdOption": "St Peter",
     "timer": 20
   },
@@ -676,7 +671,7 @@
     "question": "According to tradition,STPatrick used which plant to explain the Trinity?",
     "quiz": "Catholic Faith",
     "secondOption": "Rose",
-    "thirdOption": "Gumleaf",
+    "thirdOption": "Gum leaf",
     "timer": 20
   },
   {
@@ -691,7 +686,7 @@
   {
     "correctOption": "Pilate",
     "firstOption": "Herod",
-    "question": "Who was the Roman governor befpre whom Jesus appeared?",
+    "question": "Who was the Roman governor before whom Jesus appeared?",
     "quiz": "Catholic Faith",
     "secondOption": "Pilate",
     "thirdOption": "Pharoh",
@@ -792,7 +787,7 @@
     "firstOption": "Rite of religious profession",
     "question": "Which of these is a sacrament?",
     "quiz": "Catholic Faith",
-    "secondOption": "consecration of a virgin",
+    "secondOption": "Consecration of a virgin",
     "thirdOption": "Ordination of priest",
     "timer": 20
   },
@@ -806,8 +801,8 @@
     "timer": 20
   },
   {
-    "correctOption": "obedience",
-    "firstOption": "obedience",
+    "correctOption": "Obedience",
+    "firstOption": "Obedience",
     "question": "The Evangelical counsels are: poverty, chastity, and __________?",
     "quiz": "Catholic Faith",
     "secondOption": "Love",
@@ -870,7 +865,7 @@
   },
   {
     "correctOption": "Futile",
-    "firstOption": "Beneficical",
+    "firstOption": "Beneficial",
     "question": "The Catechism teaches that any attempt to ignore sin or to give this dark reality other names would be?",
     "quiz": "Catholic Faith",
     "secondOption": "Futile",
@@ -878,18 +873,18 @@
     "timer": 20
   },
   {
-    "correctOption": "almsgiving",
+    "correctOption": "Almsgiving",
     "firstOption": "Speaking in tongues",
     "question": "The three main forms of interior penance of the Christian are fasting, prayer and _____________?",
     "quiz": "Catholic Faith",
-    "secondOption": "flaggelation",
-    "thirdOption": "almsgiving",
+    "secondOption": "Flaggelation",
+    "thirdOption": "Almsgiving",
     "timer": 20
   },
   {
     "correctOption": "Despair",
     "firstOption": "Despair",
-    "question": "What is it cakked when someone ceases to hope for personal salvation from God and for the forgiveness of sins?",
+    "question": "What is it called when someone ceases to hope for personal salvation from God and for the forgiveness of sins?",
     "quiz": "Catholic Faith",
     "secondOption": "Presumption",
     "thirdOption": "Apostacy",
@@ -907,10 +902,10 @@
   {
     "correctOption": "Jesus Christ",
     "firstOption": "Isaiah",
-    "question": "In whom does the old Covenant prefigurations find their fulfilment?",
+    "question": "In whom does the old Covenant prefiguring find their fulfilment?",
     "quiz": "Catholic Faith",
     "secondOption": "Jesus Christ",
-    "thirdOption": "MAry",
+    "thirdOption": "Mary",
     "timer": 20
   },
   {
@@ -933,8 +928,8 @@
   },
   {
     "correctOption": "The altar",
-    "firstOption": "The baptisimal font",
-    "question": "To which parrt of the church do spiritual authors sometimes compare the heart that prays?",
+    "firstOption": "The baptismal font",
+    "question": "To which part of the church do spiritual authors sometimes compare the heart that prays?",
     "quiz": "Catholic Faith",
     "secondOption": "The pew",
     "thirdOption": "The altar",
@@ -946,7 +941,7 @@
     "question": "Who validly ordains the three degrees of the sacrament of Holy Orders (deacons, Priests and Bishops)?",
     "quiz": "Catholic Faith",
     "secondOption": "Bishops",
-    "thirdOption": "The pope",
+    "thirdOption": "The Pope",
     "timer": 20
   },
   {
@@ -970,7 +965,7 @@
   {
     "correctOption": "Sunday",
     "firstOption": "Saturday",
-    "question": "On which day of the week does thte church oblige the faithfult to go to mass?",
+    "question": "On which day of the week does the church oblige the faithful to go to mass?",
     "quiz": "Catholic Faith",
     "secondOption": "Monday",
     "thirdOption": "Sunday",
@@ -1022,15 +1017,6 @@
     "timer": 20
   },
   {
-    "correctOption": "",
-    "firstOption": "",
-    "question": "?",
-    "quiz": "Catholic Faith",
-    "secondOption": "",
-    "thirdOption": "",
-    "timer": 20
-  },
-  {
     "correctOption": "The grace of the Lord be with all. Amen",
     "firstOption": "The grace of the Lord be with all. Amen",
     "question": "What are the last words of the Bible?",
@@ -1060,7 +1046,7 @@
   {
     "correctOption": "The sign of Peace",
     "firstOption": "The Wail",
-    "question": "Whic of these may take place during the mass, shortly after the Our Father?",
+    "question": "Which of these may take place during the mass, shortly after the Our Father?",
     "quiz": "Catholic Faith",
     "secondOption": "The trumpet call",
     "thirdOption": "The sign of Peace",
@@ -1073,24 +1059,6 @@
     "quiz": "Catholic Faith",
     "secondOption": "Mammal",
     "thirdOption": "Mommon",
-    "timer": 20
-  },
-  {
-    "correctOption": "",
-    "firstOption": "",
-    "question": "?",
-    "quiz": "Catholic Faith",
-    "secondOption": "",
-    "thirdOption": "",
-    "timer": 20
-  },
-  {
-    "correctOption": "",
-    "firstOption": "",
-    "question": "?",
-    "quiz": "Catholic Faith",
-    "secondOption": "",
-    "thirdOption": "",
     "timer": 20
   },
   {
@@ -1130,21 +1098,21 @@
     "timer": 20
   },
   {
-    "correctOption": "alone",
-    "firstOption": "free",
+    "correctOption": "Alone",
+    "firstOption": "Free",
     "question": "The Word of God says that its not good that man should be ________?",
     "quiz": "Catholic Faith",
-    "secondOption": "alone",
-    "thirdOption": "rich",
+    "secondOption": "Alone",
+    "thirdOption": "Rich",
     "timer": 20
   },
   {
-    "correctOption": "free gift",
-    "firstOption": "option",
+    "correctOption": "Free gift",
+    "firstOption": "Option",
     "question": "Faith is a _______ given by God?",
     "quiz": "Catholic Faith",
-    "secondOption": "free gift",
-    "thirdOption": "earned gift",
+    "secondOption": "Free gift",
+    "thirdOption": "Earned gift",
     "timer": 20
   },
   {
@@ -1230,7 +1198,7 @@
   },
   {
     "correctOption": "Shamrock",
-    "firstOption": "Gumleaf",
+    "firstOption": "Gum leaf",
     "question": "According to tradition, St. Patrick used which plant to explain the Trinity?",
     "quiz": "Catholic Faith",
     "secondOption": "Fig",

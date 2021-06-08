@@ -4,11 +4,13 @@ import android.os.Build
 import android.text.Html
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.johnmaricool.mario_designs.databinding.PrayerItemViewpagerBinding
 import com.johnmaricool.mario_designs.utils.models.PrayerModel
+import javax.inject.Inject
 
-class PrayerViewPagerAdapter(val prayer: List<PrayerModel>): RecyclerView.Adapter<PrayerViewPagerAdapter.ViewPagerViewHolder>(){
+class PrayerViewPagerAdapter constructor( var prayer: List<PrayerModel> ): RecyclerView.Adapter<PrayerViewPagerAdapter.ViewPagerViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewPagerViewHolder {
         val binding = PrayerItemViewpagerBinding.inflate(
@@ -26,9 +28,7 @@ class PrayerViewPagerAdapter(val prayer: List<PrayerModel>): RecyclerView.Adapte
     override fun onBindViewHolder(holder: ViewPagerViewHolder, position: Int) {
         holder.binding.prayerTitle.text = prayer[position].prayerTitle
        val text =  prayer[position].prayerContent
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            holder.binding.prayerBody.text = Html.fromHtml(text, 0)
-        }
+            holder.binding.prayerBody.text = HtmlCompat.fromHtml(text, 0)
     }
 
     inner class ViewPagerViewHolder(var binding: PrayerItemViewpagerBinding): RecyclerView.ViewHolder(binding.root) {

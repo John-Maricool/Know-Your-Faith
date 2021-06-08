@@ -1,29 +1,36 @@
 package com.johnmaricool.mario_designs.utils.repositories
 
-import androidx.lifecycle.LiveData
-import com.johnmaricool.mario_designs.database.PrayerDao
+import com.johnmaricool.mario_designs.utils.PrayerDaoImpl
+import com.johnmaricool.mario_designs.utils.models.PrayerFavModel
 import com.johnmaricool.mario_designs.utils.models.PrayerModel
+import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class PrayerListRepository
-constructor(var dao: PrayerDao){
+@Inject constructor(var dao: PrayerDaoImpl){
 
-    fun getBasicPrayer(): LiveData<List<PrayerModel>> {
+   suspend fun getBasicPrayer(): List<PrayerModel> {
        return dao.getPrayer("Basic")
     }
 
-    fun getJesusPrayer(): LiveData<List<PrayerModel>> {
+    suspend fun getJesusPrayer(): List<PrayerModel>{
         return dao.getPrayer("Jesus")
     }
 
-    fun getSaintsPrayer(): LiveData<List<PrayerModel>> {
+    suspend fun getSaintsPrayer(): List<PrayerModel> {
         return dao.getPrayer("Saints")
     }
 
-    fun getRosaryPrayer(): LiveData<List<PrayerModel>> {
+   suspend fun getRosaryPrayer(): List<PrayerModel> {
         return dao.getPrayer("Rosary")
     }
 
-    fun getStationsOfTheCross(): LiveData<List<PrayerModel>> {
+   suspend fun getStationsOfTheCross(): List<PrayerModel> {
         return dao.getPrayer("Station")
+    }
+
+    suspend fun getFavPrayers(): List<PrayerFavModel> {
+        return dao.getAllFavPrayers()
     }
 }

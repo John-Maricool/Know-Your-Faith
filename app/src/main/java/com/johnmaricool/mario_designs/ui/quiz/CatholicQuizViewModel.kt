@@ -1,40 +1,36 @@
 package com.johnmaricool.mario_designs.ui.quiz
 
-import android.util.Log
 import androidx.hilt.lifecycle.ViewModelInject
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.johnmaricool.mario_designs.utils.Result
 import com.johnmaricool.mario_designs.utils.models.QuizEntityModel
 import com.johnmaricool.mario_designs.utils.repositories.CatholicQuizRepository
-import java.util.concurrent.CountDownLatch
+import kotlinx.coroutines.Dispatchers.IO
+import kotlinx.coroutines.launch
 
 class CatholicQuizViewModel
     @ViewModelInject
  constructor(var repo: CatholicQuizRepository
     ): ViewModel() {
 
-    private val latch = CountDownLatch(1)
+    private val _data = MutableLiveData<Result>()
+    val data: LiveData<Result> = _data
+
+    init {
+        QuizQuestionsToAnswer?.toMutableList()?.clear()
+    }
 
      fun getAnsweredList(id: Int, part: String) {
-               AllQuizQuestions = repo.getQuizByPart(part).toMutableList()
-                    Log.i("quizQuestions", AllQuizQuestions.size.toString())
-                    latch.countDown()
-                    latch.await()
-                    QuizQuestionsToAnswer.clear()
-
-                    //shuffle all the questions
-                    AllQuizQuestions.shuffle()
-
-                  for (i in 0 until id) {
-                      if (i < AllQuizQuestions.size) {
-                          QuizQuestionsToAnswer.add(AllQuizQuestions[i])
-                          AllQuizQuestions.removeAt(i)
-                      }
-             }
-         AllQuizQuestions.clear()
+         _data.value = Result.isLoading
+         viewModelScope.launch(IO) {
+             _data.postValue(Result.isLoaded(repo.getQuizByPart(part, id)))
+         }
     }
 
     companion object {
-        var AllQuizQuestions: MutableList<QuizEntityModel> = mutableListOf()
-        var QuizQuestionsToAnswer: MutableList<QuizEntityModel> = mutableListOf()
+        var QuizQuestionsToAnswer: List<QuizEntityModel>? = null
     }
 }

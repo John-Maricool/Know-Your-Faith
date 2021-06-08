@@ -5,7 +5,7 @@ import com.johnmaricool.mario_designs.utils.models.QuizEntityModel
 
 class CatholicQuizRepository
 constructor(var dao: QuizDao){
-       fun getQuizByPart(part: String): List<QuizEntityModel>{
-          return dao.getQuizWherePart(part)
+       suspend fun getQuizByPart(part: String, q: Int): List<QuizEntityModel>{
+          return dao.getQuizWherePart(part, q)
        }
 }

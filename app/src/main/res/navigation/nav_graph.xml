@@ -102,10 +102,6 @@
         android:name="com.johnmaricool.mario_designs.ui.quiz.QuizCustomFragment"
         android:label="Quiz"
         tools:layout="@layout/fragment_quiz_custom" >
-        <argument
-            android:name="item"
-            app:argType="integer"
-            android:defaultValue="10" />
         <action
             android:id="@+id/action_quizCustomFragment_to_quizResultFragment"
             app:destination="@id/quizResultFragment"

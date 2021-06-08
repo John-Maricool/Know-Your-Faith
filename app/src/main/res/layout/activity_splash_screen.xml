@@ -5,16 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context="com.johnmaricool.mario_designs.SplashScreenActivity">
+    tools:context=".SplashScreenActivity">
+
+        <ProgressBar
+            android:id="@+id/p_bar"
+            android:layout_width="34dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
             android:layout_height="wrap_content"
             android:text="KNOW YOUR FAITH"
-            android:textColor="@color/colorAccent"
             android:textSize="28sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.583"

@@ -35,6 +35,7 @@ class CatholicFactsFragment: Fragment(R.layout.fragment_catholic_facts), OnPraye
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentCatholicFactsBinding.bind(view)
+        model.getData()
         binding.expandableRecyclerView.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(activity)
@@ -46,7 +47,7 @@ class CatholicFactsFragment: Fragment(R.layout.fragment_catholic_facts), OnPraye
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         binding.expandableRecyclerView.adapter = adapter
-        model.facts.observe(viewLifecycleOwner, Observer {
+        model.data.observe(viewLifecycleOwner, Observer {
             adapter.getFactList(it)
         })
     }

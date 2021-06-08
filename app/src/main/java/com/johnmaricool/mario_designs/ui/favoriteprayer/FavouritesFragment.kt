@@ -36,21 +36,25 @@ class FavouritesFragment : Fragment(R.layout.fragment_favourites), OnPrayerItemC
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentFavouritesBinding.bind(view)
 
+        model.getData()
         binding.adView.adView.loadAd(request)
         binding.recyclerFav.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(activity)
         }
+        binding.recyclerFav.adapter = adapter
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        binding.recyclerFav.adapter = adapter
 
-        model.getFavPrayers().observe(viewLifecycleOwner, Observer {
+        model.data.observe(viewLifecycleOwner, Observer {
             adapter.getAllFavPrayers(it)
         })
+    }
 
+    override fun onStart() {
+        super.onStart()
         adapter.setOnClickListener(this)
     }
 
