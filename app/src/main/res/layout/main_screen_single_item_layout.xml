@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:focusable="true"
     android:clickable="true"
-    android:layout_margin="8dp"
+    android:layout_margin="5dp"
     android:background="@color/colorPrimary"
     android:foreground="?android:attr/selectableItemBackground"
     app:cardCornerRadius="7dp">
@@ -19,7 +19,7 @@
         <ImageView
             android:id="@+id/image_view"
             android:layout_width="300dp"
-            android:layout_height="250dp"
+            android:layout_height="300dp"
             android:contentDescription="Know your faith"
             android:scaleType="fitCenter"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,8 +31,8 @@
         <View
             android:id="@+id/view"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:background="@drawable/for_view"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/image_view"
             app:layout_constraintStart_toStartOf="@+id/image_view"
             app:layout_constraintTop_toBottomOf="@+id/image_view" />
@@ -42,38 +42,22 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/bubblegum_sans"
             android:letterSpacing="0.1"
             android:shadowColor="#7C7F85"
             android:shadowDx="1.5"
             android:shadowDy="1.3"
             android:shadowRadius="1.6"
-            android:textColor="@color/colorBlack"
+            android:textColor="@color/colorBlue"
             android:textSize="20sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/view"
             app:layout_constraintStart_toStartOf="@+id/view"
             app:layout_constraintTop_toTopOf="@+id/view"
             tools:text="Title" />
-
-        <TextView
-            android:id="@+id/title_description"
-            android:layout_width="328dp"
-            android:layout_height="39dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/bubblegum_sans"
-            android:letterSpacing="0.1"
-            android:shadowColor="#FF085A"
-            android:shadowDx="1.5"
-            android:shadowDy="1.3"
-            android:shadowRadius="1.6"
-            android:textColor="#ffffff"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/title"
-            tools:text="Descriptionc  dksjsjjs sdji i u uhkj buhj biguj khku g  kssnsksskjs sksjsbkjs " />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

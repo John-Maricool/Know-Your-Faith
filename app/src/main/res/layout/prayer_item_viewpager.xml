@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/toolbar_gradient"
     android:layout_height="match_parent">
 
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,12 +17,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:textSize="20sp"
+        android:textSize="23sp"
         android:textStyle="bold"
         android:textColor="@color/colorBlack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        android:letterSpacing="0.15"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="prayer title" />
 
@@ -30,15 +32,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:textColor="@color/colorBlack"
+        android:textColor="#EFF4F6"
         android:padding="9dp"
-        android:textSize="17sp"
-        android:textStyle="normal"
+        android:textSize="19sp"
+        android:textStyle="bold|normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/prayer_title"
-        tools:text="just a random body that i want to add to the view pager" />
+        tools:text="just a random body that i want to add to thdskmlsksjmskjnsnsklslksnkse view pager" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

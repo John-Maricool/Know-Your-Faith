@@ -22,29 +22,25 @@ constructor(@ApplicationContext val context: Context?) :
         myList.add(
                 MainScreenRecyclerModel(
                         context!!.resources.getString(R.string.prayers),
-                        context.resources.getString(R.string.prayers_desc),
-                        context.getDrawable(R.drawable.catholicprayer)
+                        context.getDrawable(R.drawable.prayer)
                 )
         )
         myList.add(
                 MainScreenRecyclerModel(
                         context.resources.getString(R.string.facts),
-                        context.resources.getString(R.string.facts_desc),
-                        context.getDrawable(R.drawable.catholicfacts)
+                        context.getDrawable(R.drawable.fact)
                 )
         )
         myList.add(
                 MainScreenRecyclerModel(
                         context.resources.getString(R.string.quiz),
-                        context.resources.getString(R.string.quiz_desc),
-                        context.getDrawable(R.drawable.catholicquiz)
+                        context.getDrawable(R.drawable.quiz)
                 )
         )
         myList.add(
                 MainScreenRecyclerModel(
                         context.resources.getString(R.string.oom_name),
-                        context.resources.getString(R.string.oom_desc),
-                        context.getDrawable(R.drawable.catholicoom)
+                        context.getDrawable(R.drawable.oom)
                 )
                 )
     }
@@ -69,12 +65,11 @@ constructor(@ApplicationContext val context: Context?) :
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
-        val mListPos = myList.get(position)
+        val mListPos = myList[position]
         holder.binding.imageView.setImageDrawable(mListPos.imageRes)
 
         holder.binding.apply {
             title.text = mListPos.title
-            titleDescription.text = mListPos.description
         }
     }
 
@@ -90,5 +85,4 @@ constructor(@ApplicationContext val context: Context?) :
             }
         }
     }
-
 }

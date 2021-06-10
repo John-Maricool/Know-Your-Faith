@@ -2,6 +2,7 @@ package com.johnmaricool.mario_designs.ui.prayer
 
 import android.os.Bundle
 import android.view.*
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -41,6 +42,7 @@ class PrayerFragment : Fragment(R.layout.fragment_prayer) {
 
         binding.viewPager.setCurrentItem(args.id, false)
     }
+
 
     override fun onDestroy() {
         super.onDestroy()
