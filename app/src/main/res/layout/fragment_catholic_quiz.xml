@@ -22,23 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radio_group" />
 
-    <TextView
-        android:id="@+id/notice"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:ellipsize="marquee"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:scrollHorizontally="true"
-        android:fontFamily="@font/bubblegum_sans"
-        android:singleLine="true"
-        android:text="@string/notice"
-        android:textColor="@color/colorWhite"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/adView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <com.sanojpunchihewa.glowbutton.GlowButton
         android:id="@+id/start_quiz"
         android:layout_width="0dp"
@@ -62,10 +45,9 @@
         app:pressedGlowSize="28sp" />
 
     <Spinner
+        android:layout_height="30dp"
         android:id="@+id/spinner_number_of_questions"
-        style="@style/Widget.AppCompat.Spinner"
         android:layout_width="130dp"
-        android:layout_height="?attr/dropdownListPreferredItemHeight"
         android:layout_margin="10dp"
         android:layout_marginTop="104dp"
         android:background="@drawable/style_spinner"
