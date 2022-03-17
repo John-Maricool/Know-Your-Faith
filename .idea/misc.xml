@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/fragment_add_notes.xml" value="0.1" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/fragment_quiz_custom.xml" value="0.12092391304347826" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/prayer_single_item.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/menu/add_note.xml" value="1.34375" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/menu/main.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/menu/save_note.xml" value="0.22395833333333334" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

@@ -8,12 +8,14 @@ import androidx.lifecycle.viewModelScope
 import com.johnmaricool.mario_designs.utils.Result
 import com.johnmaricool.mario_designs.utils.models.QuizEntityModel
 import com.johnmaricool.mario_designs.utils.repositories.CatholicQuizRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
+@HiltViewModel
 class CatholicQuizViewModel
-    @ViewModelInject
- constructor(var repo: CatholicQuizRepository
+@Inject  constructor(var repo: CatholicQuizRepository
     ): ViewModel() {
 
     private val _data = MutableLiveData<Result>()

@@ -16,6 +16,11 @@
         android:icon="@drawable/ic_baseline_favorite_24"
         android:id="@+id/favoriteFactsFragment"/>
 
+    <item
+        android:title="@string/view_notes"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:id="@+id/viewNotesFragment"/>
+
  <item android:title="@string/communicate">
     <menu>
     <item android:id="@+id/aboutFragment"

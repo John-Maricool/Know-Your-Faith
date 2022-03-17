@@ -36,15 +36,15 @@ class FactsFragment : Fragment(R.layout.facts_fragment) {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewModel.data.observe(viewLifecycleOwner, Observer {fact ->
+        viewModel.data.observe(viewLifecycleOwner) { fact ->
             binding.apply {
                 factName.text = fact.factTitle
                 val text = fact.factContent
                 factBody.text = HtmlCompat.fromHtml(text, 0)
                 (activity as MainActivity).supportActionBar?.title = fact.factTitle
             }
-            })
         }
+    }
 
     override fun onDestroy() {
         super.onDestroy()

@@ -32,11 +32,11 @@
         <item>90</item>
         <item>100</item>
     </string-array>
-        <string name="introductory_rite">THE INTRODUCTORY RITE</string>
-        <string name="liturgy_word">THE LITURGY OF THE WORD</string>
-        <string name="liturgy_eucharist">THE LITURGY OF THE HOLY EUCHARIST</string>
-        <string name="communion_rite">THE COMMUNION RITE</string>
-        <string name="concluding_rite">THE CONCLUDING RITE</string>
+    <string name="introductory_rite">THE INTRODUCTORY RITE</string>
+    <string name="liturgy_word">THE LITURGY OF THE WORD</string>
+    <string name="liturgy_eucharist">THE LITURGY OF THE HOLY EUCHARIST</string>
+    <string name="communion_rite">THE COMMUNION RITE</string>
+    <string name="concluding_rite">THE CONCLUDING RITE</string>
 
 
     <string-array name="added_entries">
@@ -64,7 +64,6 @@
     <string name="holy_header">Holy Spirit</string>
     <string name="custom_fact">Custom Fact</string>
     <string name="other_header">Others</string>
-
 
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -110,5 +109,11 @@
     <string name="rate_me">Rate me</string>
     <string name="know_your_faith">Know your faith</string>
     <string name="speak_prayer">Speak</string>
+    <string name="add_notes">Add Prayer/Note</string>
+    <string name="title">Title</string>
+    <string name="Note">Write Note</string>
+    <string name="SAVE">SAVE</string>
+    <string name="ADD">ADD</string>
+    <string name="view_notes">Notes</string>
 
 </resources>

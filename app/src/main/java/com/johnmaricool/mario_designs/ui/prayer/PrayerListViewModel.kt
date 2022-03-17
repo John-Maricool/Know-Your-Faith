@@ -4,12 +4,14 @@ import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.*
 import com.johnmaricool.mario_designs.utils.models.PrayerModel
 import com.johnmaricool.mario_designs.utils.repositories.PrayerListRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
+@HiltViewModel
 class PrayerListViewModel
-@ViewModelInject
-constructor(var repo: PrayerListRepository): ViewModel() {
+@Inject constructor(var repo: PrayerListRepository): ViewModel() {
 
    private val _basic  = MutableLiveData<List<PrayerModel>>()
     private val _jesus  = MutableLiveData<List<PrayerModel>>()

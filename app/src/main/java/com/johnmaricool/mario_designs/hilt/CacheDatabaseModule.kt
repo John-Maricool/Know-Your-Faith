@@ -1,19 +1,16 @@
 package com.johnmaricool.mario_designs.hilt
 
 import android.content.Context
-import com.johnmaricool.mario_designs.database.CacheDatabase
-import com.johnmaricool.mario_designs.database.FactDao
-import com.johnmaricool.mario_designs.database.PrayerDao
-import com.johnmaricool.mario_designs.database.QuizDao
+import com.johnmaricool.mario_designs.database.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
 import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(SingletonComponent::class)
 
 object CacheDatabaseModule {
 
@@ -35,7 +32,6 @@ object CacheDatabaseModule {
     fun provideFactDAO(cacheDatabase: CacheDatabase): FactDao {
         return cacheDatabase.factDao()
     }
-
 
     @Singleton
     @Provides

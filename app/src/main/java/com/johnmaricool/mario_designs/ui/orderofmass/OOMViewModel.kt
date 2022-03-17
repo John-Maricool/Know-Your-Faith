@@ -5,11 +5,13 @@ import android.text.Html
 import androidx.core.text.HtmlCompat
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
+import javax.inject.Inject
 
+@HiltViewModel
 class OOMViewModel
-    @ViewModelInject
-    constructor(@ApplicationContext var context: Context)
+  @Inject constructor(@ApplicationContext var context: Context)
     : ViewModel() {
 
     fun getOOM(title: String): String {
