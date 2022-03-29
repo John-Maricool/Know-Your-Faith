@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.johnmaricool.mario_designs.AboutFragment">
+    tools:context="com.johnmaricool.mario_designs.ui.AboutFragment">
 
 
     <TextView

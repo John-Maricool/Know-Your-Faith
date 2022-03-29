@@ -13,6 +13,7 @@
             android:id="@+id/recycler_prayers"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -20,9 +21,13 @@
             app:layout_constraintVertical_bias="1.0"
             tools:listitem="@layout/prayer_single_item" />
 
-        <include
-            layout="@layout/adview"
-            android:id="@+id/adView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-2405193777782482/7176920316"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>

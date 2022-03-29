@@ -4,9 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.gms.ads.AdRequest
 import com.johnmaricool.mario_designs.R
 import com.johnmaricool.mario_designs.adapters.FavouritePrayerAdapter
@@ -37,20 +35,15 @@ class FavouritesFragment : Fragment(R.layout.fragment_favourites), OnPrayerItemC
         _binding = FragmentFavouritesBinding.bind(view)
 
         model.getData()
-        binding.adView.adView.loadAd(request)
+        binding.adV.loadAd(request)
         binding.recyclerFav.apply {
             setHasFixedSize(true)
-            layoutManager = LinearLayoutManager(activity)
         }
         binding.recyclerFav.adapter = adapter
-    }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-
-        model.data.observe(viewLifecycleOwner, Observer {
+        model.data.observe(viewLifecycleOwner) {
             adapter.getAllFavPrayers(it)
-        })
+        }
     }
 
     override fun onStart() {
@@ -64,7 +57,7 @@ class FavouritesFragment : Fragment(R.layout.fragment_favourites), OnPrayerItemC
     }
 
     override fun onPrayerItemClick(prayer: String, id: Int) {
-       val action = FavouritesFragmentDirections.actionFavouritesFragmentToPrayerFragment2(id, prayer)
+        val action = FavouritesFragmentDirections.actionFavouritesFragmentToPrayerFragment(id, prayer)
         findNavController().navigate(action)
     }
 }

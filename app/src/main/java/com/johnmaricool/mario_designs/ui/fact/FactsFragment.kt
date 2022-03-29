@@ -5,7 +5,6 @@ import android.view.View
 import androidx.core.text.HtmlCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.navigation.fragment.navArgs
 import com.google.android.gms.ads.AdRequest
 import com.johnmaricool.mario_designs.R
@@ -21,7 +20,7 @@ class FactsFragment : Fragment(R.layout.facts_fragment) {
     private val binding get() = _binding!!
 
     private val viewModel: FactsViewModel by viewModels()
-    val args: FactsFragmentArgs by navArgs()
+    private val args: FactsFragmentArgs by navArgs()
 
     @Inject
     lateinit var adRequest: AdRequest
@@ -30,12 +29,11 @@ class FactsFragment : Fragment(R.layout.facts_fragment) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FactsFragmentBinding.bind(view)
         viewModel.getFact(args.id)
-        binding.adView.adView.loadAd(adRequest)
+        binding.adV?.loadAd(adRequest)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-
+    override fun onStart() {
+        super.onStart()
         viewModel.data.observe(viewLifecycleOwner) { fact ->
             binding.apply {
                 factName.text = fact.factTitle

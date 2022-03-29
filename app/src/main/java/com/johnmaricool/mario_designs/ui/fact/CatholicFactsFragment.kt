@@ -8,7 +8,6 @@ import android.view.View
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.gms.ads.AdRequest
@@ -41,19 +40,15 @@ class CatholicFactsFragment: Fragment(R.layout.fragment_catholic_facts), OnPraye
             layoutManager = LinearLayoutManager(activity)
         }
         setHasOptionsMenu(true)
-        binding.adView.adView.loadAd(adRequest)
-    }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
         binding.expandableRecyclerView.adapter = adapter
-        model.data.observe(viewLifecycleOwner, Observer {
+        model.data.observe(viewLifecycleOwner) {
             adapter.getFactList(it)
-        })
+        }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
 
@@ -75,11 +70,12 @@ class CatholicFactsFragment: Fragment(R.layout.fragment_catholic_facts), OnPraye
 
     override fun onStart() {
         super.onStart()
+        binding.adV.loadAd(adRequest)
         adapter.setOnClickListener(this)
     }
 
     override fun onPrayerItemClick(prayer: String, id: Int) {
-        val action = CatholicFactsFragmentDirections.actionCatholicFactsFragmentToFactsFragment(id)
+        val action = CatholicFactsFragmentDirections.actionCatholicFactsFragmentToFactsFragment()
         findNavController().navigate(action)
     }
 }

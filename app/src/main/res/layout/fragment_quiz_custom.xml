@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -73,8 +74,8 @@
         app:layout_constraintTop_toBottomOf="@+id/progress"
         tools:text="Who is the father of Abraham" />
 
-    <Button
-        android:id="@+id/option1"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/op1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -83,17 +84,17 @@
         android:background="@drawable/quiz_options"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorBlue"
         android:textSize="18sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="@+id/option2"
+        app:layout_constraintEnd_toEndOf="@+id/op2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/option2"
-        app:layout_constraintTop_toBottomOf="@+id/option2"
+        app:layout_constraintStart_toStartOf="@+id/op2"
+        app:layout_constraintTop_toBottomOf="@+id/op2"
         tools:text="option1" />
 
-    <Button
-        android:id="@+id/option2"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/op2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -102,17 +103,17 @@
         android:background="@drawable/quiz_options"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorBlue"
         android:textSize="18sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="@+id/option3"
+        app:layout_constraintEnd_toEndOf="@+id/op3"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/option3"
-        app:layout_constraintTop_toBottomOf="@+id/option3"
-        tools:text="option1" />
+        app:layout_constraintStart_toStartOf="@+id/op3"
+        app:layout_constraintTop_toBottomOf="@+id/op3"
+        tools:text="op1" />
 
-    <Button
-        android:id="@+id/option3"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/op3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -121,7 +122,7 @@
         android:background="@drawable/quiz_options"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorBlue"
         android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="@+id/question"
@@ -141,11 +142,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option1"
+        app:layout_constraintTop_toBottomOf="@+id/op1"
         tools:text="Correction" />
 
-    <Button
-        android:id="@+id/next"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -154,7 +155,7 @@
         android:background="@drawable/quiz_buttons"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
-        android:text="NEXT"
+        android:text="@string/next"
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold"

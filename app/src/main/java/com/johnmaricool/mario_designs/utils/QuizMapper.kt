@@ -1,4 +1,4 @@
-package com.johnmaricool.mario_designs
+package com.johnmaricool.mario_designs.utils
 
 import com.johnmaricool.mario_designs.interfaces_kids.ModelMapper
 import com.johnmaricool.mario_designs.utils.models.QuizEntityModel

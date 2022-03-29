@@ -6,12 +6,12 @@
 
     <shape
         android:shape="ring"
-        android:thicknessRatio="7"
+        android:thicknessRatio="20"
         android:useLevel="true">
 
         <gradient
-            android:startColor="#B1F18E"
-            android:endColor="#44D324"
+            android:startColor="@color/colorPrimary"
+            android:endColor="@color/colorPrimary"
             android:angle="90"/>
     </shape>
 

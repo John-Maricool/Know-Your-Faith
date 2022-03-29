@@ -9,10 +9,8 @@ import androidx.appcompat.widget.SearchView
 import androidx.core.view.ViewCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ConcatAdapter
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.gms.ads.AdRequest
 import com.johnmaricool.mario_designs.R
 import com.johnmaricool.mario_designs.adapters.PrayerFragmentMainScreenAdapter
@@ -27,18 +25,23 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
     private var _binding: FragmentCatholicPrayerBinding? = null
     private val binding get() = _binding!!
 
-   private val model: PrayerListViewModel by viewModels()
+    private val model: PrayerListViewModel by viewModels()
 
     @Inject
-     lateinit var adapter1: PrayerFragmentMainScreenAdapter
+    lateinit var adapter1: PrayerFragmentMainScreenAdapter
+
     @Inject
-     lateinit var adapter2: PrayerFragmentMainScreenAdapter
+    lateinit var adapter2: PrayerFragmentMainScreenAdapter
+
     @Inject
-     lateinit var adapter3: PrayerFragmentMainScreenAdapter
+    lateinit var adapter3: PrayerFragmentMainScreenAdapter
+
     @Inject
-     lateinit var adapter4: PrayerFragmentMainScreenAdapter
+    lateinit var adapter4: PrayerFragmentMainScreenAdapter
+
     @Inject
     lateinit var adapter5: PrayerFragmentMainScreenAdapter
+
     @Inject
     lateinit var request: AdRequest
 
@@ -47,16 +50,35 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
         _binding = FragmentCatholicPrayerBinding.bind(view)
         setHasOptionsMenu(true)
         model.getData()
-        binding.adView.adView.loadAd(request)
-    }
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+        binding.adV.loadAd(request)
 
         binding.apply {
-            recyclerPrayers.layoutManager = LinearLayoutManager(activity)
             recyclerPrayers.setHasFixedSize(false)
             ViewCompat.setNestedScrollingEnabled(recyclerPrayers, false)
         }
+        initRecyclerView()
+        observeLiveData()
+    }
+
+    private fun observeLiveData() {
+        model.basic.observe(viewLifecycleOwner) {
+            adapter1.getPrayerList(it)
+        }
+        model.jesus.observe(viewLifecycleOwner) {
+            adapter2.getPrayerList(it)
+        }
+        model.rosary.observe(viewLifecycleOwner) {
+            adapter3.getPrayerList(it)
+        }
+        model.saints.observe(viewLifecycleOwner) {
+            adapter4.getPrayerList(it)
+        }
+        model.station.observe(viewLifecycleOwner) {
+            adapter5.getPrayerList(it)
+        }
+    }
+
+    private fun initRecyclerView() {
         adapter1.header = "Basic Prayers"
         adapter2.header = "Jesus Christ"
         adapter3.header = "Rosary"
@@ -65,22 +87,6 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
 
         val concat = ConcatAdapter(adapter1, adapter2, adapter3, adapter4, adapter5)
         binding.recyclerPrayers.adapter = concat
-
-        model.basic.observe(viewLifecycleOwner, Observer {
-            adapter1.getPrayerList(it)
-        })
-        model.jesus.observe(viewLifecycleOwner, Observer {
-            adapter2.getPrayerList(it)
-        })
-        model.rosary.observe(viewLifecycleOwner, Observer {
-            adapter3.getPrayerList(it)
-        })
-        model.saints.observe(viewLifecycleOwner, Observer {
-            adapter4.getPrayerList(it)
-        })
-        model.station.observe(viewLifecycleOwner, Observer {
-            adapter5.getPrayerList(it)
-        })
     }
 
     override fun onStart() {
@@ -93,8 +99,8 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
     }
 
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
 
@@ -120,8 +126,8 @@ class CatholicPrayerFragment : Fragment(R.layout.fragment_catholic_prayer), Sear
 
     override fun onPrayerItemClick(prayer: String, id: Int) {
         val action = CatholicPrayerFragmentDirections.actionCatholicPrayerFragmentToPrayerFragment(
-                prayer,
-                id
+                id,
+                prayer
         )
         findNavController().navigate(action)
     }

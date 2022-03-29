@@ -1,72 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
-    android:layout_height="match_parent"
-    tools:context=".ui.quiz.QuizResultFragment">
-
     <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
+        android:background="@drawable/background_gradient"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        tools:context=".ui.quiz.QuizResultFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:padding="20dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="20dp"
+        android:background="#E0E6E6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <ProgressBar
             android:id="@+id/progress"
-            android:layout_width="220dp"
-            android:layout_height="220dp"
-            android:layout_marginTop="56dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/circular_progress_back"
             android:indeterminateOnly="false"
             android:progress="70"
             android:progressDrawable="@drawable/circular_progress_big"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/state" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            tools:text="Congratulations!"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:fontFamily="@font/baloo_tammudu"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/correct_ones"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:fontFamily="@font/bubblegum_sans"
-            android:textSize="19sp"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold|italic"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/progress"
-            tools:text="Correct answers: " />
+            <TextView
+                android:id="@+id/success"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/baloo_bhai"
+                android:gravity="center"
+                android:text="@string/quiz_completed_successfully"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/progress" />
 
-        <TextView
-            android:id="@+id/wrong_ones"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/bubblegum_sans"
-            android:textSize="19sp"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold|italic"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/correct_ones"
-            tools:text="Wrong answers: " />
 
-        <TextView
+            <TextView
+                android:id="@+id/wrong_ones"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/success"
+                app:layout_constraintStart_toStartOf="@+id/success"
+                app:layout_constraintTop_toBottomOf="@+id/success"
+                tools:text="Wrong answers: " />
+
+            <com.sanojpunchihewa.glowbutton.GlowButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonColor="@color/colorWhite"
+                app:cornerRadius="3dp"
+                android:id="@+id/back"
+                app:glowColor="#ED0AD7"
+                app:unpressedGlowSize="9dp"
+                app:pressedGlowSize="20dp"
+                android:padding="14dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/baloo_bhai"
+                android:text="@string/back_to_quiz"
+                android:textColor="#ED0AD7"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/wrong_ones"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/wrong_ones"
+                app:layout_constraintTop_toBottomOf="@+id/wrong_ones" />
+
+            <TextView
             android:id="@+id/percentage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorWhite"
-            android:textSize="60sp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/progress"
             app:layout_constraintEnd_toEndOf="@+id/progress"
             app:layout_constraintStart_toStartOf="@+id/progress"
             app:layout_constraintTop_toTopOf="@+id/progress"
             tools:text="80%" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>

@@ -93,7 +93,7 @@
     <string name="added_items">Added Items</string>
     <string name="favourites_prayers">favourite Prayers</string>
     <string name="favorite_facts">Favorite facts</string>
-    <string name="choose_number_of_questions">Choose number of questions</string>
+    <string name="choose_number_of_questions">Select number of questions to answer</string>
     <string name="show_that_advanced_quiz_is_unlocked">You have unlocked the Catholic Faith quiz</string>
     <string name="home">Home</string>
     <string name="about">About</string>
@@ -115,5 +115,11 @@
     <string name="SAVE">SAVE</string>
     <string name="ADD">ADD</string>
     <string name="view_notes">Notes</string>
+    <string name="next">NEXT</string>
+    <string name="quiz_completed_successfully">Quiz Completed successfully</string>
+    <string name="unlucky">Unlucky!</string>
+    <string name="congrats">Congratulations!</string>
+    <string name="average">Average!</string>
+    <string name="back_to_quiz">Back to Quiz</string>
 
 </resources>

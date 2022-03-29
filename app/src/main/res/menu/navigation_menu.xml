@@ -16,19 +16,10 @@
         android:icon="@drawable/ic_baseline_favorite_24"
         android:id="@+id/favoriteFactsFragment"/>
 
-    <item
-        android:title="@string/view_notes"
-        android:icon="@drawable/ic_baseline_favorite_24"
-        android:id="@+id/viewNotesFragment"/>
-
  <item android:title="@string/communicate">
     <menu>
     <item android:id="@+id/aboutFragment"
         android:title="@string/about_app"/>
-
-        <item android:title="@string/report_contact"
-            android:icon="@drawable/ic_contact"
-            android:id="@+id/reportFragment"/>
 
         <item android:title="@string/rate_me"
             android:icon="@drawable/ic_baseline_grade_24"

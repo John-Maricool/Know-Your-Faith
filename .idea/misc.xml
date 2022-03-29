@@ -3,8 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/drawable/background_gradient.xml" value="0.155" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/drawable/circular_progress_back.xml" value="0.1295" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/drawable/circular_progress_big_center.xml" value="0.149" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/drawable/circular_progress_big_low.xml" value="0.155" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/drawable/quiz_correct.xml" value="0.1295" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/drawable/quiz_options.xml" value="0.1295" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout-sw600dp/fragment_quiz_custom.xml" value="0.164453125" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/facts_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/favorite_facts_fragment.xml" value="0.1" />
         <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/fragment_add_notes.xml" value="0.1" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/fragment_catholic_prayer.xml" value="0.1" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/fragment_catholic_quiz.xml" value="0.18" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/fragment_favourites.xml" value="0.1" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/fragment_main_screen.xml" value="0.1" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/fragment_order_of_mass.xml" value="0.1" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/fragment_prayer.xml" value="0.21927083333333333" />
         <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/fragment_quiz_custom.xml" value="0.12092391304347826" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/fragment_quiz_result.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/o_o_m_fragment.xml" value="0.1" />
         <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/layout/prayer_single_item.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/menu/add_note.xml" value="1.34375" />
         <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/KnowYourFaithForChildrenAndTeenagers/app/src/main/res/menu/main.xml" value="0.22395833333333334" />

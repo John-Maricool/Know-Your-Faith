@@ -50,11 +50,7 @@
         tools:layout="@layout/fragment_catholic_prayer">
         <action
             android:id="@+id/action_catholicPrayerFragment_to_prayerFragment"
-            app:destination="@id/prayerFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:destination="@id/prayerFragment" />
     </fragment>
     <fragment
         android:id="@+id/catholicQuizFragment"
@@ -71,13 +67,11 @@
         android:label="Prayer"
         tools:layout="@layout/fragment_prayer" >
         <argument
-            android:name="prayer"
-            app:argType="string"
-            android:defaultValue="Prayer" />
-        <argument
             android:name="id"
-            app:argType="integer"
-            android:defaultValue="0" />
+            app:argType="integer" />
+        <argument
+            android:name="prayer"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/factsFragment"
@@ -134,22 +128,13 @@
             android:defaultValue="0" />
     </fragment>
     <fragment
-        android:id="@+id/reportFragment"
-        android:name="com.johnmaricool.mario_designs.ui.report.ReportFragment"
-        android:label="Report"
-        tools:layout="@layout/fragment_report" />
-    <fragment
         android:id="@+id/favouritesFragment"
         android:name="com.johnmaricool.mario_designs.ui.favoriteprayer.FavouritesFragment"
         android:label="Favourite Prayers"
         tools:layout="@layout/fragment_favourites">
         <action
-            android:id="@+id/action_favouritesFragment_to_prayerFragment2"
-            app:destination="@id/prayerFragment">
-            <argument
-                android:name="id"
-                android:defaultValue="0" />
-        </action>
+            android:id="@+id/action_favouritesFragment_to_prayerFragment"
+            app:destination="@id/prayerFragment" />
     </fragment>
     <fragment
         android:id="@+id/OOMFragment"
@@ -172,7 +157,7 @@
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.johnmaricool.mario_designs.AboutFragment"
+        android:name="com.johnmaricool.mario_designs.ui.AboutFragment"
         android:label="@string/about"
         tools:layout="@layout/fragment_about" />
 </navigation>

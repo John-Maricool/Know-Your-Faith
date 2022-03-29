@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_faithicon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.johnmaricool.mario_designs.SplashScreenActivity"
+        <activity android:name="com.johnmaricool.mario_designs.androidcomponents.SplashScreenActivity"
             android:screenOrientation="fullSensor"
             android:exported="true">
             <intent-filter>
@@ -26,6 +26,9 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-2405193777782482~3529427147" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <activity android:name="com.johnmaricool.mario_designs.androidcomponents.MainActivity"
             android:screenOrientation="portrait">
