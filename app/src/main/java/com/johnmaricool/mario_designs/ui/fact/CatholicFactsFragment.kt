@@ -75,7 +75,7 @@ class CatholicFactsFragment: Fragment(R.layout.fragment_catholic_facts), OnPraye
     }
 
     override fun onPrayerItemClick(prayer: String, id: Int) {
-        val action = CatholicFactsFragmentDirections.actionCatholicFactsFragmentToFactsFragment()
+        val action = CatholicFactsFragmentDirections.actionCatholicFactsFragmentToFactsFragment(id)
         findNavController().navigate(action)
     }
 }

@@ -15,7 +15,7 @@
       android:text="@string/introductory_rite"
       android:id="@+id/introductory_rite"
       android:textSize="20sp"
-    android:textColor="@color/colorBlack"
+    android:textColor="@color/colorWhite"
     android:background="@drawable/rounded_corners"/>
 
   <Button
@@ -26,7 +26,7 @@
       android:text="@string/liturgy_word"
       android:id="@+id/liturgy_word"
       android:textSize="20sp"
-      android:textColor="@color/colorBlack"
+      android:textColor="@color/colorWhite"
       android:background="@drawable/rounded_corners"/>
 
   <Button
@@ -37,7 +37,7 @@
       android:fontFamily="@font/bubblegum_sans"
       android:id="@+id/liturgy_eucharist"
       android:textSize="20sp"
-      android:textColor="@color/colorBlack"
+      android:textColor="@color/colorWhite"
       android:background="@drawable/rounded_corners"/>
 
   <Button
@@ -48,7 +48,7 @@
       android:fontFamily="@font/bubblegum_sans"
       android:id="@+id/communion_rite"
       android:textSize="20sp"
-      android:textColor="@color/colorBlack"
+      android:textColor="@color/colorWhite"
       android:background="@drawable/rounded_corners"/>
 
   <Button
@@ -59,7 +59,7 @@
       android:text="@string/concluding_rite"
       android:id="@+id/concluding_rite"
       android:textSize="20sp"
-      android:textColor="@color/colorBlack"
+      android:textColor="@color/colorWhite"
       android:background="@drawable/rounded_corners"/>
 
   <com.google.android.gms.ads.AdView
