@@ -9,13 +9,13 @@ apply plugin: 'dagger.hilt.android.plugin'
 apply plugin: 'com.google.firebase.crashlytics'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
     buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.johnmaricool.mario_designs"
-        minSdkVersion 21
-        targetSdkVersion 31
+        minSdkVersion 22
+        targetSdkVersion 33
         versionCode 8
         versionName "1.0.8"
         multiDexEnabled true
